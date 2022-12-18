@@ -15,8 +15,8 @@
 		BCC19E73294E93F4002F0A2C /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E72294E93F4002F0A2C /* Main.swift */; };
 		BCC19E75294E98D7002F0A2C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E74294E98D7002F0A2C /* Storage.swift */; };
 		BCC19E77294EAE03002F0A2C /* InstrumentChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */; };
-		BCC19E79294EC66A002F0A2C /* ScaleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E78294EC669002F0A2C /* ScaleRow.swift */; };
-		BCC19E7C294EC880002F0A2C /* MultipleScaleSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E7B294EC880002F0A2C /* MultipleScaleSelection.swift */; };
+		BCC19E7E294EDA8F002F0A2C /* ScaleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */; };
+		BCC19EA3294F903A002F0A2C /* ScaleSelectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		BCC19E72294E93F4002F0A2C /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		BCC19E74294E98D7002F0A2C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentChooser.swift; sourceTree = "<group>"; };
-		BCC19E78294EC669002F0A2C /* ScaleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleRow.swift; sourceTree = "<group>"; };
-		BCC19E7B294EC880002F0A2C /* MultipleScaleSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleScaleSelection.swift; sourceTree = "<group>"; };
+		BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewer.swift; sourceTree = "<group>"; };
+		BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleSelectionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +66,10 @@
 			children = (
 				BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */,
 				BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */,
+				BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */,
+				BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */,
 				BCC19E74294E98D7002F0A2C /* Storage.swift */,
 				BCC19E70294E93EC002F0A2C /* Settings.swift */,
-				BCC19E7A294EC853002F0A2C /* Scale Selector List */,
 				BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */,
 				BCC19E72294E93F4002F0A2C /* Main.swift */,
 				BC99DDBD294E50AB00AB5AF0 /* Assets.xcassets */,
@@ -84,15 +85,6 @@
 				BC99DDC1294E50AB00AB5AF0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		BCC19E7A294EC853002F0A2C /* Scale Selector List */ = {
-			isa = PBXGroup;
-			children = (
-				BCC19E78294EC669002F0A2C /* ScaleRow.swift */,
-				BCC19E7B294EC880002F0A2C /* MultipleScaleSelection.swift */,
-			);
-			name = "Scale Selector List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,11 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCC19E71294E93EC002F0A2C /* Settings.swift in Sources */,
-				BCC19E7C294EC880002F0A2C /* MultipleScaleSelection.swift in Sources */,
+				BCC19E7E294EDA8F002F0A2C /* ScaleViewer.swift in Sources */,
 				BC99DDBC294E50AA00AB5AF0 /* ContentView.swift in Sources */,
-				BCC19E79294EC66A002F0A2C /* ScaleRow.swift in Sources */,
 				BCC19E77294EAE03002F0A2C /* InstrumentChooser.swift in Sources */,
 				BCC19E73294E93F4002F0A2C /* Main.swift in Sources */,
+				BCC19EA3294F903A002F0A2C /* ScaleSelectionList.swift in Sources */,
 				BC99DDBA294E50AA00AB5AF0 /* ScaleMasterApp.swift in Sources */,
 				BCC19E75294E98D7002F0A2C /* Storage.swift in Sources */,
 			);

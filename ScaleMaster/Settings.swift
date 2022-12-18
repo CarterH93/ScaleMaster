@@ -17,6 +17,7 @@ struct Settings: View {
                 LinearGradient(gradient: Gradient(colors: [Color("NiceOrange"), .white, .gray]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     .ignoresSafeArea()
                 ScrollView {
+                    
                     VStack {
                         VStack(spacing: 0) {
                             Text("Choose Your Instrument")
@@ -32,10 +33,11 @@ struct Settings: View {
                         VStack {
                             Text("Select Your Scales to Play")
                                 .font(.title)
-                            MultipleScaleSelection()
+                            ScaleSelectionList(selectedScales: storage.selectedScales)
                                 .frame(width: geo.size.width * 0.95, height: geo.size.height > geo.size.width ? geo.size.width * 0.78: geo.size.height * 0.40)
                         }
-                        
+                       
+                    
                     }
                     
                 }

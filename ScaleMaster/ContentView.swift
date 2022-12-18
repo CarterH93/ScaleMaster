@@ -57,16 +57,35 @@ struct ContentView: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 30))
                         }
                         
-                        
-                        NavigationLink(value: "settings") {
+                        HStack {
                             
-                            Text("Settings")
-                                .font(.system(size: geo.size.height > geo.size.width ? geo.size.width * 0.07: geo.size.height * 0.07))
-                                .foregroundColor(.secondary)
-                                .padding(8)
-                                .background(.thinMaterial)
-                                .clipShape(Rectangle())
-                                .border(.black.opacity(0.5))
+                            
+                            NavigationLink(value: "ScaleViewer") {
+                                
+                                Text("View Scales")
+                                    .font(.system(size: geo.size.height > geo.size.width ? geo.size.width * 0.07: geo.size.height * 0.07))
+                                    .foregroundColor(.secondary)
+                                    .padding(8)
+                                    .background(.thinMaterial)
+                                    .clipShape(Rectangle())
+                                    .border(.black.opacity(0.5))
+                                
+                                
+                            }
+                            
+                            NavigationLink(value: "settings") {
+                                
+                                Text("Settings")
+                                    .font(.system(size: geo.size.height > geo.size.width ? geo.size.width * 0.07: geo.size.height * 0.07))
+                                    .foregroundColor(.secondary)
+                                    .padding(8)
+                                    .background(.thinMaterial)
+                                    .clipShape(Rectangle())
+                                    .border(.black.opacity(0.5))
+                                
+                                
+                            }
+                            
                             
                         }
                         
@@ -95,6 +114,8 @@ struct ContentView: View {
                 } else if selectedView == "settings" {
                     Settings()
                       
+                } else if selectedView == "ScaleViewer" {
+                    ScaleViewer()
                 }
             }
         }

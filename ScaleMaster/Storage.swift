@@ -26,22 +26,22 @@ class AppInfoStorage: ObservableObject {
     
     
     
-    @Published var presentedViews: NavigationPath = NavigationPath()
+    @Published var presentedViews: [String] = []
     
     static let allScales: [scale] = [
-    scale(name: "C", octaves: 2),
-    scale(name: "F", octaves: 2),
-    scale(name: "Bb", octaves: 2),
-    scale(name: "Eb", octaves: 1),
-    scale(name: "Ab", octaves: 2),
-    scale(name: "Db", octaves: 1),
-    scale(name: "F#", octaves: 2),
-    scale(name: "B", octaves: 2),
-    scale(name: "E", octaves: 2),
-    scale(name: "A", octaves: 2),
-    scale(name: "D", octaves: 1),
-    scale(name: "G", octaves: 2),
-    scale(name: "chromatic", octaves: 0),
+    scale(id: 1, name: "C", octaves: 2),
+    scale(id: 2, name: "F", octaves: 2),
+    scale(id: 3, name: "Bb", octaves: 2),
+    scale(id: 4, name: "Eb", octaves: 1),
+    scale(id: 5, name: "Ab", octaves: 2),
+    scale(id: 6, name: "Db", octaves: 1),
+    scale(id: 7, name: "F#", octaves: 2),
+    scale(id: 8, name: "B", octaves: 2),
+    scale(id: 9, name: "E", octaves: 2),
+    scale(id: 10, name: "A", octaves: 2),
+    scale(id: 11, name: "D", octaves: 1),
+    scale(id: 12, name: "G", octaves: 2),
+    scale(id: 13, name: "chromatic", octaves: 0),
     ]
     
     static let instrumentSelections: [instrument] = [.Tuba, .Test]
@@ -95,7 +95,7 @@ class AppInfoStorage: ObservableObject {
                     if let decodedItems = try? JSONDecoder().decode([scale].self, from: savedItems) {
                         selectedScales = decodedItems
                     } else {
-                        selectedScales = [scale(name: "Error", octaves: 1)]
+                        selectedScales = []
                     }
                 }
             
@@ -115,8 +115,9 @@ class AppInfoStorage: ObservableObject {
 
 
 struct scale: Identifiable, Codable {
-    var id = UUID()
+    var id: Int
     var name: String
     var octaves: Int
+    var isSelected = false
     
 }
