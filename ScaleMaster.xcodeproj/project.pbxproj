@@ -11,6 +11,10 @@
 		BC99DDBC294E50AA00AB5AF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */; };
 		BC99DDBE294E50AB00AB5AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC99DDBD294E50AB00AB5AF0 /* Assets.xcassets */; };
 		BC99DDC2294E50AB00AB5AF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC99DDC1294E50AB00AB5AF0 /* Preview Assets.xcassets */; };
+		BCC19E71294E93EC002F0A2C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E70294E93EC002F0A2C /* Settings.swift */; };
+		BCC19E73294E93F4002F0A2C /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E72294E93F4002F0A2C /* Main.swift */; };
+		BCC19E75294E98D7002F0A2C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E74294E98D7002F0A2C /* Storage.swift */; };
+		BCC19E77294EAE03002F0A2C /* InstrumentChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		BC99DDBD294E50AB00AB5AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC99DDBF294E50AB00AB5AF0 /* ScaleMaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScaleMaster.entitlements; sourceTree = "<group>"; };
 		BC99DDC1294E50AB00AB5AF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCC19E70294E93EC002F0A2C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		BCC19E72294E93F4002F0A2C /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		BCC19E74294E98D7002F0A2C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentChooser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 			children = (
 				BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */,
 				BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */,
+				BCC19E74294E98D7002F0A2C /* Storage.swift */,
+				BCC19E70294E93EC002F0A2C /* Settings.swift */,
+				BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */,
+				BCC19E72294E93F4002F0A2C /* Main.swift */,
 				BC99DDBD294E50AB00AB5AF0 /* Assets.xcassets */,
 				BC99DDBF294E50AB00AB5AF0 /* ScaleMaster.entitlements */,
 				BC99DDC0294E50AB00AB5AF0 /* Preview Content */,
@@ -139,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC19E71294E93EC002F0A2C /* Settings.swift in Sources */,
 				BC99DDBC294E50AA00AB5AF0 /* ContentView.swift in Sources */,
+				BCC19E77294EAE03002F0A2C /* InstrumentChooser.swift in Sources */,
+				BCC19E73294E93F4002F0A2C /* Main.swift in Sources */,
 				BC99DDBA294E50AA00AB5AF0 /* ScaleMasterApp.swift in Sources */,
+				BCC19E75294E98D7002F0A2C /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

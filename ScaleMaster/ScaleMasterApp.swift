@@ -12,6 +12,7 @@ struct ScaleMasterApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(AppInfoStorage())
         }
     }
 }

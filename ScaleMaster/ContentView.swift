@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State private var tubaRotate = 0.0
+   
+    
+    @EnvironmentObject var storage: AppInfoStorage
+    
+    
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $storage.presentedViews) {
             GeometryReader { geo in
                     ZStack {
                         LinearGradient(gradient: Gradient(colors: [Color("NiceOrange"), .white, .gray]), startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -42,10 +48,7 @@ struct ContentView: View {
                                     tubaRotate += 360
                                 }
                             }
-                        Button {
-                            
-                        } label: {
-                            
+                        NavigationLink(value: "main") {
                             
                             Text("Start")
                                 .font(.system(size: geo.size.height > geo.size.width ? geo.size.width * 0.07: geo.size.height * 0.07))
@@ -53,10 +56,9 @@ struct ContentView: View {
                                 .background(.quaternary)
                                 .clipShape(RoundedRectangle(cornerRadius: 30))
                         }
-                        Button {
-                            
-                        } label: {
-                            
+                        
+                        
+                        NavigationLink(value: "settings") {
                             
                             Text("Settings")
                                 .font(.system(size: geo.size.height > geo.size.width ? geo.size.width * 0.07: geo.size.height * 0.07))
@@ -67,6 +69,8 @@ struct ContentView: View {
                                 .border(.black.opacity(0.5))
                             
                         }
+                        
+                        
                         
                     }
                     .toolbar {
@@ -84,6 +88,15 @@ struct ContentView: View {
                             
                 }
             }
+            .navigationDestination(for: String.self) { selectedView in
+                if selectedView == "main" {
+                    Main()
+                      
+                } else if selectedView == "settings" {
+                    Settings()
+                      
+                }
+            }
         }
     }
 }
@@ -91,5 +104,8 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AppInfoStorage())
     }
 }
+
+
