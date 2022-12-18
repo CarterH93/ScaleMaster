@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     
+    @State private var scaleAudio: AVAudioPlayer?
     @State private var instrumentRotate = 0.0
    
     
@@ -47,6 +49,21 @@ struct ContentView: View {
                                 withAnimation(.interpolatingSpring(stiffness: 60, damping: 6)) {
                                     instrumentRotate += 360
                                 }
+                                
+                                
+                                do {
+                                    let path = Bundle.main.path(forResource: "Whoosh", ofType: "m4a")
+                                    if let path = path {
+                                        let url = URL(fileURLWithPath: path)
+                                        scaleAudio = try AVAudioPlayer(contentsOf: url)
+                                        scaleAudio?.play()
+                                    } else {
+                                        
+                                    }
+                                } catch {
+                                    // couldn't load file :(
+                                }
+                                
                             }
                         NavigationLink(value: "main") {
                             
@@ -118,9 +135,9 @@ struct ContentView: View {
                     ScaleViewer()
                 }
             }
-            .navigationDestination(for: [scale].self) { scales in
-                Main(scales: scales)
-            }
+            //.navigationDestination(for: [scale].self) { scales in
+                //Main(scales: scales)
+           // }
         }
     }
 }

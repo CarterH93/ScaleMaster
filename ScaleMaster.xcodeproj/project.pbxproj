@@ -18,6 +18,8 @@
 		BCC19E7E294EDA8F002F0A2C /* ScaleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */; };
 		BCC19EA3294F903A002F0A2C /* ScaleSelectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */; };
 		BCC19EA5294FA390002F0A2C /* Scale View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EA4294FA390002F0A2C /* Scale View.swift */; };
+		BCC19EAA294FBE36002F0A2C /* E2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EA9294FBE36002F0A2C /* E2TubaAudio.m4a */; };
+		BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewer.swift; sourceTree = "<group>"; };
 		BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleSelectionList.swift; sourceTree = "<group>"; };
 		BCC19EA4294FA390002F0A2C /* Scale View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scale View.swift"; sourceTree = "<group>"; };
+		BCC19EA9294FBE36002F0A2C /* E2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = E2TubaAudio.m4a; sourceTree = "<group>"; };
+		BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Whoosh.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */,
 				BCC19E72294E93F4002F0A2C /* Main.swift */,
 				BCC19EA4294FA390002F0A2C /* Scale View.swift */,
+				BCC19EA8294FBE16002F0A2C /* Sounds */,
 				BC99DDBD294E50AB00AB5AF0 /* Assets.xcassets */,
 				BC99DDBF294E50AB00AB5AF0 /* ScaleMaster.entitlements */,
 				BC99DDC0294E50AB00AB5AF0 /* Preview Content */,
@@ -88,6 +93,15 @@
 				BC99DDC1294E50AB00AB5AF0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCC19EA8294FBE16002F0A2C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BCC19EA9294FBE36002F0A2C /* E2TubaAudio.m4a */,
+				BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +162,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC19EAA294FBE36002F0A2C /* E2TubaAudio.m4a in Resources */,
 				BC99DDC2294E50AB00AB5AF0 /* Preview Assets.xcassets in Resources */,
+				BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */,
 				BC99DDBE294E50AB00AB5AF0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
