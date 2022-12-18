@@ -7,7 +7,16 @@
 
 import SwiftUI
 
+
 struct Main: View {
+    
+    @State private var scales: [scale]
+    @State private var showingAlert = false
+    
+    
+    init(scales: [scale]) {
+        _scales = State(initialValue: scales)
+    }
     
   @EnvironmentObject var storage: AppInfoStorage
     @State private var showingScale = false
@@ -18,23 +27,39 @@ struct Main: View {
             
             VStack {
                 //Put actual code here
-                
+                if scales.count > 0 {
+                    Scale_View(scale: scales[0])
+                }
                 
             }
+            
+        }
+        .alert("You Have Played Through All the Scales", isPresented: $showingAlert) {
+            Button("Home") {
+                storage.presentedViews.removeLast(storage.presentedViews.count)
+                
+                        }
         }
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    //Put code for going to previous scale
-                } label: {
-                    
+            if storage.previousScale != nil {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        //Put code for going to previous scale
+                        //var tempStore: [scale] = scales
+                        //tempStore.insert(storage.previousScale!, at: 0)
+                        scales.insert(storage.previousScale!, at: 0)
+                        storage.previousScale = nil
+                    } label: {
+                        
                         Text("Previous Scale")
-                        .font(.largeTitle)
+                            .font(.largeTitle)
                             .foregroundColor(.secondary)
                             .padding(8)
                             .background(.thinMaterial)
                             .clipShape(Rectangle())
                             .border(.black.opacity(0.5))
+                        
+                    }
                     
                 }
             }
@@ -58,7 +83,7 @@ struct Main: View {
             
             ToolbarItem(placement: .bottomBar) {
                 Button {
-                    //Show Fingerings
+                    //Show Scale
                     showingScale.toggle()
                 } label: {
                     
@@ -97,6 +122,14 @@ struct Main: View {
             ToolbarItem(placement: .bottomBar) {
                 Button {
                     //Go to Next Scale
+                    if scales.count > 1 {
+                        storage.previousScale = scales[0]
+                        scales.remove(at: 0)
+                    } else {
+                        showingAlert = true
+                        storage.previousScale = nil
+                    }
+                    
                 } label: {
                     
                         Text("Next Scale")
@@ -121,7 +154,7 @@ struct Main: View {
 struct Main_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            Main()
+            Main(scales: AppInfoStorage.allScales)
                 .environmentObject(AppInfoStorage())
         }
     }

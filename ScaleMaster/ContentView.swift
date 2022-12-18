@@ -109,7 +109,7 @@ struct ContentView: View {
             }
             .navigationDestination(for: String.self) { selectedView in
                 if selectedView == "main" {
-                    Main()
+                    Main(scales: storage.listOfScalesToPlay)
                       
                 } else if selectedView == "settings" {
                     Settings()
@@ -117,6 +117,9 @@ struct ContentView: View {
                 } else if selectedView == "ScaleViewer" {
                     ScaleViewer()
                 }
+            }
+            .navigationDestination(for: [scale].self) { scales in
+                Main(scales: scales)
             }
         }
     }

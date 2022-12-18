@@ -24,9 +24,14 @@ let savePathForInstrument = getDocumentsDirectory().appendingPathComponent("Save
 
 class AppInfoStorage: ObservableObject {
     
+    var listOfScalesToPlay: [scale] {
+        var tempStore = self.selectedScales
+        tempStore.shuffle()
+        return tempStore
+    }
+    @Published var previousScale: scale? = nil
     
-    
-    @Published var presentedViews: [String] = []
+    @Published var presentedViews = NavigationPath()
     
     static let allScales: [scale] = [
     scale(id: 1, name: "C", octaves: 2),
@@ -114,7 +119,7 @@ class AppInfoStorage: ObservableObject {
 }
 
 
-struct scale: Identifiable, Codable {
+struct scale: Identifiable, Codable, Hashable {
     var id: Int
     var name: String
     var octaves: Int

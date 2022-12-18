@@ -17,6 +17,7 @@
 		BCC19E77294EAE03002F0A2C /* InstrumentChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */; };
 		BCC19E7E294EDA8F002F0A2C /* ScaleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */; };
 		BCC19EA3294F903A002F0A2C /* ScaleSelectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */; };
+		BCC19EA5294FA390002F0A2C /* Scale View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EA4294FA390002F0A2C /* Scale View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentChooser.swift; sourceTree = "<group>"; };
 		BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewer.swift; sourceTree = "<group>"; };
 		BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleSelectionList.swift; sourceTree = "<group>"; };
+		BCC19EA4294FA390002F0A2C /* Scale View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scale View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				BCC19E70294E93EC002F0A2C /* Settings.swift */,
 				BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */,
 				BCC19E72294E93F4002F0A2C /* Main.swift */,
+				BCC19EA4294FA390002F0A2C /* Scale View.swift */,
 				BC99DDBD294E50AB00AB5AF0 /* Assets.xcassets */,
 				BC99DDBF294E50AB00AB5AF0 /* ScaleMaster.entitlements */,
 				BC99DDC0294E50AB00AB5AF0 /* Preview Content */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCC19E71294E93EC002F0A2C /* Settings.swift in Sources */,
+				BCC19EA5294FA390002F0A2C /* Scale View.swift in Sources */,
 				BCC19E7E294EDA8F002F0A2C /* ScaleViewer.swift in Sources */,
 				BC99DDBC294E50AA00AB5AF0 /* ContentView.swift in Sources */,
 				BCC19E77294EAE03002F0A2C /* InstrumentChooser.swift in Sources */,
@@ -301,8 +305,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -339,8 +343,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
