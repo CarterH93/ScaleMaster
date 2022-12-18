@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var tubaRotate = 0.0
+    @State private var instrumentRotate = 0.0
    
     
     @EnvironmentObject var storage: AppInfoStorage
@@ -39,13 +39,13 @@ struct ContentView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 15))
                             .padding(.top)
                         
-                        Image("Tuba")
+                        Image(storage.selectedInstrument.rawValue)
                             .resizable()
                             .scaledToFit()
-                            .rotation3DEffect(.degrees(tubaRotate), axis: (x: 0, y: 1, z: 0))
+                            .rotation3DEffect(.degrees(instrumentRotate), axis: (x: 0, y: 1, z: 0))
                             .onTapGesture {
                                 withAnimation(.interpolatingSpring(stiffness: 60, damping: 6)) {
-                                    tubaRotate += 360
+                                    instrumentRotate += 360
                                 }
                             }
                         NavigationLink(value: "main") {

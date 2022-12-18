@@ -45,7 +45,6 @@ class AppInfoStorage: ObservableObject {
     ]
     
     static let instrumentSelections: [instrument] = [.Tuba, .Test]
-    
     @Published var selectedScales = [scale]() {
         //did set for saving data to the disk
         
@@ -96,7 +95,7 @@ class AppInfoStorage: ObservableObject {
                     if let decodedItems = try? JSONDecoder().decode([scale].self, from: savedItems) {
                         selectedScales = decodedItems
                     } else {
-                        selectedScales = []
+                        selectedScales = [scale(name: "Error", octaves: 1)]
                     }
                 }
             
