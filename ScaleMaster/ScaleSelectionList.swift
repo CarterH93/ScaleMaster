@@ -42,7 +42,7 @@ struct ScaleSelectionList: View {
                                         scales[index].isSelected ? "checkmark.circle" : "circle"
                                 )
                                 
-                                Text(scales[index].name)
+                                Text("\(scales[index].name)   \(scales[index].octaves == 1 ? "1 octave" : scales[index].octaves == 0 ? "" : "\(scales[index].octaves) octaves")")
                             }
                             Spacer()
                         }
