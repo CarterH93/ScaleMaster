@@ -98,10 +98,18 @@
 		BCC19EA8294FBE16002F0A2C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				BCC19EA9294FBE36002F0A2C /* E Major2TubaAudio.m4a */,
+				BCC19EAF294FFD5A002F0A2C /* Tuba */,
 				BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		BCC19EAF294FFD5A002F0A2C /* Tuba */ = {
+			isa = PBXGroup;
+			children = (
+				BCC19EA9294FBE36002F0A2C /* E Major2TubaAudio.m4a */,
+			);
+			path = Tuba;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
