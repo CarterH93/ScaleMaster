@@ -12,6 +12,7 @@ struct Main: View {
     
     @State private var scales: [scale]
     @State private var showingAlert = false
+    @State private var showingNoScaleAlert = false
     @State private var showingScaleImage = false
     @State private var showingFingeringsImage = false
     
@@ -53,12 +54,29 @@ struct Main: View {
                 }
                 
             }
+            .onAppear {
+                if scales.count == 0 {
+                    showingNoScaleAlert = true
+                }
+            }
             .alert("You Have Played Through All the Scales", isPresented: $showingAlert) {
+                Button("Ok") {
+                    resetButtons()
+                    storage.presentedViews.removeLast(storage.presentedViews.count)
+                }
+            }
+            .alert("You have no scales selected to play", isPresented: $showingNoScaleAlert) {
                 Button("Home") {
                     storage.presentedViews.removeLast(storage.presentedViews.count)
                     
                 }
+                Button("Settings") {
+                    storage.presentedViews = ["settings"]
+                }
+            } message: {
+                Text("Please select scales to play within the settings menu.")
             }
+            
             .toolbar {
                 if storage.previousScale != nil {
                     ToolbarItem(placement: .navigationBarTrailing) {

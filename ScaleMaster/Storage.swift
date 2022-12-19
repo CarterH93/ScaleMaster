@@ -31,7 +31,7 @@ class AppInfoStorage: ObservableObject {
     }
     @Published var previousScale: scale? = nil
     
-    @Published var presentedViews = NavigationPath()
+    @Published var presentedViews: [String] = []
     
     
     static let allScaleNames: [String] = [
