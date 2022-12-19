@@ -67,10 +67,12 @@ struct Main: View {
             }
             .alert("You have no scales selected to play", isPresented: $showingNoScaleAlert) {
                 Button("Home") {
+                    resetButtons()
                     storage.presentedViews.removeLast(storage.presentedViews.count)
                     
                 }
                 Button("Settings") {
+                    resetButtons()
                     storage.presentedViews = ["settings"]
                 }
             } message: {
