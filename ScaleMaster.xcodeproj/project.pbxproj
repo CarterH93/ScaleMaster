@@ -20,6 +20,7 @@
 		BCC19EAA294FBE36002F0A2C /* E Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EA9294FBE36002F0A2C /* E Major2TubaAudio.m4a */; };
 		BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */; };
 		BCC19EAE294FF1AB002F0A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EAD294FF1AB002F0A2C /* Assets.xcassets */; };
+		BCC19EB32950E7D3002F0A2C /* ScaleViewerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		BCC19EA9294FBE36002F0A2C /* E Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "E Major2TubaAudio.m4a"; sourceTree = "<group>"; };
 		BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Whoosh.m4a; sourceTree = "<group>"; };
 		BCC19EAD294FF1AB002F0A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ScaleMaster/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */,
 				BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */,
 				BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */,
+				BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */,
 				BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */,
 				BCC19E74294E98D7002F0A2C /* Storage.swift */,
 				BCC19E70294E93EC002F0A2C /* Settings.swift */,
@@ -192,6 +195,7 @@
 				BCC19E73294E93F4002F0A2C /* Main.swift in Sources */,
 				BCC19EA3294F903A002F0A2C /* ScaleSelectionList.swift in Sources */,
 				BC99DDBA294E50AA00AB5AF0 /* ScaleMasterApp.swift in Sources */,
+				BCC19EB32950E7D3002F0A2C /* ScaleViewerDetailView.swift in Sources */,
 				BCC19E75294E98D7002F0A2C /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

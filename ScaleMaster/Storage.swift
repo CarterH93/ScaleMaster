@@ -33,6 +33,23 @@ class AppInfoStorage: ObservableObject {
     
     @Published var presentedViews = NavigationPath()
     
+    
+    static let allScaleNames: [String] = [
+    "C Major",
+    "F Major",
+    "Bb Major",
+    "Eb Major",
+    "Ab Major",
+    "Db Major",
+    "F# Major",
+    "B Major",
+    "E Major",
+    "A Major",
+    "D Major",
+    "G Major",
+    "Chromatic"
+    ]
+    
     static let allScales: [scale] = [
     scale(id: 1, name: "C Major", octaves: 2),
     scale(id: 2, name: "F Major", octaves: 2),

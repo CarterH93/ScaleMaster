@@ -33,7 +33,9 @@ struct Main: View {
                     //Put actual code here
                     if scales.count > 0 {
                         Scale_View(scale: scales[0], geoH: geo.size.height, geoW: geo.size.width)
+                            .padding(.bottom)
                     }
+                        
                     
                     
                     if showingFingeringsImage {

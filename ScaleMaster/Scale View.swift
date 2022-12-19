@@ -14,12 +14,17 @@ struct Scale_View: View {
     var geoW: Double
     var body: some View {
             VStack {
-                Text("\(scale.name) Scale")
-                    .font(.system(size: geoH > geoW ? geoH * 0.1: geoH * 0.2))
-                    .padding(15)
-                    .background(.quaternary)
-                    .clipShape(RoundedRectangle(cornerRadius: 30))
+                VStack {
+                    Text("\(scale.name) Scale")
+                        .font(.system(size: geoH > geoW ? geoH * 0.1: geoH * 0.2))
+                        
                     
+                    Text("\(scale.octaves == 1 ? "1 Octave" : scale.octaves == 0 ? "" : "\(scale.octaves) Octaves")")
+                        .font(.system(size: geoH > geoW ? geoH * 0.03: geoH * 0.06))
+                }
+                .padding(15)
+                .background(.quaternary)
+                .clipShape(RoundedRectangle(cornerRadius: 30))
             }
             .frame(height: geoH / 3, alignment: .center)
     }
