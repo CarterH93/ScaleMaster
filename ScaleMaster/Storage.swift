@@ -34,19 +34,19 @@ class AppInfoStorage: ObservableObject {
     @Published var presentedViews = NavigationPath()
     
     static let allScales: [scale] = [
-    scale(id: 1, name: "C", octaves: 2),
-    scale(id: 2, name: "F", octaves: 2),
-    scale(id: 3, name: "Bb", octaves: 2),
-    scale(id: 4, name: "Eb", octaves: 1),
-    scale(id: 5, name: "Ab", octaves: 2),
-    scale(id: 6, name: "Db", octaves: 1),
-    scale(id: 7, name: "F#", octaves: 2),
-    scale(id: 8, name: "B", octaves: 2),
-    scale(id: 9, name: "E", octaves: 2),
-    scale(id: 10, name: "A", octaves: 2),
-    scale(id: 11, name: "D", octaves: 1),
-    scale(id: 12, name: "G", octaves: 2),
-    scale(id: 13, name: "chromatic", octaves: 0),
+    scale(id: 1, name: "C Major", octaves: 2),
+    scale(id: 2, name: "F Major", octaves: 2),
+    scale(id: 3, name: "Bb Major", octaves: 2),
+    scale(id: 4, name: "Eb Major", octaves: 1),
+    scale(id: 5, name: "Ab Major", octaves: 2),
+    scale(id: 6, name: "Db Major", octaves: 1),
+    scale(id: 7, name: "F# Major", octaves: 2),
+    scale(id: 8, name: "B Major", octaves: 2),
+    scale(id: 9, name: "E Major", octaves: 2),
+    scale(id: 10, name: "A Major", octaves: 2),
+    scale(id: 11, name: "D Major", octaves: 1),
+    scale(id: 12, name: "G Major", octaves: 2),
+    scale(id: 13, name: "Chromatic", octaves: 0),
     ]
     
     static let instrumentSelections: [instrument] = [.Tuba, .Test]

@@ -14,14 +14,14 @@ struct Scale_View: View {
     var geoW: Double
     var body: some View {
             VStack {
-                Text(scale.name)
-                    .font(.system(size: geoH > geoW ? geoH * 0.1: geoH * 0.1))
+                Text("\(scale.name) Scale")
+                    .font(.system(size: geoH > geoW ? geoH * 0.1: geoH * 0.2))
                     .padding(15)
                     .background(.quaternary)
                     .clipShape(RoundedRectangle(cornerRadius: 30))
                     
             }
-            .frame(width: geoW / 3, height: geoH / 3, alignment: .center)
+            .frame(height: geoH / 3, alignment: .center)
     }
 }
 
