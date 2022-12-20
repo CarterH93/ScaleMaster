@@ -28,7 +28,7 @@ struct ScaleSelectionList: View {
         }
         
         
-        _scales = State(initialValue: tempStore.sorted(by: { $0.name > $1.name } ))
+        _scales = State(initialValue: tempStore.sorted(by: { $0.name < $1.name } ))
     }
     
     
