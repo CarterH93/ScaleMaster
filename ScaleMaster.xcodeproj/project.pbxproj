@@ -17,10 +17,22 @@
 		BCC19E7E294EDA8F002F0A2C /* ScaleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */; };
 		BCC19EA3294F903A002F0A2C /* ScaleSelectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */; };
 		BCC19EA5294FA390002F0A2C /* Scale View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EA4294FA390002F0A2C /* Scale View.swift */; };
-		BCC19EAA294FBE36002F0A2C /* E Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EA9294FBE36002F0A2C /* E Major2TubaAudio.m4a */; };
 		BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */; };
 		BCC19EAE294FF1AB002F0A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EAD294FF1AB002F0A2C /* Assets.xcassets */; };
 		BCC19EB32950E7D3002F0A2C /* ScaleViewerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */; };
+		BCC19EB52951234C002F0A2C /* Eb Major1TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EB42951234C002F0A2C /* Eb Major1TubaAudio.m4a */; };
+		BCC19EB729512599002F0A2C /* C Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EB629512598002F0A2C /* C Major2TubaAudio.m4a */; };
+		BCC19EB929516977002F0A2C /* F Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EB829516977002F0A2C /* F Major2TubaAudio.m4a */; };
+		BCC19EBB29516A88002F0A2C /* E Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EBA29516A88002F0A2C /* E Major2TubaAudio.m4a */; };
+		BCC19EBD29516B23002F0A2C /* Bb Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EBC29516B23002F0A2C /* Bb Major2TubaAudio.m4a */; };
+		BCC19EBF29516BBC002F0A2C /* Ab Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EBE29516BBC002F0A2C /* Ab Major2TubaAudio.m4a */; };
+		BCC19EC129516C2C002F0A2C /* Db Major1TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EC029516C2C002F0A2C /* Db Major1TubaAudio.m4a */; };
+		BCC19EC52951709A002F0A2C /* F# Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EC42951709A002F0A2C /* F# Major2TubaAudio.m4a */; };
+		BCC19EC72951715C002F0A2C /* B Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EC62951715C002F0A2C /* B Major2TubaAudio.m4a */; };
+		BCC19EC9295171F4002F0A2C /* A Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EC8295171F4002F0A2C /* A Major2TubaAudio.m4a */; };
+		BCC19ECB29517270002F0A2C /* D Major1TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19ECA29517270002F0A2C /* D Major1TubaAudio.m4a */; };
+		BCC19ECD295172E3002F0A2C /* G Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19ECC295172E3002F0A2C /* G Major2TubaAudio.m4a */; };
+		BCC19ECF29517476002F0A2C /* Chromatic0TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19ECE29517476002F0A2C /* Chromatic0TubaAudio.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +48,22 @@
 		BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewer.swift; sourceTree = "<group>"; };
 		BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleSelectionList.swift; sourceTree = "<group>"; };
 		BCC19EA4294FA390002F0A2C /* Scale View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scale View.swift"; sourceTree = "<group>"; };
-		BCC19EA9294FBE36002F0A2C /* E Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "E Major2TubaAudio.m4a"; sourceTree = "<group>"; };
 		BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Whoosh.m4a; sourceTree = "<group>"; };
 		BCC19EAD294FF1AB002F0A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ScaleMaster/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewerDetailView.swift; sourceTree = "<group>"; };
+		BCC19EB42951234C002F0A2C /* Eb Major1TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Eb Major1TubaAudio.m4a"; path = "Photos and audio editing/Eb Major1TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19EB629512598002F0A2C /* C Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "C Major2TubaAudio.m4a"; path = "ScaleMaster/Sounds/Tuba/C Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19EB829516977002F0A2C /* F Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "F Major2TubaAudio.m4a"; path = "Photos and audio editing/F Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19EBA29516A88002F0A2C /* E Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "E Major2TubaAudio.m4a"; path = "Photos and audio editing/E Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19EBC29516B23002F0A2C /* Bb Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Bb Major2TubaAudio.m4a"; path = "Photos and audio editing/Bb Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19EBE29516BBC002F0A2C /* Ab Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ab Major2TubaAudio.m4a"; path = "Photos and audio editing/Ab Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19EC029516C2C002F0A2C /* Db Major1TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Db Major1TubaAudio.m4a"; path = "Photos and audio editing/Db Major1TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19EC42951709A002F0A2C /* F# Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "F# Major2TubaAudio.m4a"; path = "Photos and audio editing/F# Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19EC62951715C002F0A2C /* B Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "B Major2TubaAudio.m4a"; path = "Photos and audio editing/B Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19EC8295171F4002F0A2C /* A Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "A Major2TubaAudio.m4a"; path = "Photos and audio editing/A Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19ECA29517270002F0A2C /* D Major1TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "D Major1TubaAudio.m4a"; path = "Photos and audio editing/D Major1TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19ECC295172E3002F0A2C /* G Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "G Major2TubaAudio.m4a"; path = "Photos and audio editing/G Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BCC19ECE29517476002F0A2C /* Chromatic0TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Chromatic0TubaAudio.m4a; path = "Photos and audio editing/Chromatic0TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +134,19 @@
 		BCC19EAF294FFD5A002F0A2C /* Tuba */ = {
 			isa = PBXGroup;
 			children = (
-				BCC19EA9294FBE36002F0A2C /* E Major2TubaAudio.m4a */,
+				BCC19EB629512598002F0A2C /* C Major2TubaAudio.m4a */,
+				BCC19EB42951234C002F0A2C /* Eb Major1TubaAudio.m4a */,
+				BCC19EB829516977002F0A2C /* F Major2TubaAudio.m4a */,
+				BCC19EBC29516B23002F0A2C /* Bb Major2TubaAudio.m4a */,
+				BCC19EBA29516A88002F0A2C /* E Major2TubaAudio.m4a */,
+				BCC19EC029516C2C002F0A2C /* Db Major1TubaAudio.m4a */,
+				BCC19EBE29516BBC002F0A2C /* Ab Major2TubaAudio.m4a */,
+				BCC19EC42951709A002F0A2C /* F# Major2TubaAudio.m4a */,
+				BCC19EC62951715C002F0A2C /* B Major2TubaAudio.m4a */,
+				BCC19EC8295171F4002F0A2C /* A Major2TubaAudio.m4a */,
+				BCC19ECA29517270002F0A2C /* D Major1TubaAudio.m4a */,
+				BCC19ECC295172E3002F0A2C /* G Major2TubaAudio.m4a */,
+				BCC19ECE29517476002F0A2C /* Chromatic0TubaAudio.m4a */,
 			);
 			path = Tuba;
 			sourceTree = "<group>";
@@ -173,10 +209,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCC19EAA294FBE36002F0A2C /* E Major2TubaAudio.m4a in Resources */,
+				BCC19EC129516C2C002F0A2C /* Db Major1TubaAudio.m4a in Resources */,
 				BC99DDC2294E50AB00AB5AF0 /* Preview Assets.xcassets in Resources */,
+				BCC19EBB29516A88002F0A2C /* E Major2TubaAudio.m4a in Resources */,
 				BCC19EAE294FF1AB002F0A2C /* Assets.xcassets in Resources */,
+				BCC19EBD29516B23002F0A2C /* Bb Major2TubaAudio.m4a in Resources */,
+				BCC19ECD295172E3002F0A2C /* G Major2TubaAudio.m4a in Resources */,
+				BCC19EB929516977002F0A2C /* F Major2TubaAudio.m4a in Resources */,
+				BCC19EC52951709A002F0A2C /* F# Major2TubaAudio.m4a in Resources */,
+				BCC19ECF29517476002F0A2C /* Chromatic0TubaAudio.m4a in Resources */,
+				BCC19ECB29517270002F0A2C /* D Major1TubaAudio.m4a in Resources */,
+				BCC19EBF29516BBC002F0A2C /* Ab Major2TubaAudio.m4a in Resources */,
+				BCC19EC72951715C002F0A2C /* B Major2TubaAudio.m4a in Resources */,
+				BCC19EB52951234C002F0A2C /* Eb Major1TubaAudio.m4a in Resources */,
 				BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */,
+				BCC19EC9295171F4002F0A2C /* A Major2TubaAudio.m4a in Resources */,
+				BCC19EB729512599002F0A2C /* C Major2TubaAudio.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
