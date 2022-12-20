@@ -7,15 +7,19 @@
 
 import SwiftUI
 
+
+
 struct ScaleViewer: View {
     @EnvironmentObject var storage: AppInfoStorage
     
     @State private var selectedScale: String?
     
+    @State private var SplitViewVisible: NavigationSplitViewVisibility = .doubleColumn
     
     var body: some View {
+        
         GeometryReader { geo in
-            NavigationSplitView(columnVisibility: .constant(.doubleColumn)) {
+            NavigationSplitView(columnVisibility: $SplitViewVisible) {
                     List(selection: $selectedScale) {
                         ForEach(AppInfoStorage.allScaleNames, id: \.self) { scale in
                                 Text(scale)
@@ -26,14 +30,24 @@ struct ScaleViewer: View {
                                     .padding(.bottom, 5)
                             }
                         }
+                
                 } detail: {
                     ScaleViewerDetailView(scale: selectedScale)
                 }
                 
                 
                 
+                
         }
+        
         .navigationTitle("Scale Viewer")
+        .onChange(of: selectedScale) { _ in
+            if UIDevice.current.userInterfaceIdiom == .phone || UIDevice.current.orientation.isPortrait {
+                SplitViewVisible = .detailOnly
+            }
+            
+            
+        }
     }
 }
 

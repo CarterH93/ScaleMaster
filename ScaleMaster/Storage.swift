@@ -9,10 +9,16 @@
 
 import SwiftUI
 
-public enum instrument: String, Codable {
-    case Tuba, Test
+//Edit this to expand App
+//Adding instruments here will update the rest of the app
+public enum instrument: String, Codable, CaseIterable {
+    case Tuba, Test, BiggerTest
 }
 
+func getSafeImage(named: String) -> Image {
+   let uiImage =  (UIImage(named: named) ?? UIImage(named: "No Scale Image Available.png"))!
+   return Image(uiImage: uiImage)
+}
 
 func getDocumentsDirectory() -> URL {
     let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -33,23 +39,21 @@ class AppInfoStorage: ObservableObject {
     
     @Published var presentedViews: [String] = []
     
+
     
-    static let allScaleNames: [String] = [
-    "C Major",
-    "F Major",
-    "Bb Major",
-    "Eb Major",
-    "Ab Major",
-    "Db Major",
-    "F# Major",
-    "B Major",
-    "E Major",
-    "A Major",
-    "D Major",
-    "G Major",
-    "Chromatic"
-    ]
+    static var allScaleNames: [String] {
+        var tempStore = Set<String>()
+        for scale in allScales {
+            tempStore.insert(scale.name)
+        }
+        
+        
+        return Array(tempStore).sorted(by: {$0 < $1} )
+    }
     
+    //Edit this to expand App
+    //You can make the id any number you want, it dosent matter. Just make sure no two numbers are the same.
+    //Adding scales to this list will update the rest of the app.
     static let allScales: [scale] = [
     scale(id: 1, name: "C Major", octaves: 2),
     scale(id: 2, name: "F Major", octaves: 2),
@@ -63,10 +67,21 @@ class AppInfoStorage: ObservableObject {
     scale(id: 10, name: "A Major", octaves: 2),
     scale(id: 11, name: "D Major", octaves: 1),
     scale(id: 12, name: "G Major", octaves: 2),
-    scale(id: 13, name: "Chromatic", octaves: 0),
+    scale(id: 13, name: "Chromatic", octaves: 0)
     ]
     
-    static let instrumentSelections: [instrument] = [.Tuba, .Test]
+   static func OctaveChoices(inputScale: String) -> [Int]{
+       var tempStore = Set<Int>()
+       
+       for scale in AppInfoStorage.allScales {
+           if scale.name == inputScale {
+               tempStore.insert(scale.octaves)
+           }
+       }
+       return Array(tempStore)
+    }
+    
+    static let instrumentSelections: [instrument] = instrument.allCases
     @Published var selectedScales = [scale]() {
         //did set for saving data to the disk
         

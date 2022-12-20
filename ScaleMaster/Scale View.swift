@@ -26,7 +26,7 @@ struct Scale_View: View {
                 .background(.quaternary)
                 .clipShape(RoundedRectangle(cornerRadius: 30))
             }
-            .frame(height: geoH / 3, alignment: .center)
+            .frame(alignment: .center)
     }
 }
 

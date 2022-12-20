@@ -124,6 +124,8 @@ struct ContentView: View {
                             
                 }
             }
+            .navigationTitle("Home")
+            .navigationBarHidden(true)
             .navigationDestination(for: String.self) { selectedView in
                 if selectedView == "main" {
                     Main(scales: storage.listOfScalesToPlay)

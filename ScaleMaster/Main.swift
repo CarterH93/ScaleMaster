@@ -41,12 +41,12 @@ struct Main: View {
                     
                     if showingFingeringsImage {
                         //show fingerings image
-                        Image("\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)Fingerings")
+                        getSafeImage(named: "\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)Fingerings")
                             .resizable()
                             .scaledToFit()
                     } else if showingScaleImage {
                         //show scale image
-                        Image("\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)")
+                        getSafeImage(named: "\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)")
                             .resizable()
                             .scaledToFit()
                     }
