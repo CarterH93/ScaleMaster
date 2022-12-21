@@ -107,6 +107,7 @@ struct Main: View {
                     Button {
                         resetButtons()
                         storage.presentedViews.removeLast(storage.presentedViews.count)
+                        storage.previousScale = nil
                     } label: {
                         
                         Text("Home 🏠")
