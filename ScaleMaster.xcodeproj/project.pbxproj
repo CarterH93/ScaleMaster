@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC5046EA2954D11A006330D6 /* Chromatic0TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BC5046E92954D11A006330D6 /* Chromatic0TubaAudio.m4a */; };
 		BC99DDBA294E50AA00AB5AF0 /* ScaleMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */; };
 		BC99DDBC294E50AA00AB5AF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */; };
 		BC99DDC2294E50AB00AB5AF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC99DDC1294E50AB00AB5AF0 /* Preview Assets.xcassets */; };
@@ -32,10 +33,10 @@
 		BCC19EC9295171F4002F0A2C /* A Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EC8295171F4002F0A2C /* A Major2TubaAudio.m4a */; };
 		BCC19ECB29517270002F0A2C /* D Major1TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19ECA29517270002F0A2C /* D Major1TubaAudio.m4a */; };
 		BCC19ECD295172E3002F0A2C /* G Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19ECC295172E3002F0A2C /* G Major2TubaAudio.m4a */; };
-		BCC19ECF29517476002F0A2C /* Chromatic0TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19ECE29517476002F0A2C /* Chromatic0TubaAudio.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC5046E92954D11A006330D6 /* Chromatic0TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Chromatic0TubaAudio.m4a; path = "Photos and audio editing/Chromatic0TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
 		BC99DDB6294E50AA00AB5AF0 /* ScaleMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaleMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleMasterApp.swift; sourceTree = "<group>"; };
 		BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		BCC19EC8295171F4002F0A2C /* A Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "A Major2TubaAudio.m4a"; path = "Photos and audio editing/A Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
 		BCC19ECA29517270002F0A2C /* D Major1TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "D Major1TubaAudio.m4a"; path = "Photos and audio editing/D Major1TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
 		BCC19ECC295172E3002F0A2C /* G Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "G Major2TubaAudio.m4a"; path = "Photos and audio editing/G Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19ECE29517476002F0A2C /* Chromatic0TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Chromatic0TubaAudio.m4a; path = "Photos and audio editing/Chromatic0TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +134,7 @@
 		BCC19EAF294FFD5A002F0A2C /* Tuba */ = {
 			isa = PBXGroup;
 			children = (
+				BC5046E92954D11A006330D6 /* Chromatic0TubaAudio.m4a */,
 				BCC19EB629512598002F0A2C /* C Major2TubaAudio.m4a */,
 				BCC19EB42951234C002F0A2C /* Eb Major1TubaAudio.m4a */,
 				BCC19EB829516977002F0A2C /* F Major2TubaAudio.m4a */,
@@ -146,7 +147,6 @@
 				BCC19EC8295171F4002F0A2C /* A Major2TubaAudio.m4a */,
 				BCC19ECA29517270002F0A2C /* D Major1TubaAudio.m4a */,
 				BCC19ECC295172E3002F0A2C /* G Major2TubaAudio.m4a */,
-				BCC19ECE29517476002F0A2C /* Chromatic0TubaAudio.m4a */,
 			);
 			path = Tuba;
 			sourceTree = "<group>";
@@ -217,7 +217,6 @@
 				BCC19ECD295172E3002F0A2C /* G Major2TubaAudio.m4a in Resources */,
 				BCC19EB929516977002F0A2C /* F Major2TubaAudio.m4a in Resources */,
 				BCC19EC52951709A002F0A2C /* F# Major2TubaAudio.m4a in Resources */,
-				BCC19ECF29517476002F0A2C /* Chromatic0TubaAudio.m4a in Resources */,
 				BCC19ECB29517270002F0A2C /* D Major1TubaAudio.m4a in Resources */,
 				BCC19EBF29516BBC002F0A2C /* Ab Major2TubaAudio.m4a in Resources */,
 				BCC19EC72951715C002F0A2C /* B Major2TubaAudio.m4a in Resources */,
@@ -225,6 +224,7 @@
 				BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */,
 				BCC19EC9295171F4002F0A2C /* A Major2TubaAudio.m4a in Resources */,
 				BCC19EB729512599002F0A2C /* C Major2TubaAudio.m4a in Resources */,
+				BC5046EA2954D11A006330D6 /* Chromatic0TubaAudio.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
