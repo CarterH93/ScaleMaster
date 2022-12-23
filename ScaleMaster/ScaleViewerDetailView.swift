@@ -13,6 +13,17 @@ import AVFoundation
 
 struct ScaleViewerDetailView: View {
     
+    func getRealScale() -> scale? {
+        for retrievedScale in AppInfoStorage.allScales {
+            if retrievedScale.name == scale {
+                if retrievedScale.octaves == octave {
+                    return retrievedScale
+                }
+            }
+        }
+        return nil
+    }
+    
     @State private var showingFingeringsImage = false
     @State private var octave: Int
     
@@ -98,7 +109,7 @@ struct ScaleViewerDetailView: View {
                     } label: {
                         
                         Text("Show Fingerings")
-                            .font(.largeTitle)
+                            .font(.title2)
                             .foregroundColor(.secondary)
                             .padding(8)
                             .background(.thinMaterial)
@@ -113,7 +124,12 @@ struct ScaleViewerDetailView: View {
                     Button {
                         //Play Audio
                         do {
-                            let path = Bundle.main.path(forResource: "\(scale)\(octave)\(storage.selectedInstrument)Audio", ofType: "m4a")
+                            var path = Bundle.main.path(forResource: "\(scale)\(octave)\(storage.selectedInstrument)Audio", ofType: "mp3")
+                            
+                            if storage.useSlowedAudio == true {
+                                path = Bundle.main.path(forResource: "\(scale)\(octave)\(storage.selectedInstrument)AudioSlowed", ofType: "mp3")
+                            }
+                            
                             if let path = path {
                                 let url = URL(fileURLWithPath: path)
                                 scaleAudio = try AVAudioPlayer(contentsOf: url)
@@ -128,7 +144,7 @@ struct ScaleViewerDetailView: View {
                     } label: {
                         
                         Text("Play Audio")
-                            .font(.largeTitle)
+                            .font(.title2)
                             .foregroundColor(.secondary)
                             .padding(8)
                             .background(.thinMaterial)
@@ -137,7 +153,28 @@ struct ScaleViewerDetailView: View {
                         
                     }
                 }
-                ToolbarItem(placement: .bottomBar, content: { Spacer() })
+                
+                ToolbarItem(placement: .bottomBar) {
+                    Button {
+                        if let tempscale = getRealScale() {
+                            storage.presentedViews.append(tempscale)
+                            scaleAudio?.stop()
+                        }
+                        
+                        
+                    } label: {
+                        
+                        Text("Learn")
+                            .font(.title2)
+                            .foregroundColor(.secondary)
+                            .padding(8)
+                            .background(.blue.opacity(0.3))
+                            .clipShape(Rectangle())
+                            .border(.black.opacity(0.5))
+                        
+                    }
+                }
+                ToolbarItem(placement: .bottomBar) { Spacer() }
                 
                 if octave > 0 {
                     ToolbarItem(placement: .bottomBar) {

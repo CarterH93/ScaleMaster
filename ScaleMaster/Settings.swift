@@ -17,7 +17,8 @@ struct Settings: View {
                 LinearGradient(gradient: Gradient(colors: [Color("NiceOrange"), .white, .gray]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     .ignoresSafeArea()
                 ScrollView {
-                    
+                    Toggle("Use Slowed Audio For Scale Playback", isOn: $storage.useSlowedAudio)
+                        .padding()
                     VStack {
                         VStack(spacing: 0) {
                             Text("Choose Your Instrument")
@@ -34,7 +35,7 @@ struct Settings: View {
                             Text("Select Your Scales to Play")
                                 .font(.title)
                             ScaleSelectionList(selectedScales: storage.selectedScales)
-                                .frame(width: geo.size.width * 0.95, height: geo.size.height > geo.size.width ? geo.size.width * 0.78: geo.size.height * 0.40)
+                                .frame(width: geo.size.width * 0.95, height: geo.size.height > geo.size.width ? geo.size.width * 0.58: geo.size.height * 0.30)
                         }
                        
                     

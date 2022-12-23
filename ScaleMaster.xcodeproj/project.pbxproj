@@ -7,10 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC5046EA2954D11A006330D6 /* Chromatic0TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BC5046E92954D11A006330D6 /* Chromatic0TubaAudio.m4a */; };
+		BC5046EC29561D83006330D6 /* LearnScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5046EB29561D83006330D6 /* LearnScale.swift */; };
 		BC99DDBA294E50AA00AB5AF0 /* ScaleMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */; };
 		BC99DDBC294E50AA00AB5AF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */; };
 		BC99DDC2294E50AB00AB5AF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC99DDC1294E50AB00AB5AF0 /* Preview Assets.xcassets */; };
+		BCB11BE02956606E006788EE /* Bb Major2TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BC62956606E006788EE /* Bb Major2TubaAudio.mp3 */; };
+		BCB11BE12956606E006788EE /* B Major2TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BC72956606E006788EE /* B Major2TubaAudio.mp3 */; };
+		BCB11BE22956606E006788EE /* Ab Major2TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BC82956606E006788EE /* Ab Major2TubaAudio.mp3 */; };
+		BCB11BE32956606E006788EE /* F Major2TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BC92956606E006788EE /* F Major2TubaAudioSlowed.mp3 */; };
+		BCB11BE42956606E006788EE /* Bb Major2TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BCA2956606E006788EE /* Bb Major2TubaAudioSlowed.mp3 */; };
+		BCB11BE52956606E006788EE /* D Major1TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BCB2956606E006788EE /* D Major1TubaAudio.mp3 */; };
+		BCB11BE62956606E006788EE /* Db Major1TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BCC2956606E006788EE /* Db Major1TubaAudio.mp3 */; };
+		BCB11BE72956606E006788EE /* Chromatic0TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BCD2956606E006788EE /* Chromatic0TubaAudio.mp3 */; };
+		BCB11BE82956606E006788EE /* C Major2TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BCE2956606E006788EE /* C Major2TubaAudioSlowed.mp3 */; };
+		BCB11BE92956606E006788EE /* E Major2TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BCF2956606E006788EE /* E Major2TubaAudioSlowed.mp3 */; };
+		BCB11BEA2956606E006788EE /* A Major2TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BD02956606E006788EE /* A Major2TubaAudioSlowed.mp3 */; };
+		BCB11BEB2956606E006788EE /* Db Major1TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BD12956606E006788EE /* Db Major1TubaAudioSlowed.mp3 */; };
+		BCB11BEC2956606E006788EE /* D Major1TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BD22956606E006788EE /* D Major1TubaAudioSlowed.mp3 */; };
+		BCB11BED2956606E006788EE /* G Major2TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BD32956606E006788EE /* G Major2TubaAudio.mp3 */; };
+		BCB11BEE2956606E006788EE /* Ab Major2TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BD42956606E006788EE /* Ab Major2TubaAudioSlowed.mp3 */; };
+		BCB11BEF2956606E006788EE /* Eb Major1TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BD52956606E006788EE /* Eb Major1TubaAudio.mp3 */; };
+		BCB11BF02956606E006788EE /* G Major2TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BD62956606E006788EE /* G Major2TubaAudioSlowed.mp3 */; };
+		BCB11BF12956606E006788EE /* Eb Major1TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BD72956606E006788EE /* Eb Major1TubaAudioSlowed.mp3 */; };
+		BCB11BF22956606E006788EE /* F# Major2TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BD82956606E006788EE /* F# Major2TubaAudio.mp3 */; };
+		BCB11BF32956606E006788EE /* F Major2TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BD92956606E006788EE /* F Major2TubaAudio.mp3 */; };
+		BCB11BF42956606E006788EE /* B Major2TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BDA2956606E006788EE /* B Major2TubaAudioSlowed.mp3 */; };
+		BCB11BF52956606E006788EE /* C Major2TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BDB2956606E006788EE /* C Major2TubaAudio.mp3 */; };
+		BCB11BF62956606E006788EE /* E Major2TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BDC2956606E006788EE /* E Major2TubaAudio.mp3 */; };
+		BCB11BF72956606E006788EE /* F# Major2TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BDD2956606E006788EE /* F# Major2TubaAudioSlowed.mp3 */; };
+		BCB11BF82956606E006788EE /* Chromatic0TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BDE2956606E006788EE /* Chromatic0TubaAudioSlowed.mp3 */; };
+		BCB11BF92956606E006788EE /* A Major2TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BDF2956606E006788EE /* A Major2TubaAudio.mp3 */; };
 		BCC19E71294E93EC002F0A2C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E70294E93EC002F0A2C /* Settings.swift */; };
 		BCC19E73294E93F4002F0A2C /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E72294E93F4002F0A2C /* Main.swift */; };
 		BCC19E75294E98D7002F0A2C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E74294E98D7002F0A2C /* Storage.swift */; };
@@ -21,27 +47,41 @@
 		BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */; };
 		BCC19EAE294FF1AB002F0A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EAD294FF1AB002F0A2C /* Assets.xcassets */; };
 		BCC19EB32950E7D3002F0A2C /* ScaleViewerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */; };
-		BCC19EB52951234C002F0A2C /* Eb Major1TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EB42951234C002F0A2C /* Eb Major1TubaAudio.m4a */; };
-		BCC19EB729512599002F0A2C /* C Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EB629512598002F0A2C /* C Major2TubaAudio.m4a */; };
-		BCC19EB929516977002F0A2C /* F Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EB829516977002F0A2C /* F Major2TubaAudio.m4a */; };
-		BCC19EBB29516A88002F0A2C /* E Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EBA29516A88002F0A2C /* E Major2TubaAudio.m4a */; };
-		BCC19EBD29516B23002F0A2C /* Bb Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EBC29516B23002F0A2C /* Bb Major2TubaAudio.m4a */; };
-		BCC19EBF29516BBC002F0A2C /* Ab Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EBE29516BBC002F0A2C /* Ab Major2TubaAudio.m4a */; };
-		BCC19EC129516C2C002F0A2C /* Db Major1TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EC029516C2C002F0A2C /* Db Major1TubaAudio.m4a */; };
-		BCC19EC52951709A002F0A2C /* F# Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EC42951709A002F0A2C /* F# Major2TubaAudio.m4a */; };
-		BCC19EC72951715C002F0A2C /* B Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EC62951715C002F0A2C /* B Major2TubaAudio.m4a */; };
-		BCC19EC9295171F4002F0A2C /* A Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EC8295171F4002F0A2C /* A Major2TubaAudio.m4a */; };
-		BCC19ECB29517270002F0A2C /* D Major1TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19ECA29517270002F0A2C /* D Major1TubaAudio.m4a */; };
-		BCC19ECD295172E3002F0A2C /* G Major2TubaAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19ECC295172E3002F0A2C /* G Major2TubaAudio.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC5046E92954D11A006330D6 /* Chromatic0TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Chromatic0TubaAudio.m4a; path = "Photos and audio editing/Chromatic0TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
+		BC5046EB29561D83006330D6 /* LearnScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnScale.swift; sourceTree = "<group>"; };
 		BC99DDB6294E50AA00AB5AF0 /* ScaleMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaleMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleMasterApp.swift; sourceTree = "<group>"; };
 		BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC99DDBF294E50AB00AB5AF0 /* ScaleMaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScaleMaster.entitlements; sourceTree = "<group>"; };
 		BC99DDC1294E50AB00AB5AF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCB11BC62956606E006788EE /* Bb Major2TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bb Major2TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/Bb Major2TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BC72956606E006788EE /* B Major2TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "B Major2TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/B Major2TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BC82956606E006788EE /* Ab Major2TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Ab Major2TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/Ab Major2TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BC92956606E006788EE /* F Major2TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F Major2TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/F Major2TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BCA2956606E006788EE /* Bb Major2TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bb Major2TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Bb Major2TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BCB2956606E006788EE /* D Major1TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "D Major1TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/D Major1TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BCC2956606E006788EE /* Db Major1TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Db Major1TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/Db Major1TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BCD2956606E006788EE /* Chromatic0TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Chromatic0TubaAudio.mp3; path = "Photos and audio editing/Updated Sounds/Chromatic0TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BCE2956606E006788EE /* C Major2TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "C Major2TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/C Major2TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BCF2956606E006788EE /* E Major2TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "E Major2TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/E Major2TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BD02956606E006788EE /* A Major2TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A Major2TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/A Major2TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BD12956606E006788EE /* Db Major1TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Db Major1TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Db Major1TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BD22956606E006788EE /* D Major1TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "D Major1TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/D Major1TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BD32956606E006788EE /* G Major2TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/G Major2TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BD42956606E006788EE /* Ab Major2TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Ab Major2TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Ab Major2TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BD52956606E006788EE /* Eb Major1TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Eb Major1TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/Eb Major1TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BD62956606E006788EE /* G Major2TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/G Major2TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BD72956606E006788EE /* Eb Major1TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Eb Major1TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Eb Major1TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BD82956606E006788EE /* F# Major2TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/F# Major2TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BD92956606E006788EE /* F Major2TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F Major2TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/F Major2TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BDA2956606E006788EE /* B Major2TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "B Major2TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/B Major2TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BDB2956606E006788EE /* C Major2TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "C Major2TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/C Major2TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BDC2956606E006788EE /* E Major2TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "E Major2TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/E Major2TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BDD2956606E006788EE /* F# Major2TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/F# Major2TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BDE2956606E006788EE /* Chromatic0TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Chromatic0TubaAudioSlowed.mp3; path = "Photos and audio editing/Updated Sounds/Chromatic0TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BDF2956606E006788EE /* A Major2TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A Major2TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/A Major2TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
 		BCC19E70294E93EC002F0A2C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BCC19E72294E93F4002F0A2C /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		BCC19E74294E98D7002F0A2C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
@@ -52,18 +92,6 @@
 		BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Whoosh.m4a; sourceTree = "<group>"; };
 		BCC19EAD294FF1AB002F0A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ScaleMaster/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewerDetailView.swift; sourceTree = "<group>"; };
-		BCC19EB42951234C002F0A2C /* Eb Major1TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Eb Major1TubaAudio.m4a"; path = "Photos and audio editing/Eb Major1TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19EB629512598002F0A2C /* C Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "C Major2TubaAudio.m4a"; path = "ScaleMaster/Sounds/Tuba/C Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19EB829516977002F0A2C /* F Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "F Major2TubaAudio.m4a"; path = "Photos and audio editing/F Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19EBA29516A88002F0A2C /* E Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "E Major2TubaAudio.m4a"; path = "Photos and audio editing/E Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19EBC29516B23002F0A2C /* Bb Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Bb Major2TubaAudio.m4a"; path = "Photos and audio editing/Bb Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19EBE29516BBC002F0A2C /* Ab Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ab Major2TubaAudio.m4a"; path = "Photos and audio editing/Ab Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19EC029516C2C002F0A2C /* Db Major1TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Db Major1TubaAudio.m4a"; path = "Photos and audio editing/Db Major1TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19EC42951709A002F0A2C /* F# Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "F# Major2TubaAudio.m4a"; path = "Photos and audio editing/F# Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19EC62951715C002F0A2C /* B Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "B Major2TubaAudio.m4a"; path = "Photos and audio editing/B Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19EC8295171F4002F0A2C /* A Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "A Major2TubaAudio.m4a"; path = "Photos and audio editing/A Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19ECA29517270002F0A2C /* D Major1TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "D Major1TubaAudio.m4a"; path = "Photos and audio editing/D Major1TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
-		BCC19ECC295172E3002F0A2C /* G Major2TubaAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "G Major2TubaAudio.m4a"; path = "Photos and audio editing/G Major2TubaAudio.m4a"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +129,7 @@
 				BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */,
 				BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */,
 				BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */,
+				BC5046EB29561D83006330D6 /* LearnScale.swift */,
 				BCC19E74294E98D7002F0A2C /* Storage.swift */,
 				BCC19E70294E93EC002F0A2C /* Settings.swift */,
 				BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */,
@@ -134,19 +163,32 @@
 		BCC19EAF294FFD5A002F0A2C /* Tuba */ = {
 			isa = PBXGroup;
 			children = (
-				BC5046E92954D11A006330D6 /* Chromatic0TubaAudio.m4a */,
-				BCC19EB629512598002F0A2C /* C Major2TubaAudio.m4a */,
-				BCC19EB42951234C002F0A2C /* Eb Major1TubaAudio.m4a */,
-				BCC19EB829516977002F0A2C /* F Major2TubaAudio.m4a */,
-				BCC19EBC29516B23002F0A2C /* Bb Major2TubaAudio.m4a */,
-				BCC19EBA29516A88002F0A2C /* E Major2TubaAudio.m4a */,
-				BCC19EC029516C2C002F0A2C /* Db Major1TubaAudio.m4a */,
-				BCC19EBE29516BBC002F0A2C /* Ab Major2TubaAudio.m4a */,
-				BCC19EC42951709A002F0A2C /* F# Major2TubaAudio.m4a */,
-				BCC19EC62951715C002F0A2C /* B Major2TubaAudio.m4a */,
-				BCC19EC8295171F4002F0A2C /* A Major2TubaAudio.m4a */,
-				BCC19ECA29517270002F0A2C /* D Major1TubaAudio.m4a */,
-				BCC19ECC295172E3002F0A2C /* G Major2TubaAudio.m4a */,
+				BCB11BDF2956606E006788EE /* A Major2TubaAudio.mp3 */,
+				BCB11BD02956606E006788EE /* A Major2TubaAudioSlowed.mp3 */,
+				BCB11BC82956606E006788EE /* Ab Major2TubaAudio.mp3 */,
+				BCB11BD42956606E006788EE /* Ab Major2TubaAudioSlowed.mp3 */,
+				BCB11BC72956606E006788EE /* B Major2TubaAudio.mp3 */,
+				BCB11BDA2956606E006788EE /* B Major2TubaAudioSlowed.mp3 */,
+				BCB11BC62956606E006788EE /* Bb Major2TubaAudio.mp3 */,
+				BCB11BCA2956606E006788EE /* Bb Major2TubaAudioSlowed.mp3 */,
+				BCB11BDB2956606E006788EE /* C Major2TubaAudio.mp3 */,
+				BCB11BCE2956606E006788EE /* C Major2TubaAudioSlowed.mp3 */,
+				BCB11BCD2956606E006788EE /* Chromatic0TubaAudio.mp3 */,
+				BCB11BDE2956606E006788EE /* Chromatic0TubaAudioSlowed.mp3 */,
+				BCB11BCB2956606E006788EE /* D Major1TubaAudio.mp3 */,
+				BCB11BD22956606E006788EE /* D Major1TubaAudioSlowed.mp3 */,
+				BCB11BCC2956606E006788EE /* Db Major1TubaAudio.mp3 */,
+				BCB11BD12956606E006788EE /* Db Major1TubaAudioSlowed.mp3 */,
+				BCB11BDC2956606E006788EE /* E Major2TubaAudio.mp3 */,
+				BCB11BCF2956606E006788EE /* E Major2TubaAudioSlowed.mp3 */,
+				BCB11BD52956606E006788EE /* Eb Major1TubaAudio.mp3 */,
+				BCB11BD72956606E006788EE /* Eb Major1TubaAudioSlowed.mp3 */,
+				BCB11BD92956606E006788EE /* F Major2TubaAudio.mp3 */,
+				BCB11BC92956606E006788EE /* F Major2TubaAudioSlowed.mp3 */,
+				BCB11BD82956606E006788EE /* F# Major2TubaAudio.mp3 */,
+				BCB11BDD2956606E006788EE /* F# Major2TubaAudioSlowed.mp3 */,
+				BCB11BD32956606E006788EE /* G Major2TubaAudio.mp3 */,
+				BCB11BD62956606E006788EE /* G Major2TubaAudioSlowed.mp3 */,
 			);
 			path = Tuba;
 			sourceTree = "<group>";
@@ -209,22 +251,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCC19EC129516C2C002F0A2C /* Db Major1TubaAudio.m4a in Resources */,
+				BCB11BED2956606E006788EE /* G Major2TubaAudio.mp3 in Resources */,
+				BCB11BE72956606E006788EE /* Chromatic0TubaAudio.mp3 in Resources */,
+				BCB11BF42956606E006788EE /* B Major2TubaAudioSlowed.mp3 in Resources */,
+				BCB11BE62956606E006788EE /* Db Major1TubaAudio.mp3 in Resources */,
+				BCB11BF02956606E006788EE /* G Major2TubaAudioSlowed.mp3 in Resources */,
+				BCB11BF32956606E006788EE /* F Major2TubaAudio.mp3 in Resources */,
+				BCB11BF52956606E006788EE /* C Major2TubaAudio.mp3 in Resources */,
+				BCB11BF92956606E006788EE /* A Major2TubaAudio.mp3 in Resources */,
+				BCB11BE32956606E006788EE /* F Major2TubaAudioSlowed.mp3 in Resources */,
+				BCB11BEE2956606E006788EE /* Ab Major2TubaAudioSlowed.mp3 in Resources */,
+				BCB11BEF2956606E006788EE /* Eb Major1TubaAudio.mp3 in Resources */,
+				BCB11BF72956606E006788EE /* F# Major2TubaAudioSlowed.mp3 in Resources */,
+				BCB11BF12956606E006788EE /* Eb Major1TubaAudioSlowed.mp3 in Resources */,
+				BCB11BF22956606E006788EE /* F# Major2TubaAudio.mp3 in Resources */,
+				BCB11BEC2956606E006788EE /* D Major1TubaAudioSlowed.mp3 in Resources */,
+				BCB11BF62956606E006788EE /* E Major2TubaAudio.mp3 in Resources */,
+				BCB11BE22956606E006788EE /* Ab Major2TubaAudio.mp3 in Resources */,
 				BC99DDC2294E50AB00AB5AF0 /* Preview Assets.xcassets in Resources */,
-				BCC19EBB29516A88002F0A2C /* E Major2TubaAudio.m4a in Resources */,
+				BCB11BE52956606E006788EE /* D Major1TubaAudio.mp3 in Resources */,
+				BCB11BE02956606E006788EE /* Bb Major2TubaAudio.mp3 in Resources */,
+				BCB11BEB2956606E006788EE /* Db Major1TubaAudioSlowed.mp3 in Resources */,
+				BCB11BE92956606E006788EE /* E Major2TubaAudioSlowed.mp3 in Resources */,
+				BCB11BF82956606E006788EE /* Chromatic0TubaAudioSlowed.mp3 in Resources */,
+				BCB11BE12956606E006788EE /* B Major2TubaAudio.mp3 in Resources */,
+				BCB11BE42956606E006788EE /* Bb Major2TubaAudioSlowed.mp3 in Resources */,
 				BCC19EAE294FF1AB002F0A2C /* Assets.xcassets in Resources */,
-				BCC19EBD29516B23002F0A2C /* Bb Major2TubaAudio.m4a in Resources */,
-				BCC19ECD295172E3002F0A2C /* G Major2TubaAudio.m4a in Resources */,
-				BCC19EB929516977002F0A2C /* F Major2TubaAudio.m4a in Resources */,
-				BCC19EC52951709A002F0A2C /* F# Major2TubaAudio.m4a in Resources */,
-				BCC19ECB29517270002F0A2C /* D Major1TubaAudio.m4a in Resources */,
-				BCC19EBF29516BBC002F0A2C /* Ab Major2TubaAudio.m4a in Resources */,
-				BCC19EC72951715C002F0A2C /* B Major2TubaAudio.m4a in Resources */,
-				BCC19EB52951234C002F0A2C /* Eb Major1TubaAudio.m4a in Resources */,
 				BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */,
-				BCC19EC9295171F4002F0A2C /* A Major2TubaAudio.m4a in Resources */,
-				BCC19EB729512599002F0A2C /* C Major2TubaAudio.m4a in Resources */,
-				BC5046EA2954D11A006330D6 /* Chromatic0TubaAudio.m4a in Resources */,
+				BCB11BE82956606E006788EE /* C Major2TubaAudioSlowed.mp3 in Resources */,
+				BCB11BEA2956606E006788EE /* A Major2TubaAudioSlowed.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +297,7 @@
 				BCC19E77294EAE03002F0A2C /* InstrumentChooser.swift in Sources */,
 				BCC19E73294E93F4002F0A2C /* Main.swift in Sources */,
 				BCC19EA3294F903A002F0A2C /* ScaleSelectionList.swift in Sources */,
+				BC5046EC29561D83006330D6 /* LearnScale.swift in Sources */,
 				BC99DDBA294E50AA00AB5AF0 /* ScaleMasterApp.swift in Sources */,
 				BCC19EB32950E7D3002F0A2C /* ScaleViewerDetailView.swift in Sources */,
 				BCC19E75294E98D7002F0A2C /* Storage.swift in Sources */,

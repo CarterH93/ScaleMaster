@@ -27,8 +27,10 @@ func getDocumentsDirectory() -> URL {
 
 let savePath = getDocumentsDirectory().appendingPathComponent("SavedData")
 let savePathForInstrument = getDocumentsDirectory().appendingPathComponent("SavedInstrument")
+let savePathForUsingSlowedAudio = getDocumentsDirectory().appendingPathComponent("SlowedAudio")
 
 class AppInfoStorage: ObservableObject {
+    
     
     var listOfScalesToPlay: [scale] {
         var tempStore = self.selectedScales
@@ -37,9 +39,28 @@ class AppInfoStorage: ObservableObject {
     }
     @Published var previousScale: scale? = nil
     
-    @Published var presentedViews: [String] = []
+    @Published var presentedViews: NavigationPath = NavigationPath()
     
-
+    @Published var useSlowedAudio: Bool = false {
+        //did set for saving data to the disk
+        
+        didSet {
+            let encoder = JSONEncoder()
+            
+            if let encoded = try? encoder.encode(useSlowedAudio) {
+                
+                let str = encoded
+                let url = savePathForUsingSlowedAudio
+                
+                do {
+                    try str.write(to: url, options: .atomicWrite)
+                    
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
     
     static var allScaleNames: [String] {
         var tempStore = Set<String>()
@@ -141,6 +162,14 @@ class AppInfoStorage: ObservableObject {
                     selectedInstrument = decodedItems
                 } else {
                     selectedInstrument = .Tuba
+                }
+            }
+            
+            if let savedItems = try? Data(contentsOf: savePathForUsingSlowedAudio) {
+                if let decodedItems = try? JSONDecoder().decode(Bool.self, from: savedItems) {
+                    useSlowedAudio = decodedItems
+                } else {
+                    useSlowedAudio = false
                 }
             }
                 

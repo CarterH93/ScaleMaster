@@ -73,7 +73,7 @@ struct Main: View {
                 }
                 Button("Settings") {
                     resetButtons()
-                    storage.presentedViews = ["settings"]
+                    storage.presentedViews.append("settings")
                 }
             } message: {
                 Text("Please select scales to play within the settings menu.")
@@ -102,6 +102,22 @@ struct Main: View {
                     }
                 }
                 
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        storage.presentedViews.append(scales[0])
+                        scaleAudio?.stop()
+                    } label: {
+                        
+                        Text("Learn")
+                            .font(.largeTitle)
+                            .foregroundColor(.secondary)
+                            .padding(8)
+                            .background(.blue.opacity(0.3))
+                            .clipShape(Rectangle())
+                            .border(.black.opacity(0.5))
+                        
+                    }
+                }
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
@@ -163,11 +179,17 @@ struct Main: View {
                     Button {
                         //Play Audio
                         do {
-                            let path = Bundle.main.path(forResource: "\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)Audio", ofType: "m4a")
+                            var path = Bundle.main.path(forResource: "\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)Audio", ofType: "mp3")
+                            
+                            if storage.useSlowedAudio == true {
+                                path = Bundle.main.path(forResource: "\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)AudioSlowed", ofType: "mp3")
+                            }
+                            
                             if let path = path {
                                 let url = URL(fileURLWithPath: path)
                                 scaleAudio = try AVAudioPlayer(contentsOf: url)
                                 scaleAudio?.play()
+                                
                             } else {
                                 
                             }

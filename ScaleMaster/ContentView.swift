@@ -137,9 +137,9 @@ struct ContentView: View {
                     ScaleViewer()
                 }
             }
-            //.navigationDestination(for: [scale].self) { scales in
-                //Main(scales: scales)
-           // }
+            .navigationDestination(for: scale.self) { scales in
+                LearnScale(scale: scales)
+            }
         }
     }
 }
