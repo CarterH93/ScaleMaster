@@ -37,6 +37,7 @@
 		BCB11BF72956606E006788EE /* F# Major2TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BDD2956606E006788EE /* F# Major2TubaAudioSlowed.mp3 */; };
 		BCB11BF82956606E006788EE /* Chromatic0TubaAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BDE2956606E006788EE /* Chromatic0TubaAudioSlowed.mp3 */; };
 		BCB11BF92956606E006788EE /* A Major2TubaAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB11BDF2956606E006788EE /* A Major2TubaAudio.mp3 */; };
+		BCB11BFD29578C83006788EE /* ScaleWithMarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB11BFC29578C83006788EE /* ScaleWithMarking.swift */; };
 		BCC19E71294E93EC002F0A2C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E70294E93EC002F0A2C /* Settings.swift */; };
 		BCC19E73294E93F4002F0A2C /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E72294E93F4002F0A2C /* Main.swift */; };
 		BCC19E75294E98D7002F0A2C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19E74294E98D7002F0A2C /* Storage.swift */; };
@@ -82,6 +83,7 @@
 		BCB11BDD2956606E006788EE /* F# Major2TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2TubaAudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/F# Major2TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 		BCB11BDE2956606E006788EE /* Chromatic0TubaAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Chromatic0TubaAudioSlowed.mp3; path = "Photos and audio editing/Updated Sounds/Chromatic0TubaAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 		BCB11BDF2956606E006788EE /* A Major2TubaAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A Major2TubaAudio.mp3"; path = "Photos and audio editing/Updated Sounds/A Major2TubaAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BCB11BFC29578C83006788EE /* ScaleWithMarking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleWithMarking.swift; sourceTree = "<group>"; };
 		BCC19E70294E93EC002F0A2C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BCC19E72294E93F4002F0A2C /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		BCC19E74294E98D7002F0A2C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */,
 				BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */,
 				BC5046EB29561D83006330D6 /* LearnScale.swift */,
+				BCB11BFC29578C83006788EE /* ScaleWithMarking.swift */,
 				BCC19E74294E98D7002F0A2C /* Storage.swift */,
 				BCC19E70294E93EC002F0A2C /* Settings.swift */,
 				BCC19E76294EAE03002F0A2C /* InstrumentChooser.swift */,
@@ -292,6 +295,7 @@
 			files = (
 				BCC19E71294E93EC002F0A2C /* Settings.swift in Sources */,
 				BCC19EA5294FA390002F0A2C /* Scale View.swift in Sources */,
+				BCB11BFD29578C83006788EE /* ScaleWithMarking.swift in Sources */,
 				BCC19E7E294EDA8F002F0A2C /* ScaleViewer.swift in Sources */,
 				BC99DDBC294E50AA00AB5AF0 /* ContentView.swift in Sources */,
 				BCC19E77294EAE03002F0A2C /* InstrumentChooser.swift in Sources */,

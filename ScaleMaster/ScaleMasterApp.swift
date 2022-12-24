@@ -16,3 +16,4 @@ struct ScaleMasterApp: App {
         }
     }
 }
+

@@ -18,10 +18,13 @@ struct LearnScale: View {
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     @State private var scaleAudio: AVAudioPlayer?
-    @State private var position: Double = 0
+    @State private var position: Int = 0
     var body: some View {
         VStack {
             Text(scale.name)
+            ScaleWithMarking(scale: scale, showingFingeringsImage: true, position: position)
+                
+                
             Text("current position: \(position.formatted())")
             Button("play") {
                 
@@ -55,7 +58,7 @@ struct LearnScale: View {
                     }
                     
                     if scaleAudio.currentTime >= 0.9 && scaleAudio.currentTime < 3.9  {
-                        if scaleAudio.currentTime > ((position * 0.5) + 0.5) {
+                        if scaleAudio.currentTime > ((Double(position) * 0.5) + 0.5) {
                             position += 1
                             
                         }
@@ -66,7 +69,7 @@ struct LearnScale: View {
                     }
                     
                     if scaleAudio.currentTime >= 4.9 && scaleAudio.currentTime < 7.9  {
-                        if scaleAudio.currentTime > ((position * 0.5) + 1) {
+                        if scaleAudio.currentTime > ((Double(position) * 0.5) + 1) {
                             position += 1
                             
                         }
@@ -78,7 +81,7 @@ struct LearnScale: View {
                     }
                     
                     if scaleAudio.currentTime >= 8.9 && scaleAudio.currentTime < 12  {
-                        if scaleAudio.currentTime > ((position * 0.5) + 1.5) {
+                        if scaleAudio.currentTime > ((Double(position) * 0.5) + 1.5) {
                             position += 1
                             
                         }
@@ -89,7 +92,7 @@ struct LearnScale: View {
                     }
                     
                     if scaleAudio.currentTime >= 13 && scaleAudio.currentTime < 16  {
-                        if scaleAudio.currentTime > ((position * 0.5) + 2) {
+                        if scaleAudio.currentTime > ((Double(position) * 0.5) + 2) {
                             position += 1
                             
                         }
@@ -116,7 +119,7 @@ struct LearnScale: View {
                     } else if scaleAudio.currentTime < 0.6 {
                         position = 1
                     } else if position < 59 {
-                        if scaleAudio.currentTime > (position * 0.6) {
+                        if scaleAudio.currentTime > (Double(position) * 0.6) {
                             position += 1
                             
                         } else  if position > 58 {
