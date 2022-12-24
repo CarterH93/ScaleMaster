@@ -19,11 +19,16 @@ struct LearnScale: View {
     
     @State private var scaleAudio: AVAudioPlayer?
     @State private var position: Int = 0
+    @State private var showingFingerings = true
+    
     var body: some View {
         VStack {
             Text(scale.name)
-            ScaleWithMarking(scale: scale, showingFingeringsImage: true, position: position)
+            ScaleWithMarking(scale: scale, showingFingeringsImage: showingFingerings, position: position)
                 
+            Button("Showing Fingerings") {
+                showingFingerings.toggle()
+            }
                 
             Text("current position: \(position.formatted())")
             Button("play") {
