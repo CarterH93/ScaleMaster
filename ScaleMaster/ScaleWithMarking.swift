@@ -144,7 +144,8 @@ struct ScaleWithMarking: View {
                     .frame(width: geo.size.width / 40, height: geo.size.height > geo.size.width ? geo.size.width * 0.17: geo.size.height * 0.15)
                     .position(x: geo.size.width / getPosition, y: geo.size.height / 1.95)
                     .foregroundColor(.red)
-                    .opacity(0.5)
+                    .opacity(position > 0 ? 0.5 : 0)
+                    
             }
         }
     }
