@@ -34,15 +34,8 @@ struct ScaleViewerWithNoteMarkings: View {
     
     var body: some View {
         VStack {
-          //  Text(scale.name)
             ScaleWithMarking(scale: scale, showingFingeringsImage: showingFingerings, position: position)
                 
-            
-                
-           // Text("current position: \(position.formatted())")
-           
-                
-               
             
         }
         .onChange(of: play) { Inputplay in
