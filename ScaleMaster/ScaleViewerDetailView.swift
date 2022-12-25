@@ -49,16 +49,20 @@ struct ScaleViewerDetailView: View {
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [.white, .white, .gray]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     .ignoresSafeArea()
-                if let scale = scale {
+                if scale != nil {
                     
                     VStack {
                         VStack {
+                            /*
                             Text("\(scale) Scale")
                                 .font(.system(size: geo.size.height > geo.size.width ? geo.size.height * 0.07: geo.size.height * 0.06))
                                 .padding()
                                 .background(.quaternary)
                                 .clipShape(RoundedRectangle(cornerRadius: 30))
-                            
+                            */
+                            if let tempscale = getRealScale() {
+                                Scale_View(scale: tempscale, geoH: geo.size.height / 1.5, geoW: geo.size.width / 1.5)
+                            }
                         }
                         .frame(alignment: .center)
                         .padding(20)

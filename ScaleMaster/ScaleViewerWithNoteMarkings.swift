@@ -146,16 +146,12 @@ struct ScaleViewerWithNoteMarkings: View {
                     
                     
                     
-                } else if scale.octaves == 0 {
+                } else if scale.octaves == 0 && play == true {
                     //Do settings for chromatic scale
                     
                     if let scaleAudio = scaleAudio {
-                        if scaleAudio.currentTime == 0 {
-                            
-                            position = 0
-                            
-                            
-                        } else if scaleAudio.currentTime < (0.6 * howFast) {
+                        
+                        if scaleAudio.currentTime < (0.6 * howFast) {
                             
                             position = 1
                         } else if position < 59 {

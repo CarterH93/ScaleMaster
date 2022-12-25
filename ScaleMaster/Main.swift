@@ -233,6 +233,7 @@ struct Main: View {
     
     func resetButtons() {
         play = false
+        position = 0
         showingScaleImage = false
         showingFingeringsImage = false
         scaleAudio?.stop()

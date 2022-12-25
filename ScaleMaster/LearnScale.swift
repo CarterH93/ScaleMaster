@@ -64,6 +64,9 @@ struct LearnScale: View {
             } else {
                 stopAt = 4 * section
             }
+        case 0:
+            //put code for chromatic scale
+            break
         default:
             stopAt = 4 * section
             break
@@ -78,10 +81,12 @@ struct LearnScale: View {
     
     
     var body: some View {
-        
+        GeometryReader { geo in
             
             VStack {
+                Scale_View(scale: scale, geoH: geo.size.height / 1.5, geoW: geo.size.width / 1.5)
                 ScaleViewerWithNoteMarkings(scale: scale, stopAtPosition: stopAt, showingFingerings: showingFingerings, play: $play, resetPositionTo0AfterComplete: false, position: $position)
+                
                 VStack {
                     Text("Section \(section)   Play \(timesPlayed)/\(repeatSections)")
                         .font(.largeTitle)
@@ -89,13 +94,12 @@ struct LearnScale: View {
                 .padding(15)
                 .background(.quaternary)
                 .clipShape(RoundedRectangle(cornerRadius: 30))
+                .padding(30)
                 
                 
-                Button("Play \(play.description)") {
-                    
-                    play.toggle()
-                }
+                
             }
+        }
             .alert("You finished learn!", isPresented: $showingAlert) {
                 Button("Back") {
                     storage.presentedViews.removeLast(1)
