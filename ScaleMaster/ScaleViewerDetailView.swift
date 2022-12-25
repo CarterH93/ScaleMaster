@@ -28,7 +28,7 @@ struct ScaleViewerDetailView: View {
     @State private var octave: Int
     
     @State private var scaleAudio: AVAudioPlayer?
-    
+    @State private var play = false
    
     
     @EnvironmentObject var storage: AppInfoStorage
@@ -63,15 +63,10 @@ struct ScaleViewerDetailView: View {
                         .frame(alignment: .center)
                         .padding(20)
                         
-                        if showingFingeringsImage {
-                            getSafeImage(named: "\(scale)\(octave)\(storage.selectedInstrument)Fingerings")
-                                .resizable()
-                                .scaledToFit()
-                        } else {
-                            getSafeImage(named: "\(scale)\(octave)\(storage.selectedInstrument)")
-                                .resizable()
-                                .scaledToFit()
+                        if let scale = getRealScale() {
+                            ScaleViewerWithNoteMarkings(scale: scale, showingFingerings: showingFingeringsImage, play: $play)
                         }
+                        
                         
                     }
                     
@@ -84,7 +79,7 @@ struct ScaleViewerDetailView: View {
         }
         
         .onChange(of: scale) { newValue in
-            scaleAudio?.stop()
+            play = false
             
             if let Wrappedscale = newValue {
                 var tempStore: [Int] = AppInfoStorage.OctaveChoices(inputScale: Wrappedscale)
@@ -96,7 +91,7 @@ struct ScaleViewerDetailView: View {
             }
         }
         .onChange(of: storage.selectedInstrument) { _ in
-            scaleAudio?.stop()
+            play = false
         }
         
         .toolbar {
@@ -108,7 +103,7 @@ struct ScaleViewerDetailView: View {
                         
                     } label: {
                         
-                        Text("Show Fingerings")
+                        Text(showingFingeringsImage == true ? "Hide Fingerings" : "Show Fingerings")
                             .font(.title2)
                             .foregroundColor(.secondary)
                             .padding(8)
@@ -122,28 +117,18 @@ struct ScaleViewerDetailView: View {
                 
                 ToolbarItem(placement: .bottomBar) {
                     Button {
-                        //Play Audio
-                        do {
-                            var path = Bundle.main.path(forResource: "\(scale)\(octave)\(storage.selectedInstrument)Audio", ofType: "mp3")
-                            
-                            if storage.useSlowedAudio == true {
-                                path = Bundle.main.path(forResource: "\(scale)\(octave)\(storage.selectedInstrument)AudioSlowed", ofType: "mp3")
-                            }
-                            
-                            if let path = path {
-                                let url = URL(fileURLWithPath: path)
-                                scaleAudio = try AVAudioPlayer(contentsOf: url)
-                                scaleAudio?.play()
-                            } else {
-                                
-                            }
-                        } catch {
-                            // couldn't load file :(
+                        if storage.useSlowedAudio == true {
+                            storage.linkedSpeedIsFast = false
+                        } else {
+                            storage.linkedSpeedIsFast = true
                         }
+                        //Play Audio
+                        play.toggle()
+                        
                         
                     } label: {
                         
-                        Text("Play Audio")
+                        Text(play == true ? "Stop Scale" : "Play Scale")
                             .font(.title2)
                             .foregroundColor(.secondary)
                             .padding(8)
@@ -159,7 +144,7 @@ struct ScaleViewerDetailView: View {
                         if let tempscale = getRealScale() {
                             storage.linkedSpeedIsFast = false
                             storage.presentedViews.append(tempscale)
-                            scaleAudio?.stop()
+                            play = false
                         }
                         
                         

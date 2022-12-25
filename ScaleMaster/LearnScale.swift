@@ -11,18 +11,17 @@ struct LearnScale: View {
     var scale: scale
     @State private var showingFingerings = true
     @State private var play = false
-    @State private var stopAt: Int? = 8
-    @State private var position: Int = 0
+    @State private var stopAt: Int?
+  
     var body: some View {
         VStack {
-            Text("position: \(position)")
-            ScaleViewerWithNoteMarkings(scale: scale, stopAtPosition: stopAt, position: $position, showingFingerings: showingFingerings, play: $play)
+            ScaleViewerWithNoteMarkings(scale: scale, stopAtPosition: stopAt, showingFingerings: showingFingerings, play: $play)
             Button("Showing Fingerings") {
                 showingFingerings.toggle()
             }
             Button("Play \(play.description)") {
                 
-                play = true
+                play.toggle()
             }
             
         }

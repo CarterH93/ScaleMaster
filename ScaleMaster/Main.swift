@@ -16,6 +16,8 @@ struct Main: View {
     @State private var showingScaleImage = false
     @State private var showingFingeringsImage = false
     
+    @State private var play = false
+    
     @State private var scaleAudio: AVAudioPlayer?
     
     init(scales: [scale]) {
@@ -36,20 +38,12 @@ struct Main: View {
                         Scale_View(scale: scales[0], geoH: geo.size.height, geoW: geo.size.width)
                             .padding(.bottom)
                     }
+                    
+                    if showingScaleImage {
+                        ScaleViewerWithNoteMarkings(scale: scales[0], showingFingerings: showingFingeringsImage, play: $play)
+                    }
                         
                     
-                    
-                    if showingFingeringsImage {
-                        //show fingerings image
-                        getSafeImage(named: "\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)Fingerings")
-                            .resizable()
-                            .scaledToFit()
-                    } else if showingScaleImage {
-                        //show scale image
-                        getSafeImage(named: "\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)")
-                            .resizable()
-                            .scaledToFit()
-                    }
                     
                 }
                 
@@ -147,7 +141,7 @@ struct Main: View {
                         }
                     } label: {
                         
-                        Text("Show Scale")
+                        Text(showingScaleImage == true ? "Hide Scale" : "Show Scale")
                             .font(.title3)
                             .foregroundColor(.secondary)
                             .padding(8)
@@ -164,7 +158,7 @@ struct Main: View {
                             showingFingeringsImage.toggle()
                         } label: {
                             
-                            Text("Show Fingerings")
+                            Text(showingFingeringsImage == true ? "Hide Fingerings" : "Show Fingerings")
                                 .font(.title3)
                                 .foregroundColor(.secondary)
                                 .padding(8)
@@ -174,40 +168,29 @@ struct Main: View {
                             
                         }
                     }
-                }
                 
-                ToolbarItem(placement: .bottomBar) {
-                    Button {
-                        //Play Audio
-                        do {
-                            var path = Bundle.main.path(forResource: "\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)Audio", ofType: "mp3")
-                            
+                
+                    ToolbarItem(placement: .bottomBar) {
+                        Button {
+                            //Play Audio
                             if storage.useSlowedAudio == true {
-                                path = Bundle.main.path(forResource: "\(scales[0].name)\(scales[0].octaves)\(storage.selectedInstrument)AudioSlowed", ofType: "mp3")
-                            }
-                            
-                            if let path = path {
-                                let url = URL(fileURLWithPath: path)
-                                scaleAudio = try AVAudioPlayer(contentsOf: url)
-                                scaleAudio?.play()
-                                
+                                storage.linkedSpeedIsFast = false
                             } else {
-                                
+                                storage.linkedSpeedIsFast = true
                             }
-                        } catch {
-                            // couldn't load file :(
+                            play.toggle()
+                            
+                        } label: {
+                            
+                            Text(play == true ? "Stop Scale" : "Play Scale")
+                                .font(.title3)
+                                .foregroundColor(.secondary)
+                                .padding(8)
+                                .background(.thinMaterial)
+                                .clipShape(Rectangle())
+                                .border(.black.opacity(0.5))
+                            
                         }
-                        
-                    } label: {
-                        
-                        Text("Play Audio")
-                            .font(.title3)
-                            .foregroundColor(.secondary)
-                            .padding(8)
-                            .background(.thinMaterial)
-                            .clipShape(Rectangle())
-                            .border(.black.opacity(0.5))
-                        
                     }
                 }
                 
@@ -247,6 +230,7 @@ struct Main: View {
         }
     
     func resetButtons() {
+        play = false
         showingScaleImage = false
         showingFingeringsImage = false
         scaleAudio?.stop()
