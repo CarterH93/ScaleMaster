@@ -20,6 +20,8 @@ struct Main: View {
     
     @State private var scaleAudio: AVAudioPlayer?
     
+    @State private var position = 0
+    
     init(scales: [scale]) {
         _scales = State(initialValue: scales)
     }
@@ -40,7 +42,7 @@ struct Main: View {
                     }
                     
                     if showingScaleImage {
-                        ScaleViewerWithNoteMarkings(scale: scales[0], showingFingerings: showingFingeringsImage, play: $play)
+                        ScaleViewerWithNoteMarkings(scale: scales[0], showingFingerings: showingFingeringsImage, play: $play, resetPositionTo0AfterComplete: true, position: $position)
                     }
                         
                     

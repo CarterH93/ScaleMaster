@@ -30,7 +30,7 @@ struct ScaleViewerDetailView: View {
     @State private var scaleAudio: AVAudioPlayer?
     @State private var play = false
    
-    
+    @State private var position = 0
     @EnvironmentObject var storage: AppInfoStorage
     
     var scale: String?
@@ -64,7 +64,7 @@ struct ScaleViewerDetailView: View {
                         .padding(20)
                         
                         if let scale = getRealScale() {
-                            ScaleViewerWithNoteMarkings(scale: scale, showingFingerings: showingFingeringsImage, play: $play)
+                            ScaleViewerWithNoteMarkings(scale: scale, showingFingerings: showingFingeringsImage, play: $play,  resetPositionTo0AfterComplete: true, position: $position)
                         }
                         
                         

@@ -28,13 +28,14 @@ struct ScaleViewerWithNoteMarkings: View {
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     @State private var scaleAudio: AVAudioPlayer?
-    @State var position: Int = 0
+  
     var showingFingerings: Bool
     @Binding var play: Bool
-    
+    var resetPositionTo0AfterComplete = false
+    @Binding var position: Int
     var body: some View {
         VStack {
-            Text("\(position)")
+            
             ScaleWithMarking(scale: scale, showingFingeringsImage: showingFingerings, position: position)
             
             
@@ -58,7 +59,9 @@ struct ScaleViewerWithNoteMarkings: View {
                 }
             } else {
                 scaleAudio?.stop()
-                position = 0
+                if resetPositionTo0AfterComplete {
+                    position = 0
+                }
             }
         }
         .onReceive(timer) { time in
