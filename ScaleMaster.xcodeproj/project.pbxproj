@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC5046EC29561D83006330D6 /* LearnScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5046EB29561D83006330D6 /* LearnScale.swift */; };
+		BC5046EC29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5046EB29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift */; };
+		BC53CD452957FDFD0008EC5F /* LearnScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53CD442957FDFD0008EC5F /* LearnScale.swift */; };
 		BC99DDBA294E50AA00AB5AF0 /* ScaleMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */; };
 		BC99DDBC294E50AA00AB5AF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */; };
 		BC99DDC2294E50AB00AB5AF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC99DDC1294E50AB00AB5AF0 /* Preview Assets.xcassets */; };
@@ -51,7 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC5046EB29561D83006330D6 /* LearnScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnScale.swift; sourceTree = "<group>"; };
+		BC5046EB29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewerWithNoteMarkings.swift; sourceTree = "<group>"; };
+		BC53CD442957FDFD0008EC5F /* LearnScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnScale.swift; sourceTree = "<group>"; };
 		BC99DDB6294E50AA00AB5AF0 /* ScaleMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaleMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleMasterApp.swift; sourceTree = "<group>"; };
 		BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,7 +133,8 @@
 				BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */,
 				BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */,
 				BCC19EA2294F903A002F0A2C /* ScaleSelectionList.swift */,
-				BC5046EB29561D83006330D6 /* LearnScale.swift */,
+				BC5046EB29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift */,
+				BC53CD442957FDFD0008EC5F /* LearnScale.swift */,
 				BCB11BFC29578C83006788EE /* ScaleWithMarking.swift */,
 				BCC19E74294E98D7002F0A2C /* Storage.swift */,
 				BCC19E70294E93EC002F0A2C /* Settings.swift */,
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC53CD452957FDFD0008EC5F /* LearnScale.swift in Sources */,
 				BCC19E71294E93EC002F0A2C /* Settings.swift in Sources */,
 				BCC19EA5294FA390002F0A2C /* Scale View.swift in Sources */,
 				BCB11BFD29578C83006788EE /* ScaleWithMarking.swift in Sources */,
@@ -301,7 +305,7 @@
 				BCC19E77294EAE03002F0A2C /* InstrumentChooser.swift in Sources */,
 				BCC19E73294E93F4002F0A2C /* Main.swift in Sources */,
 				BCC19EA3294F903A002F0A2C /* ScaleSelectionList.swift in Sources */,
-				BC5046EC29561D83006330D6 /* LearnScale.swift in Sources */,
+				BC5046EC29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift in Sources */,
 				BC99DDBA294E50AA00AB5AF0 /* ScaleMasterApp.swift in Sources */,
 				BCC19EB32950E7D3002F0A2C /* ScaleViewerDetailView.swift in Sources */,
 				BCC19E75294E98D7002F0A2C /* Storage.swift in Sources */,
