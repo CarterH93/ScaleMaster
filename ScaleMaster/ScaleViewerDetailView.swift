@@ -157,6 +157,7 @@ struct ScaleViewerDetailView: View {
                 ToolbarItem(placement: .bottomBar) {
                     Button {
                         if let tempscale = getRealScale() {
+                            storage.linkedSpeedIsFast = false
                             storage.presentedViews.append(tempscale)
                             scaleAudio?.stop()
                         }

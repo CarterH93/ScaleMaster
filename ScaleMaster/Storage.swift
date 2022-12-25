@@ -39,6 +39,8 @@ class AppInfoStorage: ObservableObject {
     }
     @Published var previousScale: scale? = nil
     
+    @Published var linkedSpeedIsFast: Bool = false
+    
     @Published var presentedViews: NavigationPath = NavigationPath()
     
     @Published var useSlowedAudio: Bool = false {

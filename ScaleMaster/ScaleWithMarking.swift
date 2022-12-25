@@ -11,6 +11,8 @@ struct ScaleWithMarking: View {
     
     @EnvironmentObject var storage: AppInfoStorage
     
+    
+    
     var getPosition: Double {
         if scale.octaves == 2 {
             switch position {

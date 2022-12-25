@@ -104,6 +104,7 @@ struct Main: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
+                        storage.linkedSpeedIsFast = false
                         storage.presentedViews.append(scales[0])
                         scaleAudio?.stop()
                     } label: {

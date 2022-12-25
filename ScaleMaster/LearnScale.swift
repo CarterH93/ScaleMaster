@@ -15,6 +15,16 @@ struct LearnScale: View {
     
     var scale: scale
     
+    var stopAtPosition: Int?
+    
+    var howFast: Double {
+        if storage.linkedSpeedIsFast == true {
+            return 0.5
+        } else {
+            return 1
+        }
+    }
+    
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     @State private var scaleAudio: AVAudioPlayer?
@@ -34,7 +44,7 @@ struct LearnScale: View {
             Button("play") {
                 
                 do {
-                    let path = Bundle.main.path(forResource: "\(scale.name)\(scale.octaves)\(storage.selectedInstrument)AudioSlowed", ofType: "mp3")
+                    let path = Bundle.main.path(forResource: "\(scale.name)\(scale.octaves)\(storage.selectedInstrument)Audio\(howFast == 0.5 ? "" : "Slowed")", ofType: "mp3")
                     
                     if let path = path {
                         let url = URL(fileURLWithPath: path)
@@ -51,59 +61,74 @@ struct LearnScale: View {
         }
         .onReceive(timer) { time in
             
+            if let stopAtPosition = stopAtPosition { if stopAtPosition == position { scaleAudio?.stop()
+                return
+            }}
+            
             if scale.octaves > 0 {
                 //Do settings for Normal Scales
                 
                 if let scaleAudio = scaleAudio {
                     if scaleAudio.currentTime == 0 {
-                        position = 0
                         
-                    } else if scaleAudio.currentTime < 0.9 {
+                        position = 0
+                       
+                        
+                    } else if scaleAudio.currentTime < (0.9 * howFast) {
+                       
                         position = 1
                     }
                     
-                    if scaleAudio.currentTime >= 0.9 && scaleAudio.currentTime < 3.9  {
-                        if scaleAudio.currentTime > ((Double(position) * 0.5) + 0.5) {
+                    if scaleAudio.currentTime >= (0.9 * howFast) && scaleAudio.currentTime < (4.3 * howFast)  {
+                        if scaleAudio.currentTime > ((Double(position) * (0.5 * howFast)) + (0.5 * howFast)) {
+                            
                             position += 1
                             
                         }
                     }
                     
-                    if scaleAudio.currentTime >= 3.9 && scaleAudio.currentTime < 4.9 {
+                    if scaleAudio.currentTime >= (4.3 * howFast) && scaleAudio.currentTime < (4.9 * howFast) {
+                        
                         position = 8
                     }
                     
-                    if scaleAudio.currentTime >= 4.9 && scaleAudio.currentTime < 7.9  {
-                        if scaleAudio.currentTime > ((Double(position) * 0.5) + 1) {
+                    if scaleAudio.currentTime >= (4.9 * howFast) && scaleAudio.currentTime < (8.3 * howFast)  {
+                        if scaleAudio.currentTime > ((Double(position) * (0.5 * howFast)) + (1 * howFast)) {
+                            
                             position += 1
                             
                         }
                     }
                     
                     
-                    if scaleAudio.currentTime >= 7.9 && scaleAudio.currentTime < 8.9 {
+                    if scaleAudio.currentTime >= (8.3 * howFast) && scaleAudio.currentTime < (8.9 * howFast) {
+                        
                         position = 15
                     }
                     
-                    if scaleAudio.currentTime >= 8.9 && scaleAudio.currentTime < 12  {
-                        if scaleAudio.currentTime > ((Double(position) * 0.5) + 1.5) {
+                    if scaleAudio.currentTime >= (8.9 * howFast) && scaleAudio.currentTime < (12 * howFast)  {
+                        if scaleAudio.currentTime > ((Double(position) * (0.5 * howFast)) + (1.5 * howFast)) {
+                            
                             position += 1
                             
                         }
                     }
                     
-                    if scaleAudio.currentTime >= 12 && scaleAudio.currentTime < 13 {
+                    if scaleAudio.currentTime >= (12 * howFast) && scaleAudio.currentTime < (13 * howFast) {
+                        
                         position = 22
                     }
                     
-                    if scaleAudio.currentTime >= 13 && scaleAudio.currentTime < 16  {
-                        if scaleAudio.currentTime > ((Double(position) * 0.5) + 2) {
+                    if scaleAudio.currentTime >= (13 * howFast) && scaleAudio.currentTime < (16 * howFast) {
+                        if scaleAudio.currentTime > ((Double(position) * (0.5 * howFast)) + (2 * howFast)) {
+                            
                             position += 1
                             
                         }
                     }
                     
-                    if scaleAudio.currentTime >= 16 {
+                    if scaleAudio.currentTime >= (16 * howFast) {
+                        
                         position = 29
                     }
                     
@@ -118,16 +143,20 @@ struct LearnScale: View {
                 
                 if let scaleAudio = scaleAudio {
                     if scaleAudio.currentTime == 0 {
+                        
                         position = 0
                         
                         
-                    } else if scaleAudio.currentTime < 0.6 {
+                    } else if scaleAudio.currentTime < (0.6 * howFast) {
+                        
                         position = 1
                     } else if position < 59 {
-                        if scaleAudio.currentTime > (Double(position) * 0.6) {
+                        if scaleAudio.currentTime > (Double(position) * (0.6 * howFast)) {
+                            
                             position += 1
                             
                         } else  if position > 58 {
+                        
                             position = 59
                         }
                         
