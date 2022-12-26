@@ -12,6 +12,23 @@ struct ScaleWithMarking: View {
     @EnvironmentObject var storage: AppInfoStorage
     
     
+    func getHeightFromWidth(_ width: Double) -> Double {
+        return width / 5.61467889908
+    }
+    
+    var getYPosition: Double {
+        if scale.octaves == 0 {
+            
+            if position > 30 {
+                return 0.3
+            } else {
+                return -0.3
+            }
+            
+        } else {
+            return 0.07
+        }
+    }
     
     var getPosition: Double {
         if scale.octaves == 2 {
@@ -118,7 +135,26 @@ struct ScaleWithMarking: View {
             }
             
         } else {
-            return 10.1
+            switch position {
+                            
+                        case 1:
+                            return 6.6
+                        case 2:
+                            return 5.8
+                        case 3:
+                            return 5.0
+                        case 4:
+                            return 4.25
+                        case 5:
+                            return 3.85
+                        case 6:
+                            return 3.6
+                        case 7:
+                            return 3.3
+                            
+                        default:
+                            return 9.4
+                        }
         }
     }
     
@@ -143,8 +179,8 @@ struct ScaleWithMarking: View {
                     
                 }
                 Rectangle()
-                    .frame(width: geo.size.width / 40, height: geo.size.height > geo.size.width ? geo.size.width * 0.17: geo.size.height * 0.15)
-                    .position(x: geo.size.width / getPosition, y: geo.size.height / 1.95)
+                    .frame(width: geo.size.width / 40, height:  getHeightFromWidth(geo.size.width) * 0.7)
+                    .position(x: geo.size.width / getPosition, y: geo.size.height / 2 +  getHeightFromWidth(geo.size.width) * getYPosition )
                     .foregroundColor(.red)
                     .opacity(position > 0 ? 0.5 : 0)
                     
@@ -155,7 +191,7 @@ struct ScaleWithMarking: View {
 
 struct ScaleWithMarking_Previews: PreviewProvider {
     static var previews: some View {
-        ScaleWithMarking(scale: AppInfoStorage.allScales[12], showingFingeringsImage: true, position: 15)
+        ScaleWithMarking(scale: AppInfoStorage.allScales[12], showingFingeringsImage: true, position: 1)
             .environmentObject(AppInfoStorage())
     }
 }

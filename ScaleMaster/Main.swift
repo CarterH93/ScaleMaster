@@ -103,6 +103,8 @@ struct Main: View {
                         storage.linkedSpeedIsFast = false
                         storage.presentedViews.append(scales[0])
                         scaleAudio?.stop()
+                        play = false
+                        position = 0
                     } label: {
                         
                         Text("Learn")

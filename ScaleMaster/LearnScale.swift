@@ -84,17 +84,17 @@ struct LearnScale: View {
         GeometryReader { geo in
             
             VStack {
-                Scale_View(scale: scale, geoH: geo.size.height / 1.5, geoW: geo.size.width / 1.5)
+                Scale_View(scale: scale, geoH: geo.size.height / 2.5, geoW: geo.size.width / 1.5)
                 ScaleViewerWithNoteMarkings(scale: scale, stopAtPosition: stopAt, showingFingerings: showingFingerings, play: $play, resetPositionTo0AfterComplete: false, position: $position)
                 
                 VStack {
                     Text("Section \(section)   Play \(timesPlayed)/\(repeatSections)")
-                        .font(.largeTitle)
+                        .font(.system(size: geo.size.height > geo.size.width ? geo.size.height * 0.1: geo.size.height * 0.08))
                 }
-                .padding(15)
+                .padding()
                 .background(.quaternary)
                 .clipShape(RoundedRectangle(cornerRadius: 30))
-                .padding(30)
+                .padding()
                 
                 
                 
@@ -126,7 +126,7 @@ struct LearnScale: View {
                     Text("Restart Learn")
                         .font(.title2)
                         .foregroundColor(.secondary)
-                        .padding(8)
+                        .padding()
                         .background(.thinMaterial)
                         .clipShape(Rectangle())
                         .border(.black.opacity(0.5))
@@ -147,7 +147,7 @@ struct LearnScale: View {
                     Text(showingFingerings == true ? "Hide Fingerings" : "Show Fingerings")
                         .font(.title2)
                         .foregroundColor(.secondary)
-                        .padding(8)
+                        .padding()
                         .background(.thinMaterial)
                         .clipShape(Rectangle())
                         .border(.black.opacity(0.5))
@@ -172,7 +172,7 @@ struct LearnScale: View {
                     }
                         .font(.largeTitle)
                         .foregroundColor(.accentColor)
-                        .padding(10)
+                        .padding()
                         .background(.orange)
                         .clipShape(Rectangle())
                         .border(.black.opacity(0.5))
@@ -192,7 +192,7 @@ struct LearnScale: View {
                     Text("Continue")
                         .font(.largeTitle)
                         .foregroundColor(.accentColor)
-                        .padding(10)
+                        .padding()
                         .background(.green)
                         .clipShape(Rectangle())
                         .border(.black.opacity(0.5))
@@ -220,7 +220,7 @@ struct LearnScale: View {
                     Text("\(repeatSections) \(repeatSections == 1 ? "Time" : "Times")")
                         .font(.title2)
                         .foregroundColor(.secondary)
-                        .padding(8)
+                        .padding()
                         .background(.thinMaterial)
                         .clipShape(Rectangle())
                         .border(.black.opacity(0.5))
@@ -237,7 +237,7 @@ struct LearnScale: View {
 struct LearnScale_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            LearnScale(scale: AppInfoStorage.allScales[3])
+            LearnScale(scale: AppInfoStorage.allScales[12])
                 .environmentObject(AppInfoStorage())
         }
     }
