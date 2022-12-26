@@ -21,7 +21,8 @@ struct LearnScale: View {
     @State private var position = 0
     @State private var section = 1
     @State private var showingAlert = false
-  
+  @State private var enableFastSpeed = false
+    
     func reset() {
         play = false
         position = 0
@@ -65,7 +66,24 @@ struct LearnScale: View {
                 stopAt = 4 * section
             }
         case 0:
+            
+            if section > 16 {
+                reachedEndOfLearn()
+                return
+            }
             //put code for chromatic scale
+            if section > 0 {
+                stopAt = 4 * section - 1
+                if section > 7 {
+                    stopAt = 4 * section - 2
+                    
+                    if section > 8 {
+                        stopAt = 4 * section - 3
+                    }
+                    
+                }
+            }
+            
             break
         default:
             stopAt = 4 * section
@@ -89,7 +107,7 @@ struct LearnScale: View {
                 
                 VStack {
                     Text("Section \(section)   Play \(timesPlayed)/\(repeatSections)")
-                        .font(.system(size: geo.size.height > geo.size.width ? geo.size.height * 0.1: geo.size.height * 0.08))
+                        .font(.system(size: geo.size.height > geo.size.width ? geo.size.height * 0.07: geo.size.height * 0.08))
                 }
                 .padding()
                 .background(.quaternary)
@@ -112,6 +130,33 @@ struct LearnScale: View {
                 Text("Please select an option.")
             }
         .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                
+                
+                
+                Button {
+                    enableFastSpeed.toggle()
+                    if enableFastSpeed == true {
+                        storage.linkedSpeedIsFast = true
+                    } else {
+                        storage.linkedSpeedIsFast = false
+                    }
+                   
+                    
+                    
+                    
+                } label: {
+                    Text(enableFastSpeed == true ? "Disable Fast Speed" : "Enable Fast Speed")
+                        .font(.title2)
+                        .foregroundColor(.accentColor)
+                        .padding()
+                        .background(.thinMaterial)
+                        .clipShape(Rectangle())
+                        .border(.black.opacity(0.5))
+                }
+                .disabled(play == true || timesPlayed == 0 ? true : false)
+            }
+            
             ToolbarItem(placement: .navigationBarTrailing) {
                 
                 
@@ -242,3 +287,6 @@ struct LearnScale_Previews: PreviewProvider {
         }
     }
 }
+
+
+
