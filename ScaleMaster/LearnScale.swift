@@ -154,7 +154,7 @@ struct LearnScale: View {
                         .clipShape(Rectangle())
                         .border(.black.opacity(0.5))
                 }
-                .disabled(play == true || timesPlayed == 0 ? true : false)
+                .disabled(play == true ? true : false)
             }
             
             ToolbarItem(placement: .navigationBarTrailing) {

@@ -31,9 +31,12 @@ struct Main: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
+                /*
                 LinearGradient(gradient: Gradient(colors: [.white, .white, .gray]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     .ignoresSafeArea()
-                
+                */
+                Color(.white)
+                    .ignoresSafeArea()
                 VStack {
                     //Put actual code here
                     if scales.count > 0 {
@@ -69,13 +72,33 @@ struct Main: View {
                 }
                 Button("Settings") {
                     resetButtons()
+                    storage.presentedViews.removeLast(1)
                     storage.presentedViews.append("settings")
+                    
                 }
             } message: {
                 Text("Please select scales to play within the settings menu.")
             }
             
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        resetButtons()
+                        storage.presentedViews.removeLast(storage.presentedViews.count)
+                        storage.previousScale = nil
+                    } label: {
+                        
+                        Text("Home 🏠")
+                            .font(.largeTitle)
+                            .foregroundColor(.secondary)
+                            .padding(8)
+                            .background(.thinMaterial)
+                            .clipShape(Rectangle())
+                            .border(.black.opacity(0.5))
+                        
+                    }
+                }
+                
                 if storage.previousScale != nil {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
@@ -118,23 +141,7 @@ struct Main: View {
                     }
                 }
                 
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        resetButtons()
-                        storage.presentedViews.removeLast(storage.presentedViews.count)
-                        storage.previousScale = nil
-                    } label: {
-                        
-                        Text("Home 🏠")
-                            .font(.largeTitle)
-                            .foregroundColor(.secondary)
-                            .padding(8)
-                            .background(.thinMaterial)
-                            .clipShape(Rectangle())
-                            .border(.black.opacity(0.5))
-                        
-                    }
-                }
+                
                 
                 ToolbarItem(placement: .bottomBar) {
                     Button {

@@ -47,7 +47,11 @@ struct ScaleViewerDetailView: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
+                /*
                 LinearGradient(gradient: Gradient(colors: [.white, .white, .gray]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
+                 */
+                Color(.white)
                     .ignoresSafeArea()
                 if scale != nil {
                     
@@ -78,6 +82,7 @@ struct ScaleViewerDetailView: View {
                     
                 } else {
                     Text("Please Select a Scale")
+                    
                 }
             }
         }
