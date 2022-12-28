@@ -55,7 +55,7 @@
 		BC5046EB29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewerWithNoteMarkings.swift; sourceTree = "<group>"; };
 		BC53CD442957FDFD0008EC5F /* LearnScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnScale.swift; sourceTree = "<group>"; };
 		BC8AB65F295CA4C700023D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		BC99DDB6294E50AA00AB5AF0 /* ScaleMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaleMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC99DDB6294E50AA00AB5AF0 /* Scale Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scale Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleMasterApp.swift; sourceTree = "<group>"; };
 		BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC99DDBF294E50AB00AB5AF0 /* ScaleMaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScaleMaster.entitlements; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		BC99DDB7294E50AA00AB5AF0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC99DDB6294E50AA00AB5AF0 /* ScaleMaster.app */,
+				BC99DDB6294E50AA00AB5AF0 /* Scale Master.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC99DDB5294E50AA00AB5AF0 /* ScaleMaster */ = {
+		BC99DDB5294E50AA00AB5AF0 /* Scale Master */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC99DDC5294E50AB00AB5AF0 /* Build configuration list for PBXNativeTarget "ScaleMaster" */;
+			buildConfigurationList = BC99DDC5294E50AB00AB5AF0 /* Build configuration list for PBXNativeTarget "Scale Master" */;
 			buildPhases = (
 				BC99DDB2294E50AA00AB5AF0 /* Sources */,
 				BC99DDB3294E50AA00AB5AF0 /* Frameworks */,
@@ -216,9 +216,9 @@
 			);
 			dependencies = (
 			);
-			name = ScaleMaster;
+			name = "Scale Master";
 			productName = ScaleMaster;
-			productReference = BC99DDB6294E50AA00AB5AF0 /* ScaleMaster.app */;
+			productReference = BC99DDB6294E50AA00AB5AF0 /* Scale Master.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -236,7 +236,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BC99DDB1294E50AA00AB5AF0 /* Build configuration list for PBXProject "ScaleMaster" */;
+			buildConfigurationList = BC99DDB1294E50AA00AB5AF0 /* Build configuration list for PBXProject "Scale Master" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -249,7 +249,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC99DDB5294E50AA00AB5AF0 /* ScaleMaster */,
+				BC99DDB5294E50AA00AB5AF0 /* Scale Master */,
 			);
 		};
 /* End PBXProject section */
@@ -509,7 +509,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC99DDB1294E50AA00AB5AF0 /* Build configuration list for PBXProject "ScaleMaster" */ = {
+		BC99DDB1294E50AA00AB5AF0 /* Build configuration list for PBXProject "Scale Master" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC99DDC3294E50AB00AB5AF0 /* Debug */,
@@ -518,7 +518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC99DDC5294E50AB00AB5AF0 /* Build configuration list for PBXNativeTarget "ScaleMaster" */ = {
+		BC99DDC5294E50AB00AB5AF0 /* Build configuration list for PBXNativeTarget "Scale Master" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC99DDC6294E50AB00AB5AF0 /* Debug */,
