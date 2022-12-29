@@ -91,7 +91,7 @@ struct ScaleViewerDetailView: View {
             play = false
             
             if let Wrappedscale = newValue {
-                var tempStore: [Int] = AppInfoStorage.OctaveChoices(inputScale: Wrappedscale)
+                var tempStore: [Int] = AppInfoStorage.OctaveChoices(inputScale: Wrappedscale, instrument: storage.selectedInstrument)
                tempStore = tempStore.sorted(by: { $0 < $1 })
                 octave = tempStore[0]
             } else {
@@ -99,8 +99,16 @@ struct ScaleViewerDetailView: View {
                 octave = 0
             }
         }
-        .onChange(of: storage.selectedInstrument) { _ in
+        .onChange(of: storage.selectedInstrument) { newValue in
             play = false
+            if let Wrappedscale = scale {
+                var tempStore: [Int] = AppInfoStorage.OctaveChoices(inputScale: Wrappedscale, instrument: storage.selectedInstrument)
+               tempStore = tempStore.sorted(by: { $0 < $1 })
+                octave = tempStore[0]
+            } else {
+                
+                octave = 0
+            }
         }
         
         .toolbar {
@@ -177,7 +185,7 @@ struct ScaleViewerDetailView: View {
                         
                         Menu {
                             Picker("\(octave) \(octave == 1 ? "Octave" : "Octaves")", selection: $octave) {
-                                ForEach(AppInfoStorage.OctaveChoices(inputScale: scale), id: \.self)  { octave in
+                                ForEach(AppInfoStorage.OctaveChoices(inputScale: scale, instrument: storage.selectedInstrument), id: \.self)  { octave in
                                     Text("\(octave) \(octave == 1 ? "Octave" : "Octaves")")
                                 }
                             }

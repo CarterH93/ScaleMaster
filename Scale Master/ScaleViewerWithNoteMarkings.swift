@@ -44,7 +44,7 @@ struct ScaleViewerWithNoteMarkings: View {
             if Inputplay == true {
                 position = 0
                 do {
-                    let path = Bundle.main.path(forResource: "\(scale.name)\(scale.octaves)\(storage.selectedInstrument)Audio\(howFast == 0.5 ? "" : "Slowed")", ofType: "mp3")
+                    let path = Bundle.main.path(forResource: "\(scale.name)\(scale.octaves)\(storage.selectedInstrument.rawValue)Audio\(howFast == 0.5 ? "" : "Slowed")", ofType: "mp3")
                     
                     if let path = path {
                         let url = URL(fileURLWithPath: path)

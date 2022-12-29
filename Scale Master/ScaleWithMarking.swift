@@ -50,7 +50,7 @@ struct ScaleWithMarking: View {
             case 7:
                 return 3.13
             case 8:
-                return 2.8
+                return 2.87
             case 9:
                 return 2.6
             case 10:
@@ -273,12 +273,12 @@ struct ScaleWithMarking: View {
         GeometryReader { geo in
             ZStack {
                 if showingFingeringsImage {
-                    getSafeImage(named: "\(scale.name)\(scale.octaves)\(storage.selectedInstrument)Fingerings")
+                    getSafeImage(named: "\(scale.name)\(scale.octaves)\(storage.selectedInstrument.rawValue)Fingerings")
                         .resizable()
                         .scaledToFit()
                     
                 } else {
-                    getSafeImage(named: "\(scale.name)\(scale.octaves)\(storage.selectedInstrument)")
+                    getSafeImage(named: "\(scale.name)\(scale.octaves)\(storage.selectedInstrument.rawValue)")
                         .resizable()
                         .scaledToFit()
                     
@@ -296,7 +296,7 @@ struct ScaleWithMarking: View {
 
 struct ScaleWithMarking_Previews: PreviewProvider {
     static var previews: some View {
-        ScaleWithMarking(scale: AppInfoStorage.allScales[12], showingFingeringsImage: true, position: 31)
+        ScaleWithMarking(scale: AppInfoStorage.allScales[1], showingFingeringsImage: true, position: 8)
             .environmentObject(AppInfoStorage())
     }
 }

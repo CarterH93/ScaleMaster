@@ -12,7 +12,9 @@ import SwiftUI
 //Edit this to expand App
 //Adding instruments here will update the rest of the app
 public enum instrument: String, Codable, CaseIterable {
-    case Tuba, Test, BiggerTest
+    case Tuba
+    case BaritoneBC = "Baritone B.C."
+    case BassTrombone = "Bass Trombone"
 }
 
 func getSafeImage(named: String) -> Image {
@@ -90,15 +92,34 @@ class AppInfoStorage: ObservableObject {
     scale(id: 10, name: "A Major", octaves: 2),
     scale(id: 11, name: "D Major", octaves: 1),
     scale(id: 12, name: "G Major", octaves: 2),
-    scale(id: 13, name: "Chromatic", octaves: 0)
+    scale(id: 13, name: "Chromatic", octaves: 0),
+    scale(id: 14, name: "Eb Major", octaves: 2),
+    scale(id: 15, name: "Db Major", octaves: 2),
+    scale(id: 16, name: "D Major", octaves: 2)
     ]
     
-   static func OctaveChoices(inputScale: String) -> [Int]{
+    static func OctaveChoices(inputScale: String, instrument: instrument) -> [Int]{
        var tempStore = Set<Int>()
        
        for scale in AppInfoStorage.allScales {
            if scale.name == inputScale {
-               tempStore.insert(scale.octaves)
+               if scale.name == "Eb Major" || scale.name == "Db Major" || scale.name == "D Major" {
+                   if instrument == .BassTrombone {
+                       if scale.octaves < 2 {
+                           //
+                       } else {
+                           tempStore.insert(scale.octaves)
+                       }
+                   } else if scale.octaves > 1 {
+                       //
+                   } else {
+                       tempStore.insert(scale.octaves)
+                   }
+               } else {
+                   tempStore.insert(scale.octaves)
+               }
+               
+               
            }
        }
        return Array(tempStore)
