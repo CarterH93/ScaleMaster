@@ -102,14 +102,14 @@ struct LearnScale: View {
         GeometryReader { geo in
             
             VStack {
-                Scale_View(scale: scale, geoH: geo.size.height / 2.5, geoW: geo.size.width / 1.5)
+                Scale_View(scale: scale, geoH: geo.size.height / 2.6, geoW: geo.size.width / 1.6)
                 ScaleViewerWithNoteMarkings(scale: scale, stopAtPosition: stopAt, showingFingerings: showingFingerings, play: $play, resetPositionTo0AfterComplete: false, position: $position)
                 
                 VStack {
                     Text("Section \(section)   Play \(timesPlayed)/\(repeatSections)")
-                        .font(.system(size: geo.size.height > geo.size.width ? geo.size.height * 0.07: geo.size.height * 0.08))
+                        .font(.system(size: geo.size.height > geo.size.width ? geo.size.height * 0.07: geo.size.height * 0.07))
                 }
-                .padding()
+                .padding(8)
                 .background(.quaternary)
                 .clipShape(RoundedRectangle(cornerRadius: 30))
                 .padding()
@@ -147,7 +147,7 @@ struct LearnScale: View {
                     
                 } label: {
                     Text(enableFastSpeed == true ? "Disable Fast Speed" : "Enable Fast Speed")
-                        .font(.title2)
+                        .font(.title3)
                         .foregroundColor(.accentColor)
                         .padding()
                         .background(.thinMaterial)
@@ -169,7 +169,7 @@ struct LearnScale: View {
                     
                 } label: {
                     Text("Restart Learn")
-                        .font(.title2)
+                        .font(.title3)
                         .foregroundColor(.secondary)
                         .padding()
                         .background(.thinMaterial)
@@ -190,7 +190,7 @@ struct LearnScale: View {
                     
                 } label: {
                     Text(showingFingerings == true ? "Hide Fingerings" : "Show Fingerings")
-                        .font(.title2)
+                        .font(.title3)
                         .foregroundColor(.secondary)
                         .padding()
                         .background(.thinMaterial)
@@ -215,7 +215,7 @@ struct LearnScale: View {
                         Text("Repeat")
                         Image(systemName: "repeat")
                     }
-                        .font(.largeTitle)
+                        .font(.headline)
                         .foregroundColor(.accentColor)
                         .padding()
                         .background(.orange)
@@ -235,7 +235,7 @@ struct LearnScale: View {
                 } label: {
                     
                     Text("Continue")
-                        .font(.largeTitle)
+                        .font(.headline)
                         .foregroundColor(.accentColor)
                         .padding()
                         .background(.green)
@@ -263,7 +263,7 @@ struct LearnScale: View {
                     
                 } label: {
                     Text("\(repeatSections) \(repeatSections == 1 ? "Time" : "Times")")
-                        .font(.title2)
+                        .font(.title3)
                         .foregroundColor(.secondary)
                         .padding()
                         .background(.thinMaterial)

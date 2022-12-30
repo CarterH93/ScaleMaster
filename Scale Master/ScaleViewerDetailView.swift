@@ -65,11 +65,11 @@ struct ScaleViewerDetailView: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 30))
                             */
                             if let tempscale = getRealScale() {
-                                Scale_View(scale: tempscale, geoH: geo.size.height / 1.5, geoW: geo.size.width / 1.5)
+                                Scale_View(scale: tempscale, geoH: geo.size.height / 1.6, geoW: geo.size.width / 1.6)
                             }
                         }
                         .frame(alignment: .center)
-                        .padding(20)
+                        .padding()
                         
                         if let scale = getRealScale() {
                             ScaleViewerWithNoteMarkings(scale: scale, showingFingerings: showingFingeringsImage, play: $play,  resetPositionTo0AfterComplete: true, position: $position)

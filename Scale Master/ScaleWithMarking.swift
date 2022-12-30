@@ -296,7 +296,7 @@ struct ScaleWithMarking: View {
 
 struct ScaleWithMarking_Previews: PreviewProvider {
     static var previews: some View {
-        ScaleWithMarking(scale: AppInfoStorage.allScales[1], showingFingeringsImage: true, position: 8)
+        ScaleWithMarking(scale: AppInfoStorage.allScales[5], showingFingeringsImage: true, position: 2)
             .environmentObject(AppInfoStorage())
     }
 }
