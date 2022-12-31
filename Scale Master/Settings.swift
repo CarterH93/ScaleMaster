@@ -54,6 +54,11 @@ struct Settings: View {
                 
             }
             .navigationTitle("Settings")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Link("Privacy Policy", destination: URL(string: "https://www.carterapps.net/apps/ScaleMaster/PrivacyPolicy")!)
+                }
+            }
         }
     }
 }

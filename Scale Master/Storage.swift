@@ -106,12 +106,14 @@ class AppInfoStorage: ObservableObject {
                if scale.name == "Eb Major" || scale.name == "Db Major" || scale.name == "D Major" {
                    if instrument == .BassTrombone {
                        if scale.octaves < 2 {
-                           //
+                           //DO NOTHING
+
                        } else {
                            tempStore.insert(scale.octaves)
                        }
                    } else if scale.octaves > 1 {
-                       //
+                       //DO NOTHING
+                       
                    } else {
                        tempStore.insert(scale.octaves)
                    }
