@@ -14,6 +14,7 @@ import SwiftUI
 public enum instrument: String, Codable, CaseIterable {
     case Tuba
     case BaritoneBC = "Baritone B.C."
+    case Trombone
     case BassTrombone = "Bass Trombone"
 }
 

@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		BC5046EC29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5046EB29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift */; };
 		BC53CD452957FDFD0008EC5F /* LearnScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53CD442957FDFD0008EC5F /* LearnScale.swift */; };
+		BC57A1832960F0940007ACAF /* F# Major2Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A1812960F0940007ACAF /* F# Major2Baritone B.C.Audio.mp3 */; };
+		BC57A1842960F0940007ACAF /* F# Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A1822960F0940007ACAF /* F# Major2Baritone B.C.AudioSlowed.mp3 */; };
 		BC8AB665295CB84300023D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB664295CB84300023D60 /* Assets.xcassets */; };
 		BC8AB683295E3CCD00023D60 /* Db Major1Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB669295E3CCC00023D60 /* Db Major1Baritone B.C.Audio.mp3 */; };
 		BC8AB684295E3CCD00023D60 /* Eb Major1Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB66A295E3CCC00023D60 /* Eb Major1Baritone B.C.Audio.mp3 */; };
 		BC8AB685295E3CCD00023D60 /* Ab Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB66B295E3CCC00023D60 /* Ab Major2Baritone B.C.AudioSlowed.mp3 */; };
 		BC8AB686295E3CCD00023D60 /* Bb Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB66C295E3CCC00023D60 /* Bb Major2Baritone B.C.AudioSlowed.mp3 */; };
-		BC8AB687295E3CCD00023D60 /* G Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB66D295E3CCC00023D60 /* G Major2Baritone B.C.AudioSlowed.mp3 */; };
 		BC8AB688295E3CCD00023D60 /* D Major1Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB66E295E3CCD00023D60 /* D Major1Baritone B.C.AudioSlowed.mp3 */; };
 		BC8AB689295E3CCD00023D60 /* C Major2Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB66F295E3CCD00023D60 /* C Major2Baritone B.C.Audio.mp3 */; };
 		BC8AB68A295E3CCD00023D60 /* B Major2Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB670295E3CCD00023D60 /* B Major2Baritone B.C.Audio.mp3 */; };
@@ -24,8 +25,6 @@
 		BC8AB68E295E3CCD00023D60 /* G Major2Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB674295E3CCD00023D60 /* G Major2Baritone B.C.Audio.mp3 */; };
 		BC8AB68F295E3CCD00023D60 /* Db Major1Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB675295E3CCD00023D60 /* Db Major1Baritone B.C.AudioSlowed.mp3 */; };
 		BC8AB690295E3CCD00023D60 /* Eb Major1Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB676295E3CCD00023D60 /* Eb Major1Baritone B.C.AudioSlowed.mp3 */; };
-		BC8AB691295E3CCD00023D60 /* F# Major2Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB677295E3CCD00023D60 /* F# Major2Baritone B.C.Audio.mp3 */; };
-		BC8AB692295E3CCD00023D60 /* F# Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB678295E3CCD00023D60 /* F# Major2Baritone B.C.AudioSlowed.mp3 */; };
 		BC8AB693295E3CCD00023D60 /* Chromatic0Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB679295E3CCD00023D60 /* Chromatic0Baritone B.C.AudioSlowed.mp3 */; };
 		BC8AB694295E3CCD00023D60 /* Chromatic0Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB67A295E3CCD00023D60 /* Chromatic0Baritone B.C.Audio.mp3 */; };
 		BC8AB695295E3CCD00023D60 /* Ab Major2Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB67B295E3CCD00023D60 /* Ab Major2Baritone B.C.Audio.mp3 */; };
@@ -80,6 +79,8 @@
 /* Begin PBXFileReference section */
 		BC5046EB29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewerWithNoteMarkings.swift; sourceTree = "<group>"; };
 		BC53CD442957FDFD0008EC5F /* LearnScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnScale.swift; sourceTree = "<group>"; };
+		BC57A1812960F0940007ACAF /* F# Major2Baritone B.C.Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2Baritone B.C.Audio.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/F# Major2Baritone B.C.Audio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A1822960F0940007ACAF /* F# Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/F# Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB65F295CA4C700023D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BC8AB664295CB84300023D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8AB666295CB92700023D60 /* Scale Master.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Scale Master.entitlements"; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		BC8AB66A295E3CCC00023D60 /* Eb Major1Baritone B.C.Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Eb Major1Baritone B.C.Audio.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/Eb Major1Baritone B.C.Audio.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB66B295E3CCC00023D60 /* Ab Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Ab Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/Ab Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB66C295E3CCC00023D60 /* Bb Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bb Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/Bb Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
-		BC8AB66D295E3CCC00023D60 /* G Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/G Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB66E295E3CCD00023D60 /* D Major1Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "D Major1Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/D Major1Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB66F295E3CCD00023D60 /* C Major2Baritone B.C.Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "C Major2Baritone B.C.Audio.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/C Major2Baritone B.C.Audio.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB670295E3CCD00023D60 /* B Major2Baritone B.C.Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "B Major2Baritone B.C.Audio.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/B Major2Baritone B.C.Audio.mp3"; sourceTree = SOURCE_ROOT; };
@@ -97,8 +97,6 @@
 		BC8AB674295E3CCD00023D60 /* G Major2Baritone B.C.Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2Baritone B.C.Audio.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/G Major2Baritone B.C.Audio.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB675295E3CCD00023D60 /* Db Major1Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Db Major1Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/Db Major1Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB676295E3CCD00023D60 /* Eb Major1Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Eb Major1Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/Eb Major1Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
-		BC8AB677295E3CCD00023D60 /* F# Major2Baritone B.C.Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2Baritone B.C.Audio.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/F# Major2Baritone B.C.Audio.mp3"; sourceTree = SOURCE_ROOT; };
-		BC8AB678295E3CCD00023D60 /* F# Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/F# Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB679295E3CCD00023D60 /* Chromatic0Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Chromatic0Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/Chromatic0Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB67A295E3CCD00023D60 /* Chromatic0Baritone B.C.Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Chromatic0Baritone B.C.Audio.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/Chromatic0Baritone B.C.Audio.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB67B295E3CCD00023D60 /* Ab Major2Baritone B.C.Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Ab Major2Baritone B.C.Audio.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/Ab Major2Baritone B.C.Audio.mp3"; sourceTree = SOURCE_ROOT; };
@@ -187,10 +185,9 @@
 				BC8AB676295E3CCD00023D60 /* Eb Major1Baritone B.C.AudioSlowed.mp3 */,
 				BC8AB673295E3CCD00023D60 /* F Major2Baritone B.C.Audio.mp3 */,
 				BC8AB681295E3CCD00023D60 /* F Major2Baritone B.C.AudioSlowed.mp3 */,
-				BC8AB677295E3CCD00023D60 /* F# Major2Baritone B.C.Audio.mp3 */,
-				BC8AB678295E3CCD00023D60 /* F# Major2Baritone B.C.AudioSlowed.mp3 */,
 				BC8AB674295E3CCD00023D60 /* G Major2Baritone B.C.Audio.mp3 */,
-				BC8AB66D295E3CCC00023D60 /* G Major2Baritone B.C.AudioSlowed.mp3 */,
+				BC57A1812960F0940007ACAF /* F# Major2Baritone B.C.Audio.mp3 */,
+				BC57A1822960F0940007ACAF /* F# Major2Baritone B.C.AudioSlowed.mp3 */,
 			);
 			path = "Baritone B.C.";
 			sourceTree = "<group>";
@@ -365,18 +362,17 @@
 				BC8AB69C295E3CCD00023D60 /* D Major1Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB68C295E3CCD00023D60 /* E Major2Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB69B295E3CCD00023D60 /* F Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
-				BC8AB687295E3CCD00023D60 /* G Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BF72956606E006788EE /* F# Major2TubaAudioSlowed.mp3 in Resources */,
 				BC8AB695295E3CCD00023D60 /* Ab Major2Baritone B.C.Audio.mp3 in Resources */,
 				BCB11BF12956606E006788EE /* Eb Major1TubaAudioSlowed.mp3 in Resources */,
 				BC8AB698295E3CCD00023D60 /* A Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BF22956606E006788EE /* F# Major2TubaAudio.mp3 in Resources */,
 				BCB11BEC2956606E006788EE /* D Major1TubaAudioSlowed.mp3 in Resources */,
+				BC57A1832960F0940007ACAF /* F# Major2Baritone B.C.Audio.mp3 in Resources */,
 				BCB11BF62956606E006788EE /* E Major2TubaAudio.mp3 in Resources */,
 				BCB11BE22956606E006788EE /* Ab Major2TubaAudio.mp3 in Resources */,
 				BC8AB694295E3CCD00023D60 /* Chromatic0Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB689295E3CCD00023D60 /* C Major2Baritone B.C.Audio.mp3 in Resources */,
-				BC8AB691295E3CCD00023D60 /* F# Major2Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB68B295E3CCD00023D60 /* A Major2Baritone B.C.Audio.mp3 in Resources */,
 				BC99DDC2294E50AB00AB5AF0 /* Preview Assets.xcassets in Resources */,
 				BCB11BE52956606E006788EE /* D Major1TubaAudio.mp3 in Resources */,
@@ -384,6 +380,7 @@
 				BC8AB68D295E3CCD00023D60 /* F Major2Baritone B.C.Audio.mp3 in Resources */,
 				BCB11BEB2956606E006788EE /* Db Major1TubaAudioSlowed.mp3 in Resources */,
 				BC8AB684295E3CCD00023D60 /* Eb Major1Baritone B.C.Audio.mp3 in Resources */,
+				BC57A1842960F0940007ACAF /* F# Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BC8AB68E295E3CCD00023D60 /* G Major2Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB68F295E3CCD00023D60 /* Db Major1Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BE92956606E006788EE /* E Major2TubaAudioSlowed.mp3 in Resources */,
@@ -391,7 +388,6 @@
 				BCB11BE12956606E006788EE /* B Major2TubaAudio.mp3 in Resources */,
 				BC8AB699295E3CCD00023D60 /* C Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BE42956606E006788EE /* Bb Major2TubaAudioSlowed.mp3 in Resources */,
-				BC8AB692295E3CCD00023D60 /* F# Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BC8AB683295E3CCD00023D60 /* Db Major1Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB690295E3CCD00023D60 /* Eb Major1Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BC8AB697295E3CCD00023D60 /* B Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
