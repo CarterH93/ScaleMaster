@@ -160,7 +160,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC8AB668295E3CB700023D60 /* Baritone B.C. */ = {
+		BC8AB668295E3CB700023D60 /* Baritone B.C. AND Trombone */ = {
 			isa = PBXGroup;
 			children = (
 				BC8AB671295E3CCD00023D60 /* A Major2Baritone B.C.Audio.mp3 */,
@@ -189,7 +189,7 @@
 				BC57A1812960F0940007ACAF /* F# Major2Baritone B.C.Audio.mp3 */,
 				BC57A1822960F0940007ACAF /* F# Major2Baritone B.C.AudioSlowed.mp3 */,
 			);
-			path = "Baritone B.C.";
+			path = "Baritone B.C. AND Trombone";
 			sourceTree = "<group>";
 		};
 		BC99DDAD294E50AA00AB5AF0 = {
@@ -244,14 +244,14 @@
 		BCC19EA8294FBE16002F0A2C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				BC8AB668295E3CB700023D60 /* Baritone B.C. */,
-				BCC19EAF294FFD5A002F0A2C /* Tuba */,
+				BC8AB668295E3CB700023D60 /* Baritone B.C. AND Trombone */,
+				BCC19EAF294FFD5A002F0A2C /* Tuba AND Bass Trombone */,
 				BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		BCC19EAF294FFD5A002F0A2C /* Tuba */ = {
+		BCC19EAF294FFD5A002F0A2C /* Tuba AND Bass Trombone */ = {
 			isa = PBXGroup;
 			children = (
 				BCB11BDF2956606E006788EE /* A Major2TubaAudio.mp3 */,
@@ -281,7 +281,7 @@
 				BCB11BD32956606E006788EE /* G Major2TubaAudio.mp3 */,
 				BCB11BD62956606E006788EE /* G Major2TubaAudioSlowed.mp3 */,
 			);
-			path = Tuba;
+			path = "Tuba AND Bass Trombone";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
