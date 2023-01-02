@@ -35,6 +35,17 @@ let savePathForUsingSlowedAudio = getDocumentsDirectory().appendingPathComponent
 class AppInfoStorage: ObservableObject {
     
     
+    //Edit this to expand App
+    //Adding if statements will change audio played for instruments
+    func getAudio(scale: scale, howFast: Double) -> String {
+        if self.selectedInstrument == .BassTrombone || self.selectedInstrument == .Tuba {
+            return "\(scale.name)\(scale.octaves)TubaAudio\(howFast == 0.5 ? "" : "Slowed")"
+        } else {
+            return "\(scale.name)\(scale.octaves)Baritone B.C.Audio\(howFast == 0.5 ? "" : "Slowed")"
+        }
+    }
+    
+    
     var listOfScalesToPlay: [scale] {
         var tempStore = self.selectedScales
         tempStore.shuffle()
@@ -104,6 +115,9 @@ class AppInfoStorage: ObservableObject {
        
        for scale in AppInfoStorage.allScales {
            if scale.name == inputScale {
+               
+               //Edit this to expand App
+               //Changes the octaves that are available for certain instruments
                if scale.name == "Eb Major" || scale.name == "Db Major" || scale.name == "D Major" {
                    if instrument == .BassTrombone {
                        if scale.octaves < 2 {
