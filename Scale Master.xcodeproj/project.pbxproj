@@ -11,6 +11,32 @@
 		BC53CD452957FDFD0008EC5F /* LearnScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53CD442957FDFD0008EC5F /* LearnScale.swift */; };
 		BC57A1832960F0940007ACAF /* F# Major2Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A1812960F0940007ACAF /* F# Major2Baritone B.C.Audio.mp3 */; };
 		BC57A1842960F0940007ACAF /* F# Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A1822960F0940007ACAF /* F# Major2Baritone B.C.AudioSlowed.mp3 */; };
+		BC57A19F296542020007ACAF /* Bb Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A185296542020007ACAF /* Bb Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1A0296542020007ACAF /* Db Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A186296542020007ACAF /* Db Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1A1296542020007ACAF /* Chromatic0Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A187296542020007ACAF /* Chromatic0Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1A2296542020007ACAF /* Eb Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A188296542020007ACAF /* Eb Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1A3296542020007ACAF /* F# Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A189296542020007ACAF /* F# Major2Bass TromboneAudio.mp3 */; };
+		BC57A1A4296542020007ACAF /* Chromatic0Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A18A296542020007ACAF /* Chromatic0Bass TromboneAudio.mp3 */; };
+		BC57A1A5296542020007ACAF /* C Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A18B296542020007ACAF /* C Major2Bass TromboneAudio.mp3 */; };
+		BC57A1A6296542020007ACAF /* A Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A18C296542020007ACAF /* A Major2Bass TromboneAudio.mp3 */; };
+		BC57A1A7296542020007ACAF /* D Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A18D296542020007ACAF /* D Major2Bass TromboneAudio.mp3 */; };
+		BC57A1A8296542020007ACAF /* E Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A18E296542020007ACAF /* E Major2Bass TromboneAudio.mp3 */; };
+		BC57A1A9296542020007ACAF /* F Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A18F296542020007ACAF /* F Major2Bass TromboneAudio.mp3 */; };
+		BC57A1AA296542020007ACAF /* B Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A190296542020007ACAF /* B Major2Bass TromboneAudio.mp3 */; };
+		BC57A1AB296542020007ACAF /* Bb Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A191296542020007ACAF /* Bb Major2Bass TromboneAudio.mp3 */; };
+		BC57A1AC296542020007ACAF /* Ab Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A192296542020007ACAF /* Ab Major2Bass TromboneAudio.mp3 */; };
+		BC57A1AD296542020007ACAF /* Eb Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A193296542020007ACAF /* Eb Major2Bass TromboneAudio.mp3 */; };
+		BC57A1AE296542020007ACAF /* G Major2Bass TromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A194296542020007ACAF /* G Major2Bass TromboneAudio.mp3 */; };
+		BC57A1AF296542020007ACAF /* F# Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A195296542020007ACAF /* F# Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1B0296542020007ACAF /* Db Major2BassTromboneAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A196296542020007ACAF /* Db Major2BassTromboneAudio.mp3 */; };
+		BC57A1B1296542020007ACAF /* C Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A197296542020007ACAF /* C Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1B2296542020007ACAF /* A Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A198296542020007ACAF /* A Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1B3296542020007ACAF /* B Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A199296542020007ACAF /* B Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1B4296542020007ACAF /* D Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A19A296542020007ACAF /* D Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1B5296542020007ACAF /* E Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A19B296542020007ACAF /* E Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1B6296542020007ACAF /* F Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A19C296542020007ACAF /* F Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1B7296542020007ACAF /* G Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A19D296542020007ACAF /* G Major2Bass TromboneAudioSlowed.mp3 */; };
+		BC57A1B8296542020007ACAF /* Ab Major2Bass TromboneAudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC57A19E296542020007ACAF /* Ab Major2Bass TromboneAudioSlowed.mp3 */; };
 		BC8AB665295CB84300023D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB664295CB84300023D60 /* Assets.xcassets */; };
 		BC8AB683295E3CCD00023D60 /* Db Major1Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB669295E3CCC00023D60 /* Db Major1Baritone B.C.Audio.mp3 */; };
 		BC8AB684295E3CCD00023D60 /* Eb Major1Baritone B.C.Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC8AB66A295E3CCC00023D60 /* Eb Major1Baritone B.C.Audio.mp3 */; };
@@ -81,6 +107,32 @@
 		BC53CD442957FDFD0008EC5F /* LearnScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnScale.swift; sourceTree = "<group>"; };
 		BC57A1812960F0940007ACAF /* F# Major2Baritone B.C.Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2Baritone B.C.Audio.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/F# Major2Baritone B.C.Audio.mp3"; sourceTree = SOURCE_ROOT; };
 		BC57A1822960F0940007ACAF /* F# Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/F# Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A185296542020007ACAF /* Bb Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bb Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/Bb Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A186296542020007ACAF /* Db Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Db Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/Db Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A187296542020007ACAF /* Chromatic0Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Chromatic0Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/Chromatic0Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A188296542020007ACAF /* Eb Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Eb Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/Eb Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A189296542020007ACAF /* F# Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/F# Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A18A296542020007ACAF /* Chromatic0Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Chromatic0Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/Chromatic0Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A18B296542020007ACAF /* C Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "C Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/C Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A18C296542020007ACAF /* A Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/A Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A18D296542020007ACAF /* D Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "D Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/D Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A18E296542020007ACAF /* E Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "E Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/E Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A18F296542020007ACAF /* F Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/F Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A190296542020007ACAF /* B Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "B Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/B Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A191296542020007ACAF /* Bb Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bb Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/Bb Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A192296542020007ACAF /* Ab Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Ab Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/Ab Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A193296542020007ACAF /* Eb Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Eb Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/Eb Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A194296542020007ACAF /* G Major2Bass TromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2Bass TromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/G Major2Bass TromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A195296542020007ACAF /* F# Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F# Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/F# Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A196296542020007ACAF /* Db Major2BassTromboneAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Db Major2BassTromboneAudio.mp3"; path = "Scale Master/Sounds/Bass Trombone/Db Major2BassTromboneAudio.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A197296542020007ACAF /* C Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "C Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/C Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A198296542020007ACAF /* A Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/A Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A199296542020007ACAF /* B Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "B Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/B Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A19A296542020007ACAF /* D Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "D Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/D Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A19B296542020007ACAF /* E Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "E Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/E Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A19C296542020007ACAF /* F Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "F Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/F Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A19D296542020007ACAF /* G Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/G Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
+		BC57A19E296542020007ACAF /* Ab Major2Bass TromboneAudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Ab Major2Bass TromboneAudioSlowed.mp3"; path = "Scale Master/Sounds/Bass Trombone/Ab Major2Bass TromboneAudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 		BC8AB65F295CA4C700023D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BC8AB664295CB84300023D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8AB666295CB92700023D60 /* Scale Master.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Scale Master.entitlements"; sourceTree = "<group>"; };
@@ -160,6 +212,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC57A1B92965420E0007ACAF /* Bass Trombone */ = {
+			isa = PBXGroup;
+			children = (
+				BC57A18C296542020007ACAF /* A Major2Bass TromboneAudio.mp3 */,
+				BC57A198296542020007ACAF /* A Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A192296542020007ACAF /* Ab Major2Bass TromboneAudio.mp3 */,
+				BC57A19E296542020007ACAF /* Ab Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A190296542020007ACAF /* B Major2Bass TromboneAudio.mp3 */,
+				BC57A199296542020007ACAF /* B Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A191296542020007ACAF /* Bb Major2Bass TromboneAudio.mp3 */,
+				BC57A185296542020007ACAF /* Bb Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A18B296542020007ACAF /* C Major2Bass TromboneAudio.mp3 */,
+				BC57A197296542020007ACAF /* C Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A18A296542020007ACAF /* Chromatic0Bass TromboneAudio.mp3 */,
+				BC57A187296542020007ACAF /* Chromatic0Bass TromboneAudioSlowed.mp3 */,
+				BC57A18D296542020007ACAF /* D Major2Bass TromboneAudio.mp3 */,
+				BC57A19A296542020007ACAF /* D Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A186296542020007ACAF /* Db Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A196296542020007ACAF /* Db Major2BassTromboneAudio.mp3 */,
+				BC57A18E296542020007ACAF /* E Major2Bass TromboneAudio.mp3 */,
+				BC57A19B296542020007ACAF /* E Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A193296542020007ACAF /* Eb Major2Bass TromboneAudio.mp3 */,
+				BC57A188296542020007ACAF /* Eb Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A18F296542020007ACAF /* F Major2Bass TromboneAudio.mp3 */,
+				BC57A19C296542020007ACAF /* F Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A189296542020007ACAF /* F# Major2Bass TromboneAudio.mp3 */,
+				BC57A195296542020007ACAF /* F# Major2Bass TromboneAudioSlowed.mp3 */,
+				BC57A194296542020007ACAF /* G Major2Bass TromboneAudio.mp3 */,
+				BC57A19D296542020007ACAF /* G Major2Bass TromboneAudioSlowed.mp3 */,
+			);
+			path = "Bass Trombone";
+			sourceTree = "<group>";
+		};
 		BC8AB668295E3CB700023D60 /* Baritone B.C. AND Trombone */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +329,7 @@
 		BCC19EA8294FBE16002F0A2C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				BC57A1B92965420E0007ACAF /* Bass Trombone */,
 				BC8AB668295E3CB700023D60 /* Baritone B.C. AND Trombone */,
 				BCC19EAF294FFD5A002F0A2C /* Tuba AND Bass Trombone */,
 				BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */,
@@ -342,32 +428,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC57A1AC296542020007ACAF /* Ab Major2Bass TromboneAudio.mp3 in Resources */,
 				BCB11BED2956606E006788EE /* G Major2TubaAudio.mp3 in Resources */,
 				BCB11BE72956606E006788EE /* Chromatic0TubaAudio.mp3 in Resources */,
+				BC57A1B7296542020007ACAF /* G Major2Bass TromboneAudioSlowed.mp3 in Resources */,
 				BCB11BF42956606E006788EE /* B Major2TubaAudioSlowed.mp3 in Resources */,
 				BC8AB68A295E3CCD00023D60 /* B Major2Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB69A295E3CCD00023D60 /* E Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BE62956606E006788EE /* Db Major1TubaAudio.mp3 in Resources */,
 				BC8AB665295CB84300023D60 /* Assets.xcassets in Resources */,
 				BCB11BF02956606E006788EE /* G Major2TubaAudioSlowed.mp3 in Resources */,
+				BC57A1B3296542020007ACAF /* B Major2Bass TromboneAudioSlowed.mp3 in Resources */,
+				BC57A1B6296542020007ACAF /* F Major2Bass TromboneAudioSlowed.mp3 in Resources */,
 				BC8AB696295E3CCD00023D60 /* Bb Major2Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB685295E3CCD00023D60 /* Ab Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BF32956606E006788EE /* F Major2TubaAudio.mp3 in Resources */,
 				BCB11BF52956606E006788EE /* C Major2TubaAudio.mp3 in Resources */,
+				BC57A1AD296542020007ACAF /* Eb Major2Bass TromboneAudio.mp3 in Resources */,
 				BCB11BF92956606E006788EE /* A Major2TubaAudio.mp3 in Resources */,
+				BC57A1A9296542020007ACAF /* F Major2Bass TromboneAudio.mp3 in Resources */,
+				BC57A1A8296542020007ACAF /* E Major2Bass TromboneAudio.mp3 in Resources */,
 				BC8AB688295E3CCD00023D60 /* D Major1Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BE32956606E006788EE /* F Major2TubaAudioSlowed.mp3 in Resources */,
 				BCB11BEE2956606E006788EE /* Ab Major2TubaAudioSlowed.mp3 in Resources */,
+				BC57A1A3296542020007ACAF /* F# Major2Bass TromboneAudio.mp3 in Resources */,
 				BCB11BEF2956606E006788EE /* Eb Major1TubaAudio.mp3 in Resources */,
 				BC8AB69C295E3CCD00023D60 /* D Major1Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB68C295E3CCD00023D60 /* E Major2Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB69B295E3CCD00023D60 /* F Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BF72956606E006788EE /* F# Major2TubaAudioSlowed.mp3 in Resources */,
+				BC57A19F296542020007ACAF /* Bb Major2Bass TromboneAudioSlowed.mp3 in Resources */,
+				BC57A1B4296542020007ACAF /* D Major2Bass TromboneAudioSlowed.mp3 in Resources */,
 				BC8AB695295E3CCD00023D60 /* Ab Major2Baritone B.C.Audio.mp3 in Resources */,
+				BC57A1B8296542020007ACAF /* Ab Major2Bass TromboneAudioSlowed.mp3 in Resources */,
+				BC57A1A7296542020007ACAF /* D Major2Bass TromboneAudio.mp3 in Resources */,
+				BC57A1B2296542020007ACAF /* A Major2Bass TromboneAudioSlowed.mp3 in Resources */,
 				BCB11BF12956606E006788EE /* Eb Major1TubaAudioSlowed.mp3 in Resources */,
+				BC57A1B1296542020007ACAF /* C Major2Bass TromboneAudioSlowed.mp3 in Resources */,
+				BC57A1A6296542020007ACAF /* A Major2Bass TromboneAudio.mp3 in Resources */,
 				BC8AB698295E3CCD00023D60 /* A Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
+				BC57A1A4296542020007ACAF /* Chromatic0Bass TromboneAudio.mp3 in Resources */,
+				BC57A1AE296542020007ACAF /* G Major2Bass TromboneAudio.mp3 in Resources */,
 				BCB11BF22956606E006788EE /* F# Major2TubaAudio.mp3 in Resources */,
 				BCB11BEC2956606E006788EE /* D Major1TubaAudioSlowed.mp3 in Resources */,
+				BC57A1B5296542020007ACAF /* E Major2Bass TromboneAudioSlowed.mp3 in Resources */,
 				BC57A1832960F0940007ACAF /* F# Major2Baritone B.C.Audio.mp3 in Resources */,
 				BCB11BF62956606E006788EE /* E Major2TubaAudio.mp3 in Resources */,
 				BCB11BE22956606E006788EE /* Ab Major2TubaAudio.mp3 in Resources */,
@@ -378,20 +482,28 @@
 				BCB11BE52956606E006788EE /* D Major1TubaAudio.mp3 in Resources */,
 				BCB11BE02956606E006788EE /* Bb Major2TubaAudio.mp3 in Resources */,
 				BC8AB68D295E3CCD00023D60 /* F Major2Baritone B.C.Audio.mp3 in Resources */,
+				BC57A1B0296542020007ACAF /* Db Major2BassTromboneAudio.mp3 in Resources */,
 				BCB11BEB2956606E006788EE /* Db Major1TubaAudioSlowed.mp3 in Resources */,
+				BC57A1A2296542020007ACAF /* Eb Major2Bass TromboneAudioSlowed.mp3 in Resources */,
 				BC8AB684295E3CCD00023D60 /* Eb Major1Baritone B.C.Audio.mp3 in Resources */,
 				BC57A1842960F0940007ACAF /* F# Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BC8AB68E295E3CCD00023D60 /* G Major2Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB68F295E3CCD00023D60 /* Db Major1Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BE92956606E006788EE /* E Major2TubaAudioSlowed.mp3 in Resources */,
 				BCB11BF82956606E006788EE /* Chromatic0TubaAudioSlowed.mp3 in Resources */,
+				BC57A1A5296542020007ACAF /* C Major2Bass TromboneAudio.mp3 in Resources */,
 				BCB11BE12956606E006788EE /* B Major2TubaAudio.mp3 in Resources */,
+				BC57A1A1296542020007ACAF /* Chromatic0Bass TromboneAudioSlowed.mp3 in Resources */,
 				BC8AB699295E3CCD00023D60 /* C Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BE42956606E006788EE /* Bb Major2TubaAudioSlowed.mp3 in Resources */,
 				BC8AB683295E3CCD00023D60 /* Db Major1Baritone B.C.Audio.mp3 in Resources */,
 				BC8AB690295E3CCD00023D60 /* Eb Major1Baritone B.C.AudioSlowed.mp3 in Resources */,
+				BC57A1AB296542020007ACAF /* Bb Major2Bass TromboneAudio.mp3 in Resources */,
+				BC57A1AF296542020007ACAF /* F# Major2Bass TromboneAudioSlowed.mp3 in Resources */,
 				BC8AB697295E3CCD00023D60 /* B Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */,
+				BC57A1AA296542020007ACAF /* B Major2Bass TromboneAudio.mp3 in Resources */,
+				BC57A1A0296542020007ACAF /* Db Major2Bass TromboneAudioSlowed.mp3 in Resources */,
 				BCB11BE82956606E006788EE /* C Major2TubaAudioSlowed.mp3 in Resources */,
 				BC8AB686295E3CCD00023D60 /* Bb Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BCB11BEA2956606E006788EE /* A Major2TubaAudioSlowed.mp3 in Resources */,

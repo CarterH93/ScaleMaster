@@ -38,8 +38,10 @@ class AppInfoStorage: ObservableObject {
     //Edit this to expand App
     //Adding if statements will change audio played for instruments
     func getAudio(scale: scale, howFast: Double) -> String {
-        if self.selectedInstrument == .BassTrombone || self.selectedInstrument == .Tuba {
+        if self.selectedInstrument == .Tuba {
             return "\(scale.name)\(scale.octaves)TubaAudio\(howFast == 0.5 ? "" : "Slowed")"
+        } else if self.selectedInstrument == .BassTrombone {
+            return "\(scale.name)\(scale.octaves)Bass TromboneAudio\(howFast == 0.5 ? "" : "Slowed")"
         } else {
             return "\(scale.name)\(scale.octaves)Baritone B.C.Audio\(howFast == 0.5 ? "" : "Slowed")"
         }
