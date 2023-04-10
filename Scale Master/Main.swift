@@ -88,7 +88,7 @@ struct Main: View {
                         storage.previousScale = nil
                     } label: {
                         
-                        Text("Home 🏠")
+                        Text("Home")
                             .font(.largeTitle)
                             .foregroundColor(.secondary)
                             .padding(8)

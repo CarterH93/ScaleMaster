@@ -100,6 +100,7 @@
 		BCC19EA5294FA390002F0A2C /* Scale View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EA4294FA390002F0A2C /* Scale View.swift */; };
 		BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */; };
 		BCC19EB32950E7D3002F0A2C /* ScaleViewerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */; };
+		BCF5A0A029E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -199,6 +200,7 @@
 		BCC19EA4294FA390002F0A2C /* Scale View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scale View.swift"; sourceTree = "<group>"; };
 		BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Whoosh.m4a; sourceTree = "<group>"; };
 		BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewerDetailView.swift; sourceTree = "<group>"; };
+		BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/G Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,7 @@
 				BC8AB672295E3CCD00023D60 /* E Major2Baritone B.C.Audio.mp3 */,
 				BC8AB680295E3CCD00023D60 /* E Major2Baritone B.C.AudioSlowed.mp3 */,
 				BC8AB66A295E3CCC00023D60 /* Eb Major1Baritone B.C.Audio.mp3 */,
+				BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */,
 				BC8AB676295E3CCD00023D60 /* Eb Major1Baritone B.C.AudioSlowed.mp3 */,
 				BC8AB673295E3CCD00023D60 /* F Major2Baritone B.C.Audio.mp3 */,
 				BC8AB681295E3CCD00023D60 /* F Major2Baritone B.C.AudioSlowed.mp3 */,
@@ -428,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF5A0A029E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 in Resources */,
 				BC57A1AC296542020007ACAF /* Ab Major2Bass TromboneAudio.mp3 in Resources */,
 				BCB11BED2956606E006788EE /* G Major2TubaAudio.mp3 in Resources */,
 				BCB11BE72956606E006788EE /* Chromatic0TubaAudio.mp3 in Resources */,
