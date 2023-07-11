@@ -139,8 +139,7 @@ struct NoteLookup: View {
                             .foregroundColor(.purple)
                         
                         HStack {
-                            Rectangle()
-                                .foregroundColor(.pink)
+                            ScaleAndAccidentalSelector()
                             
                             Rectangle()
                                 .foregroundColor(.blue)

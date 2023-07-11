@@ -103,6 +103,7 @@
 		BCEECF042A5D0C31001C03F7 /* NoteLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF032A5D0C31001C03F7 /* NoteLookup.swift */; };
 		BCEECF072A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF062A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift */; };
 		BCEECF092A5D0D07001C03F7 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF082A5D0D07001C03F7 /* Logic.swift */; };
+		BCEECF0B2A5DC146001C03F7 /* ScaleAndAccidentalSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF0A2A5DC146001C03F7 /* ScaleAndAccidentalSelector.swift */; };
 		BCF5A0A029E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -206,6 +207,7 @@
 		BCEECF032A5D0C31001C03F7 /* NoteLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLookup.swift; sourceTree = "<group>"; };
 		BCEECF062A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scale ViewNoteLookup.swift"; sourceTree = "<group>"; };
 		BCEECF082A5D0D07001C03F7 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
+		BCEECF0A2A5DC146001C03F7 /* ScaleAndAccidentalSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAndAccidentalSelector.swift; sourceTree = "<group>"; };
 		BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/G Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -384,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				BCEECF032A5D0C31001C03F7 /* NoteLookup.swift */,
+				BCEECF0A2A5DC146001C03F7 /* ScaleAndAccidentalSelector.swift */,
 				BCEECF062A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift */,
 				BCEECF082A5D0D07001C03F7 /* Logic.swift */,
 			);
@@ -549,6 +552,7 @@
 				BC99DDBC294E50AA00AB5AF0 /* ContentView.swift in Sources */,
 				BCC19E77294EAE03002F0A2C /* InstrumentChooser.swift in Sources */,
 				BCC19E73294E93F4002F0A2C /* Main.swift in Sources */,
+				BCEECF0B2A5DC146001C03F7 /* ScaleAndAccidentalSelector.swift in Sources */,
 				BCC19EA3294F903A002F0A2C /* ScaleSelectionList.swift in Sources */,
 				BC5046EC29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift in Sources */,
 				BCEECF072A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift in Sources */,
