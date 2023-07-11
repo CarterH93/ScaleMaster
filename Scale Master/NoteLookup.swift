@@ -10,6 +10,9 @@ import CoreHaptics
 
 struct NoteLookup: View {
     
+    @EnvironmentObject var storage: AppInfoStorage
+    
+    
     @Environment(\.scenePhase) private var scenePhase
     
     //core haptics
@@ -50,6 +53,24 @@ struct NoteLookup: View {
     @State private var currentDragIncrement = 0.0
     let stepby: Double = 10
     
+    
+    @State private var instrumentType: InstrumentType
+    
+    init(selectedInstrument: instrument) {
+        
+        var type: InstrumentType
+        
+        
+        if selectedInstrument == .Tuba || selectedInstrument == .BaritoneBC {
+            type = .fourvalve
+        } else if selectedInstrument == .Trombone {
+            type = .trigger
+        } else {
+            type = .standard
+        }
+        
+        _instrumentType = State(initialValue: type)
+    }
     
     var body: some View {
         GeometryReader { geo in
@@ -166,15 +187,50 @@ struct NoteLookup: View {
                         .onTapGesture {
                             //Add play code here
                         }
-                    Rectangle()
-                        .foregroundColor(.blue)
-                        .frame(width: geo.size.width * 0.15 ,height: geo.size.width / 13)
-                        .padding(.leading)
-                    Rectangle()
-                        .foregroundColor(.blue)
-                        .frame(width: geo.size.width * 0.15 ,height: geo.size.width / 13)
-                        .padding(.leading)
-                        .padding(.trailing)
+                    
+                    Menu {
+                        Picker(storage.selectedInstrument.rawValue, selection: $storage.selectedInstrument) {
+                            ForEach(AppInfoStorage.instrumentSelections, id: \.self)  { instrument in
+                                Text(instrument.rawValue)
+                            }
+                        }
+                        
+                        
+                    } label: {
+                        Text(storage.selectedInstrument.rawValue)
+                            .font(.title2)
+                            .foregroundColor(.secondary)
+                            .padding(15)
+                            .background(.thinMaterial)
+                            .clipShape(Rectangle())
+                            .border(.black.opacity(0.5))
+                    }
+                    
+                    
+                    
+                    Menu {
+                        Picker(instrumentType.rawValue, selection: $instrumentType) {
+                            ForEach(InstrumentTypeChoices(selectedInstrument: storage.selectedInstrument), id: \.self)  { instrument in
+                                Text(instrument.rawValue)
+                            }
+                        }
+                        
+                        
+                    } label: {
+                        Text(instrumentType.rawValue)
+                            .font(.title2)
+                            .foregroundColor(.secondary)
+                            .padding(15)
+                            
+                            .background(.thinMaterial)
+                            .clipShape(Rectangle())
+                            .border(.black.opacity(0.5))
+                            .padding([.trailing, .leading])
+                    }
+                    
+                    
+                    
+                    
                 }
                 .padding(.bottom)
             }
@@ -190,6 +246,20 @@ struct NoteLookup: View {
                         }
                     }
             .preferredColorScheme(.light)
+            .onChange(of: storage.selectedInstrument) { selectedInstrument in
+                var type: InstrumentType
+                
+                
+                if selectedInstrument == .Tuba || selectedInstrument == .BaritoneBC {
+                    type = .fourvalve
+                } else if selectedInstrument == .Trombone {
+                    type = .trigger
+                } else {
+                    type = .standard
+                }
+                
+                instrumentType = type
+            }
         }
     }
 }
@@ -197,7 +267,8 @@ struct NoteLookup: View {
 struct NoteLookup_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            NoteLookup()
+            NoteLookup(selectedInstrument: .Tuba)
+                .environmentObject(AppInfoStorage())
         }
     }
 }

@@ -11,6 +11,23 @@ enum Accidental: String {
     case natural, sharp, flat, none
 }
 
+enum InstrumentType: String, CaseIterable {
+    case threevalve = "3 valve"
+    case fourvalve = "4 valve"
+    case standard = "standard"
+    case trigger = "trigger"
+}
+
+func InstrumentTypeChoices(selectedInstrument: instrument) -> [InstrumentType] {
+    if selectedInstrument == .Tuba || selectedInstrument == .BaritoneBC {
+        return [.threevalve, .fourvalve]
+    } else if selectedInstrument == .Trombone {
+        return [.standard,.trigger]
+    } else {
+        return [.standard]
+    }
+}
+
 enum MajorScale: String {
     case A, Ab, B, Bb, C, D, Db, E, Eb, F, FSharp, G
 }
