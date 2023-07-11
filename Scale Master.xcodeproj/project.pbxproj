@@ -100,6 +100,9 @@
 		BCC19EA5294FA390002F0A2C /* Scale View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EA4294FA390002F0A2C /* Scale View.swift */; };
 		BCC19EAC294FC6A5002F0A2C /* Whoosh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */; };
 		BCC19EB32950E7D3002F0A2C /* ScaleViewerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */; };
+		BCEECF042A5D0C31001C03F7 /* NoteLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF032A5D0C31001C03F7 /* NoteLookup.swift */; };
+		BCEECF072A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF062A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift */; };
+		BCEECF092A5D0D07001C03F7 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF082A5D0D07001C03F7 /* Logic.swift */; };
 		BCF5A0A029E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -200,6 +203,9 @@
 		BCC19EA4294FA390002F0A2C /* Scale View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scale View.swift"; sourceTree = "<group>"; };
 		BCC19EAB294FC6A5002F0A2C /* Whoosh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Whoosh.m4a; sourceTree = "<group>"; };
 		BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewerDetailView.swift; sourceTree = "<group>"; };
+		BCEECF032A5D0C31001C03F7 /* NoteLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLookup.swift; sourceTree = "<group>"; };
+		BCEECF062A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scale ViewNoteLookup.swift"; sourceTree = "<group>"; };
+		BCEECF082A5D0D07001C03F7 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 		BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/G Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -301,6 +307,7 @@
 			children = (
 				BC8AB65F295CA4C700023D60 /* Info.plist */,
 				BC99DDB9294E50AA00AB5AF0 /* ScaleMasterApp.swift */,
+				BCEECF052A5D0C36001C03F7 /* Note Lookup */,
 				BC99DDBB294E50AA00AB5AF0 /* ContentView.swift */,
 				BCC19E7D294EDA8F002F0A2C /* ScaleViewer.swift */,
 				BCC19EB22950E7D3002F0A2C /* ScaleViewerDetailView.swift */,
@@ -371,6 +378,16 @@
 				BCB11BD62956606E006788EE /* G Major2TubaAudioSlowed.mp3 */,
 			);
 			path = "Tuba AND Bass Trombone";
+			sourceTree = "<group>";
+		};
+		BCEECF052A5D0C36001C03F7 /* Note Lookup */ = {
+			isa = PBXGroup;
+			children = (
+				BCEECF032A5D0C31001C03F7 /* NoteLookup.swift */,
+				BCEECF062A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift */,
+				BCEECF082A5D0D07001C03F7 /* Logic.swift */,
+			);
+			name = "Note Lookup";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,6 +542,8 @@
 				BC53CD452957FDFD0008EC5F /* LearnScale.swift in Sources */,
 				BCC19E71294E93EC002F0A2C /* Settings.swift in Sources */,
 				BCC19EA5294FA390002F0A2C /* Scale View.swift in Sources */,
+				BCEECF042A5D0C31001C03F7 /* NoteLookup.swift in Sources */,
+				BCEECF092A5D0D07001C03F7 /* Logic.swift in Sources */,
 				BCB11BFD29578C83006788EE /* ScaleWithMarking.swift in Sources */,
 				BCC19E7E294EDA8F002F0A2C /* ScaleViewer.swift in Sources */,
 				BC99DDBC294E50AA00AB5AF0 /* ContentView.swift in Sources */,
@@ -532,6 +551,7 @@
 				BCC19E73294E93F4002F0A2C /* Main.swift in Sources */,
 				BCC19EA3294F903A002F0A2C /* ScaleSelectionList.swift in Sources */,
 				BC5046EC29561D83006330D6 /* ScaleViewerWithNoteMarkings.swift in Sources */,
+				BCEECF072A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift in Sources */,
 				BC99DDBA294E50AA00AB5AF0 /* ScaleMasterApp.swift in Sources */,
 				BCC19EB32950E7D3002F0A2C /* ScaleViewerDetailView.swift in Sources */,
 				BCC19E75294E98D7002F0A2C /* Storage.swift in Sources */,
