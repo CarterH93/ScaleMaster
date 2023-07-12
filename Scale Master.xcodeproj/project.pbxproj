@@ -104,6 +104,8 @@
 		BCEECF072A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF062A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift */; };
 		BCEECF092A5D0D07001C03F7 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF082A5D0D07001C03F7 /* Logic.swift */; };
 		BCEECF0B2A5DC146001C03F7 /* ScaleAndAccidentalSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF0A2A5DC146001C03F7 /* ScaleAndAccidentalSelector.swift */; };
+		BCEECF0D2A5F0313001C03F7 /* NoteNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF0C2A5F0313001C03F7 /* NoteNameView.swift */; };
+		BCEECF112A5F07FD001C03F7 /* NoteFingeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF102A5F07FD001C03F7 /* NoteFingeringView.swift */; };
 		BCF5A0A029E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -208,6 +210,8 @@
 		BCEECF062A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scale ViewNoteLookup.swift"; sourceTree = "<group>"; };
 		BCEECF082A5D0D07001C03F7 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 		BCEECF0A2A5DC146001C03F7 /* ScaleAndAccidentalSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAndAccidentalSelector.swift; sourceTree = "<group>"; };
+		BCEECF0C2A5F0313001C03F7 /* NoteNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteNameView.swift; sourceTree = "<group>"; };
+		BCEECF102A5F07FD001C03F7 /* NoteFingeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteFingeringView.swift; sourceTree = "<group>"; };
 		BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/G Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -386,6 +390,8 @@
 			isa = PBXGroup;
 			children = (
 				BCEECF032A5D0C31001C03F7 /* NoteLookup.swift */,
+				BCEECF102A5F07FD001C03F7 /* NoteFingeringView.swift */,
+				BCEECF0C2A5F0313001C03F7 /* NoteNameView.swift */,
 				BCEECF0A2A5DC146001C03F7 /* ScaleAndAccidentalSelector.swift */,
 				BCEECF062A5D0CE8001C03F7 /* Scale ViewNoteLookup.swift */,
 				BCEECF082A5D0D07001C03F7 /* Logic.swift */,
@@ -543,6 +549,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC53CD452957FDFD0008EC5F /* LearnScale.swift in Sources */,
+				BCEECF112A5F07FD001C03F7 /* NoteFingeringView.swift in Sources */,
+				BCEECF0D2A5F0313001C03F7 /* NoteNameView.swift in Sources */,
 				BCC19E71294E93EC002F0A2C /* Settings.swift in Sources */,
 				BCC19EA5294FA390002F0A2C /* Scale View.swift in Sources */,
 				BCEECF042A5D0C31001C03F7 /* NoteLookup.swift in Sources */,

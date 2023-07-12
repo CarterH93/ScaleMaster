@@ -143,8 +143,14 @@ struct NoteLookup: View {
                         HStack {
                             ScaleAndAccidentalSelector(accidental: $currentAccidental, selectedMajorScale: $selectedMajorScale)
                             
-                            Rectangle()
-                                .foregroundColor(.blue)
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 25)
+                                    .foregroundColor(.blue)
+                                
+                                NoteNameView(note: "G", octave: 2)
+                                    .padding()
+                                    .padding()
+                            }
                         }
                     }
                     .padding()
