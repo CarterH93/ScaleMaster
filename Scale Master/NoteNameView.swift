@@ -77,7 +77,7 @@ struct NoteNameView: View {
     
     var body: some View {
         GeometryReader { geo in
-            SubSuperScriptText(inputString: "\(note)_{\(octave)}", bodyFont: .system(size: geo.size.width), subScriptFont: .system(size: geo.size.width * 0.35), baseLine: 6.0)
+            SubSuperScriptText(inputString: "\(note)_{\(octave)}", bodyFont: .system(size: geo.size.width * 0.5), subScriptFont: .system(size: geo.size.width * 0.2), baseLine: 6.0)
                 .frame(width: geo.size.width, height: geo.size.width)
                 .frame(width: geo.size.width, height: geo.size.height)
             
@@ -87,6 +87,6 @@ struct NoteNameView: View {
 
 struct NoteNameView_Previews: PreviewProvider {
     static var previews: some View {
-        NoteNameView(note: "A", octave: 3)
+        NoteNameView(note: "Ab", octave: 3)
     }
 }

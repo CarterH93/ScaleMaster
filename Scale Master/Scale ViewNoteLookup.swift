@@ -199,6 +199,6 @@ struct Scale_ViewNoteLookup: View {
 
 struct Scale_ViewNoteLookup_Previews: PreviewProvider {
     static var previews: some View {
-        Scale_ViewNoteLookup(location: 3, accidental: .sharp, majorScale: listOfMajorScales.Db)
+        Scale_ViewNoteLookup(location: 15, accidental: .sharp, majorScale: listOfMajorScales.Db)
     }
 }

@@ -83,7 +83,7 @@ struct NoteFingeringView: View {
     
     @EnvironmentObject var storage: AppInfoStorage
     
-    var fingering: fingering
+    var fingering: fingering?
     
     var body: some View {
         ZStack {
@@ -91,12 +91,18 @@ struct NoteFingeringView: View {
             RoundedRectangle(cornerRadius: 25)
                 .foregroundColor(Color("UnpressedValve"))
             
-            if fingering.instrumentType == .standard || fingering.instrumentType == .trigger {
-                Slides(slide: fingering.slide)
-                
+            if let fingering = fingering {
+                if fingering.instrumentType == .standard || fingering.instrumentType == .trigger {
+                    Slides(slide: fingering.slide)
+                    
+                } else {
+                    Valves(fingering: fingering)
+                }
             } else {
-                Valves(fingering: fingering)
+                Text("No Fingering Available")
             }
+            
+            
         }
         
     }
@@ -104,7 +110,7 @@ struct NoteFingeringView: View {
 
 struct NoteFingeringView_Previews: PreviewProvider {
     static var previews: some View {
-        NoteFingeringView(fingering: fingering(instrumentType: .threevalve, valve1: true, valve3: true, valve4: true))
+        NoteFingeringView(fingering: fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve3: true, valve4: true))
             .environmentObject(AppInfoStorage())
     }
 }

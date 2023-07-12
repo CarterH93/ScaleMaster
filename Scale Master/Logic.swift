@@ -7,6 +7,151 @@
 
 import Foundation
 
+struct SingleNote {
+    let position: Int
+    let letter: NoteLetters
+    let octave: Int
+    let accidental: Accidental
+    let fingering: fingering?
+}
+
+func convertLetterAccidentalToSymbol(_ accidental: Accidental) -> String {
+    switch accidental {
+    case .natural:
+        return ""
+    case .sharp:
+        return "♯"
+    case .flat:
+        return "♭"
+    case .none:
+       return ""
+    }
+}
+
+struct Notes {
+    let position: Int
+    let letter: NoteLetters
+    let octave: Int
+    let accidentalVariant: [NoteAccidentalVariant]
+}
+
+struct NoteAccidentalVariant {
+    let accidental: Accidental
+    let fingeringVarient: [fingering?]
+}
+
+func calculateNoteInfo(position: Int, instrument: instrument, type: InstrumentType, MajorScale: MajorScale, accidental: Accidental) -> SingleNote {
+
+    
+    
+    
+    for note in PossibleNotes {
+        //Check to make sure we retrieve the right note information
+        if note.position == position {
+            //We now know the position matches
+            
+            for accidentalVar in note.accidentalVariant {
+                if accidentalVar.accidental == calculateFinalAccidental(letter: note.letter, userInputedAccidental: accidental, majorScale: MajorScale) {
+                    //We now know the accidental matches
+                    
+                    for fingeringvar in accidentalVar.fingeringVarient {
+                        if let fingeringvar = fingeringvar {
+                            if fingeringvar.instrument == instrument {
+                                if fingeringvar.instrumentType == type {
+                                    
+                                    //We know now instrument and instrument type match
+                                    
+                                    //return fingerings
+                                    
+                                    return SingleNote(position: position, letter: note.letter, octave: note.octave, accidental: accidentalVar.accidental, fingering: fingeringvar)
+                                    
+                                }
+                            }
+                        } else {
+                            
+                            //return NO fingerings
+                            
+                            return SingleNote(position: position, letter: note.letter, octave: note.octave, accidental: accidentalVar.accidental, fingering: nil)
+                            
+                        }
+                        
+                    }
+                }
+            }
+            
+           
+            
+            
+        }
+        
+        
+    }
+    
+    return SingleNote(position: 15, letter: NoteLetters.B, octave: 9, accidental: .sharp, fingering: fingering(instrument: instrument, instrumentType: type, valve3: true, valve4: false, slide: "error"))
+    
+    
+}
+
+let PossibleNotes: [Notes] = [
+   
+]
+
+func calculateFinalAccidental(letter: NoteLetters, userInputedAccidental: Accidental, majorScale: MajorScale) -> Accidental {
+    var isNoteEffectedByMajorScale = false
+    for note in findListOfMajorScalesAccidentalEffecting(majorScale).notes {
+        if letter == note {
+           isNoteEffectedByMajorScale = true
+        }
+    }
+    
+    if userInputedAccidental == .natural {
+        if isNoteEffectedByMajorScale == true {
+            return findListOfMajorScalesAccidentalEffecting(majorScale).accidental
+        }
+    }
+    
+    return userInputedAccidental
+}
+
+func findListOfMajorScalesAccidentalEffecting(_ majorScale: MajorScale) -> (accidental: Accidental, notes: [NoteLetters]) {
+    switch majorScale {
+    case .A:
+        return (.sharp, [.C, .F, .G])
+    case .Ab:
+        return (.flat, [.A, .B, .D, .E])
+    case .B:
+        return (.sharp, [.A, .C, .D, .F, .G])
+    case .Bb:
+        return (.flat, [.B, .E])
+    case .C:
+        return (.none, [])
+    case .D:
+        return(.sharp, [.C, .F])
+    case .Db:
+        return(.flat, [.G, .A, .B, .D, .E])
+    case .E:
+        return(.sharp, [.C, .D, .F, .G])
+    case .Eb:
+        return(.flat, [.A, .B, .E])
+    case .F:
+        return(.flat, [.B])
+    case .FSharp:
+        return(.sharp, [.A, .C, .D, .E, .F, .G])
+    case .G:
+        return(.sharp, [.F])
+    case .none:
+        return (.none, [])
+    }
+}
+
+
+
+
+enum NoteLetters: String {
+    case A, B, C, D, E, F, G
+}
+
+
 enum Accidental: String {
     case natural, sharp, flat, none
 }
@@ -19,6 +164,7 @@ enum InstrumentType: String, CaseIterable {
 }
 
 struct fingering {
+    var instrument: instrument
     var instrumentType: InstrumentType
     var valve1: Bool = false
     var valve2: Bool = false
@@ -70,16 +216,16 @@ func InstrumentTypeChoices(selectedInstrument: instrument) -> [InstrumentType] {
 
 enum MajorScale: String, CaseIterable {
     case A
-    case Ab
+    case Ab = "A♭"
     case B
-    case Bb
+    case Bb = "B♭"
     case C
     case D
-    case Db
+    case Db = "D♭"
     case E
-    case Eb
+    case Eb = "E♭"
     case F
-    case FSharp = "F#"
+    case FSharp = "F♯"
     case G
     case none
 }

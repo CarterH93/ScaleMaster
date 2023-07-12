@@ -46,7 +46,9 @@ struct NoteLookup: View {
         }
     }
     
-    
+    var Note: SingleNote {
+        return calculateNoteInfo(position: position, instrument: storage.selectedInstrument, type: instrumentType, MajorScale: selectedMajorScale, accidental: currentAccidental)
+    }
     
     @State private var dragOffSet: CGSize = .zero
     @State private var position = 15
@@ -79,7 +81,7 @@ struct NoteLookup: View {
             VStack {
                 //Main Stuff
                 HStack {
-                    Scale_ViewNoteLookup(location: position, accidental: currentAccidental, majorScale: convertMajorScaleToRender(selectedMajorScale))
+                    Scale_ViewNoteLookup(location: position, accidental: Note.accidental, majorScale: convertMajorScaleToRender(selectedMajorScale))
                         .padding([.top], 100)
                         .gesture(DragGesture()
                             .onChanged({ (value) in
@@ -137,7 +139,7 @@ struct NoteLookup: View {
                                 })
                         )
                     VStack {
-                        NoteFingeringView(fingering: fingering(instrumentType: .fourvalve, valve4: true))
+                        NoteFingeringView(fingering: Note.fingering)
                         
                         HStack {
                             ScaleAndAccidentalSelector(accidental: $currentAccidental, selectedMajorScale: $selectedMajorScale)
@@ -146,7 +148,7 @@ struct NoteLookup: View {
                                 RoundedRectangle(cornerRadius: 25)
                                     .foregroundColor(Color("UnpressedValve"))
                                 
-                                NoteNameView(note: "G", octave: 2)
+                                NoteNameView(note: "\(Note.letter)\(convertLetterAccidentalToSymbol(Note.accidental))", octave: Note.octave)
                                     .padding()
                                     .padding()
                             }
