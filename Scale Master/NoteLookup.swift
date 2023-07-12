@@ -51,10 +51,12 @@ struct NoteLookup: View {
     @State private var dragOffSet: CGSize = .zero
     @State private var position = 15
     @State private var currentDragIncrement = 0.0
+    @State private var currentAccidental: Accidental = .natural
     let stepby: Double = 10
     
     
     @State private var instrumentType: InstrumentType
+    @State private var selectedMajorScale: MajorScale = .none
     
     init(selectedInstrument: instrument) {
         
@@ -77,7 +79,7 @@ struct NoteLookup: View {
             VStack {
                 //Main Stuff
                 HStack {
-                    Scale_ViewNoteLookup(location: position, accidental: .sharp, majorScale: listOfMajorScales.Eb)
+                    Scale_ViewNoteLookup(location: position, accidental: currentAccidental, majorScale: listOfMajorScales.Eb)
                         .padding([.top], 100)
                         .gesture(DragGesture()
                             .onChanged({ (value) in
@@ -139,7 +141,7 @@ struct NoteLookup: View {
                             .foregroundColor(.purple)
                         
                         HStack {
-                            ScaleAndAccidentalSelector()
+                            ScaleAndAccidentalSelector(accidental: $currentAccidental, selectedMajorScale: $selectedMajorScale)
                             
                             Rectangle()
                                 .foregroundColor(.blue)

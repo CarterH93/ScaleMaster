@@ -18,6 +18,7 @@ enum InstrumentType: String, CaseIterable {
     case trigger = "trigger"
 }
 
+
 func InstrumentTypeChoices(selectedInstrument: instrument) -> [InstrumentType] {
     if selectedInstrument == .Tuba || selectedInstrument == .BaritoneBC {
         return [.threevalve, .fourvalve]
@@ -28,8 +29,20 @@ func InstrumentTypeChoices(selectedInstrument: instrument) -> [InstrumentType] {
     }
 }
 
-enum MajorScale: String {
-    case A, Ab, B, Bb, C, D, Db, E, Eb, F, FSharp, G
+enum MajorScale: String, CaseIterable {
+    case A
+    case Ab
+    case B
+    case Bb
+    case C
+    case D
+    case Db
+    case E
+    case Eb
+    case F
+    case FSharp = "F#"
+    case G
+    case none
 }
 
 struct MajorScaleRender {
