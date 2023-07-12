@@ -137,15 +137,14 @@ struct NoteLookup: View {
                                 })
                         )
                     VStack {
-                        Rectangle()
-                            .foregroundColor(.purple)
+                        NoteFingeringView(fingering: fingering(instrumentType: .fourvalve, valve4: true))
                         
                         HStack {
                             ScaleAndAccidentalSelector(accidental: $currentAccidental, selectedMajorScale: $selectedMajorScale)
                             
                             ZStack {
                                 RoundedRectangle(cornerRadius: 25)
-                                    .foregroundColor(.blue)
+                                    .foregroundColor(Color("UnpressedValve"))
                                 
                                 NoteNameView(note: "G", octave: 2)
                                     .padding()

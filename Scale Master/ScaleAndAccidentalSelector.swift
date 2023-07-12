@@ -18,7 +18,7 @@ struct ScaleAndAccidentalSelector: View {
                 VStack(spacing: 5) {
                     ZStack {
                         Rectangle()
-                            .foregroundColor(accidental == .sharp ? .blue : .gray)
+                            .foregroundColor(accidental == .sharp ? .blue : Color("UnpressedValve"))
                         Image("sharp")
                             .resizable()
                             .scaledToFit()
@@ -30,7 +30,7 @@ struct ScaleAndAccidentalSelector: View {
                     }
                     ZStack {
                         Rectangle()
-                            .foregroundColor(accidental == .natural ? .blue : .gray)
+                            .foregroundColor(accidental == .natural ? .blue : Color("UnpressedValve"))
                         Image("natural")
                             .resizable()
                             .scaledToFit()
@@ -42,7 +42,7 @@ struct ScaleAndAccidentalSelector: View {
                     }
                     ZStack {
                         Rectangle()
-                            .foregroundColor(accidental == .flat ? .blue : .gray)
+                            .foregroundColor(accidental == .flat ? .blue : Color("UnpressedValve"))
                         Image("flat")
                             .resizable()
                             .scaledToFit()
@@ -87,15 +87,15 @@ struct ScaleAndAccidentalSelector: View {
                     }
                     
                     .frame(width: geo.size.width / 1.6, height: geo.size.height)
-                    .background(.gray)
+                    .background(Color("UnpressedValve"))
                     
                     
                 }
                 
                 
             }
-            //.foregroundColor(.gray)
-            .background(.black)
+            
+            .background(.gray)
             .clipShape(RoundedRectangle(cornerRadius: 25))
         }
     }

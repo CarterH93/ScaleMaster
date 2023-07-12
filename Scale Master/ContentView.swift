@@ -77,6 +77,18 @@ struct ContentView: View {
                         
                         HStack {
                             
+                            NavigationLink(value: "NoteLookup") {
+                                
+                                Text("Note Lookup")
+                                    .font(.system(size: geo.size.height > geo.size.width ? geo.size.width * 0.07: geo.size.height * 0.07))
+                                    .foregroundColor(.secondary)
+                                    .padding(8)
+                                    .background(.thinMaterial)
+                                    .clipShape(Rectangle())
+                                    .border(.black.opacity(0.5))
+                                
+                                
+                            }
                             
                             NavigationLink(value: "ScaleViewer") {
                                 
@@ -90,6 +102,9 @@ struct ContentView: View {
                                 
                                 
                             }
+                            
+                            
+                            
                             
                             NavigationLink(value: "settings") {
                                 
@@ -136,6 +151,8 @@ struct ContentView: View {
                       
                 } else if selectedView == "ScaleViewer" {
                     ScaleViewer()
+                } else if selectedView == "NoteLookup" {
+                    NoteLookup(selectedInstrument: storage.selectedInstrument)
                 }
             }
             .navigationDestination(for: scale.self) { scales in

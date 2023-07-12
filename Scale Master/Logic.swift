@@ -18,6 +18,15 @@ enum InstrumentType: String, CaseIterable {
     case trigger = "trigger"
 }
 
+struct fingering {
+    var instrumentType: InstrumentType
+    var valve1: Bool = false
+    var valve2: Bool = false
+    var valve3: Bool = false
+    var valve4: Bool = false
+    var slide: String = "-1"
+}
+
 func convertMajorScaleToRender(_ majorScale: MajorScale) -> MajorScaleRender {
     switch majorScale {
     case .A:
@@ -89,6 +98,8 @@ struct MajorScaleSpot {
     let locationY: Double
     let accidental: Accidental
 }
+
+
 
 
 struct listOfMajorScales {
