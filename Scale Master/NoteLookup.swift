@@ -79,7 +79,7 @@ struct NoteLookup: View {
             VStack {
                 //Main Stuff
                 HStack {
-                    Scale_ViewNoteLookup(location: position, accidental: currentAccidental, majorScale: listOfMajorScales.Eb)
+                    Scale_ViewNoteLookup(location: position, accidental: currentAccidental, majorScale: convertMajorScaleToRender(selectedMajorScale))
                         .padding([.top], 100)
                         .gesture(DragGesture()
                             .onChanged({ (value) in

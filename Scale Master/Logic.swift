@@ -18,6 +18,36 @@ enum InstrumentType: String, CaseIterable {
     case trigger = "trigger"
 }
 
+func convertMajorScaleToRender(_ majorScale: MajorScale) -> MajorScaleRender {
+    switch majorScale {
+    case .A:
+        return listOfMajorScales.A
+    case .Ab:
+        return listOfMajorScales.Ab
+    case .B:
+        return listOfMajorScales.B
+    case .Bb:
+        return listOfMajorScales.Bb
+    case .C:
+        return listOfMajorScales.C
+    case .D:
+        return listOfMajorScales.D
+    case .Db:
+        return listOfMajorScales.Db
+    case .E:
+        return listOfMajorScales.E
+    case .Eb:
+        return listOfMajorScales.Eb
+    case .F:
+        return listOfMajorScales.F
+    case .FSharp:
+        return listOfMajorScales.FSharp
+    case .G:
+        return listOfMajorScales.G
+    case .none:
+        return listOfMajorScales.C
+    }
+}
 
 func InstrumentTypeChoices(selectedInstrument: instrument) -> [InstrumentType] {
     if selectedInstrument == .Tuba || selectedInstrument == .BaritoneBC {

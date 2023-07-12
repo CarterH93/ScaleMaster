@@ -18,6 +18,7 @@ struct ScaleAndAccidentalSelector: View {
                 VStack(spacing: 5) {
                     ZStack {
                         Rectangle()
+                            .foregroundColor(accidental == .sharp ? .blue : .gray)
                         Image("sharp")
                             .resizable()
                             .scaledToFit()
@@ -29,6 +30,7 @@ struct ScaleAndAccidentalSelector: View {
                     }
                     ZStack {
                         Rectangle()
+                            .foregroundColor(accidental == .natural ? .blue : .gray)
                         Image("natural")
                             .resizable()
                             .scaledToFit()
@@ -40,6 +42,7 @@ struct ScaleAndAccidentalSelector: View {
                     }
                     ZStack {
                         Rectangle()
+                            .foregroundColor(accidental == .flat ? .blue : .gray)
                         Image("flat")
                             .resizable()
                             .scaledToFit()
@@ -91,7 +94,7 @@ struct ScaleAndAccidentalSelector: View {
                 
                 
             }
-            .foregroundColor(.gray)
+            //.foregroundColor(.gray)
             .background(.black)
             .clipShape(RoundedRectangle(cornerRadius: 25))
         }
