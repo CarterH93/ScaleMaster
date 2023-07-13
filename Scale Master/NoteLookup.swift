@@ -16,7 +16,7 @@ struct NoteLookup: View {
     @State private var noteAudio: AVAudioPlayer?
     @State private var play = false
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-    
+    @State private var timerCount = 0.0
     
     @Environment(\.scenePhase) private var scenePhase
     
@@ -204,10 +204,11 @@ struct NoteLookup: View {
                             } else {
                                 play = true
                                 do {
-                                    let path = Bundle.main.path(forResource: "\(Note.letter)\(Note.accidental)\(Note.octave)", ofType: "mp3")
+                                    let path = Bundle.main.path(forResource: "All Note Sounds", ofType: "mp3")
                                     if let path = path {
                                         let url = URL(fileURLWithPath: path)
                                         noteAudio = try AVAudioPlayer(contentsOf: url)
+                                        noteAudio?.currentTime = figureOutAudioPos(position: Note.position, accidental: Note.accidental)
                                         noteAudio?.play()
                                     } else {
                                         
@@ -268,7 +269,12 @@ struct NoteLookup: View {
             .onReceive(timer) { time in
                 if noteAudio?.isPlaying == true {
                     play = true
+                    timerCount += 0.1
+                    if timerCount > 1.4 {
+                        noteAudio?.stop()
+                    }
                 } else {
+                    timerCount = 0.0
                     play = false
                 }
             }

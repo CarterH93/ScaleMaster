@@ -107,6 +107,7 @@
 		BCEECF0D2A5F0313001C03F7 /* NoteNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF0C2A5F0313001C03F7 /* NoteNameView.swift */; };
 		BCEECF112A5F07FD001C03F7 /* NoteFingeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF102A5F07FD001C03F7 /* NoteFingeringView.swift */; };
 		BCEECF132A5F8615001C03F7 /* PossibleNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEECF122A5F8615001C03F7 /* PossibleNotes.swift */; };
+		BCEECF182A605A27001C03F7 /* All Note Sounds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCEECF172A605A26001C03F7 /* All Note Sounds.mp3 */; };
 		BCF5A0A029E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -214,6 +215,7 @@
 		BCEECF0C2A5F0313001C03F7 /* NoteNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteNameView.swift; sourceTree = "<group>"; };
 		BCEECF102A5F07FD001C03F7 /* NoteFingeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteFingeringView.swift; sourceTree = "<group>"; };
 		BCEECF122A5F8615001C03F7 /* PossibleNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleNotes.swift; sourceTree = "<group>"; };
+		BCEECF172A605A26001C03F7 /* All Note Sounds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "All Note Sounds.mp3"; sourceTree = "<group>"; };
 		BCF5A09F29E381150087E6AB /* G Major2Baritone B.C.AudioSlowed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "G Major2Baritone B.C.AudioSlowed.mp3"; path = "Photos and audio editing/Updated Sounds/Baritone Sounds/Real Files/G Major2Baritone B.C.AudioSlowed.mp3"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -406,6 +408,7 @@
 		BCEECF142A5FA4D4001C03F7 /* Note Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				BCEECF172A605A26001C03F7 /* All Note Sounds.mp3 */,
 			);
 			path = "Note Sounds";
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				BC57A1AC296542020007ACAF /* Ab Major2Bass TromboneAudio.mp3 in Resources */,
 				BCB11BED2956606E006788EE /* G Major2TubaAudio.mp3 in Resources */,
 				BCB11BE72956606E006788EE /* Chromatic0TubaAudio.mp3 in Resources */,
+				BCEECF182A605A27001C03F7 /* All Note Sounds.mp3 in Resources */,
 				BC57A1B7296542020007ACAF /* G Major2Bass TromboneAudioSlowed.mp3 in Resources */,
 				BCB11BF42956606E006788EE /* B Major2TubaAudioSlowed.mp3 in Resources */,
 				BC8AB68A295E3CCD00023D60 /* B Major2Baritone B.C.Audio.mp3 in Resources */,

@@ -7,6 +7,23 @@
 
 import Foundation
 
+func figureOutAudioPos(position: Int, accidental: Accidental) -> Double {
+    switch accidental {
+    case .natural, .none:
+        let redonePosition = position
+        
+        return Double(redonePosition) * 1.5
+    case .sharp:
+        let redonePosition = position + 1
+        
+        return Double(redonePosition) * 1.5
+    case .flat:
+        let redonePosition = position - 1
+        
+        return Double(redonePosition) * 1.5
+    }
+}
+
 struct SingleNote {
     let position: Int
     let letter: NoteLetters
@@ -238,7 +255,6 @@ struct MajorScaleSpot {
     let locationY: Double
     let accidental: Accidental
 }
-
 
 
 
