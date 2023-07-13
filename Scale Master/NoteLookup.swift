@@ -204,7 +204,7 @@ struct NoteLookup: View {
                             } else {
                                 play = true
                                 do {
-                                    let path = Bundle.main.path(forResource: "\(Note.letter)\(Note.octave)", ofType: "mp3")
+                                    let path = Bundle.main.path(forResource: "\(Note.letter)\(Note.accidental)\(Note.octave)", ofType: "mp3")
                                     if let path = path {
                                         let url = URL(fileURLWithPath: path)
                                         noteAudio = try AVAudioPlayer(contentsOf: url)
