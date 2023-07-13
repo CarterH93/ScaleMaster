@@ -67,15 +67,11 @@ func calculateNoteInfo(position: Int, instrument: instrument, type: InstrumentTy
                                     
                                 }
                             }
-                        } else {
-                            
-                            //return NO fingerings
-                            
-                            return SingleNote(position: position, letter: note.letter, octave: note.octave, accidental: accidentalVar.accidental, fingering: nil)
-                            
                         }
                         
                     }
+                    //return NO fingerings
+                    return SingleNote(position: position, letter: note.letter, octave: note.octave, accidental: accidentalVar.accidental, fingering: nil)
                 }
             }
             
@@ -92,9 +88,7 @@ func calculateNoteInfo(position: Int, instrument: instrument, type: InstrumentTy
     
 }
 
-let PossibleNotes: [Notes] = [
-   
-]
+
 
 func calculateFinalAccidental(letter: NoteLetters, userInputedAccidental: Accidental, majorScale: MajorScale) -> Accidental {
     var isNoteEffectedByMajorScale = false

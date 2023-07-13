@@ -99,7 +99,13 @@ struct NoteFingeringView: View {
                     Valves(fingering: fingering)
                 }
             } else {
-                Text("No Fingering Available")
+                GeometryReader { geo in
+                    Text("No Fingering Available")
+                        .font(.system(size: geo.size.width * 0.1))
+                        .frame(width: geo.size.width, height: geo.size.width)
+                        .frame(width: geo.size.width, height: geo.size.height)
+                }
+                
             }
             
             
@@ -110,7 +116,7 @@ struct NoteFingeringView: View {
 
 struct NoteFingeringView_Previews: PreviewProvider {
     static var previews: some View {
-        NoteFingeringView(fingering: fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve3: true, valve4: true))
+        NoteFingeringView()
             .environmentObject(AppInfoStorage())
     }
 }
