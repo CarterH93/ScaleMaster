@@ -391,6 +391,7 @@
 		BCEECF052A5D0C36001C03F7 /* Note Lookup */ = {
 			isa = PBXGroup;
 			children = (
+				BCEECF142A5FA4D4001C03F7 /* Note Sounds */,
 				BCEECF032A5D0C31001C03F7 /* NoteLookup.swift */,
 				BCEECF102A5F07FD001C03F7 /* NoteFingeringView.swift */,
 				BCEECF0C2A5F0313001C03F7 /* NoteNameView.swift */,
@@ -400,6 +401,13 @@
 				BCEECF122A5F8615001C03F7 /* PossibleNotes.swift */,
 			);
 			name = "Note Lookup";
+			sourceTree = "<group>";
+		};
+		BCEECF142A5FA4D4001C03F7 /* Note Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Note Sounds";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

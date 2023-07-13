@@ -7,10 +7,15 @@
 
 import SwiftUI
 import CoreHaptics
+import AVFoundation
 
 struct NoteLookup: View {
     
     @EnvironmentObject var storage: AppInfoStorage
+    
+    @State private var noteAudio: AVAudioPlayer?
+    @State private var play = false
+    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     
     @Environment(\.scenePhase) private var scenePhase
@@ -185,7 +190,7 @@ struct NoteLookup: View {
                             }
                         }
                     Spacer()
-                    Image(systemName: "play.circle.fill")
+                    Image(systemName: play == true ? "pause.circle.fill" : "play.circle.fill")
                         .resizable()
                         .scaledToFit()
                         .foregroundColor(.blue)
@@ -193,7 +198,25 @@ struct NoteLookup: View {
                         .padding(.leading)
                         .accessibilityAddTraits(.isButton)
                         .onTapGesture {
-                            //Add play code here
+                            if noteAudio?.isPlaying == true {
+                                play = false
+                                noteAudio?.stop()
+                            } else {
+                                play = true
+                                do {
+                                    let path = Bundle.main.path(forResource: "\(Note.letter)\(Note.octave)", ofType: "mp3")
+                                    if let path = path {
+                                        let url = URL(fileURLWithPath: path)
+                                        noteAudio = try AVAudioPlayer(contentsOf: url)
+                                        noteAudio?.play()
+                                    } else {
+                                        
+                                    }
+                                } catch {
+                                    // couldn't load file :(
+                                }
+                            }
+                                
                         }
                     
                     Menu {
@@ -241,6 +264,13 @@ struct NoteLookup: View {
                     
                 }
                 .padding(.bottom)
+            }
+            .onReceive(timer) { time in
+                if noteAudio?.isPlaying == true {
+                    play = true
+                } else {
+                    play = false
+                }
             }
             .onAppear(){
                         prepareHaptics()
