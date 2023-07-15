@@ -83,7 +83,7 @@ struct ContentView: View {
                                     .font(.system(size: geo.size.height > geo.size.width ? geo.size.width * 0.07: geo.size.height * 0.07))
                                     .foregroundColor(.secondary)
                                     .padding(8)
-                                    .background(.thinMaterial)
+                                    .background(.green.opacity(0.3))
                                     .clipShape(Rectangle())
                                     .border(.black.opacity(0.5))
                                 
