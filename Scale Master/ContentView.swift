@@ -57,6 +57,10 @@ struct ContentView: View {
                                     if let path = path {
                                         let url = URL(fileURLWithPath: path)
                                         scaleAudio = try AVAudioPlayer(contentsOf: url)
+                                        try AVAudioSession.sharedInstance().setCategory(
+                                            AVAudioSession.Category.playback,
+                                            options: AVAudioSession.CategoryOptions.duckOthers
+                                        )
                                         scaleAudio?.play()
                                     } else {
                                         

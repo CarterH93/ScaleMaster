@@ -209,6 +209,11 @@ struct NoteLookup: View {
                                         let url = URL(fileURLWithPath: path)
                                         noteAudio = try AVAudioPlayer(contentsOf: url)
                                         noteAudio?.currentTime = figureOutAudioPos(position: Note.position, accidental: Note.accidental, octave: Note.octave, note: Note.letter)
+                                        
+                                        try AVAudioSession.sharedInstance().setCategory(
+                                            AVAudioSession.Category.playback,
+                                            options: AVAudioSession.CategoryOptions.duckOthers
+                                        )
                                         noteAudio?.play()
                                     } else {
                                         
