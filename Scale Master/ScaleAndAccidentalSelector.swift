@@ -18,7 +18,7 @@ struct ScaleAndAccidentalSelector: View {
                 VStack(spacing: 5) {
                     ZStack {
                         Rectangle()
-                            .foregroundColor(accidental == .sharp ? .blue : Color("UnpressedValve"))
+                            .foregroundColor(accidental == .sharp && selectedMajorScale == .none ? .blue : Color("UnpressedValve"))
                         Image("sharp")
                             .resizable()
                             .scaledToFit()
@@ -30,7 +30,7 @@ struct ScaleAndAccidentalSelector: View {
                     }
                     ZStack {
                         Rectangle()
-                            .foregroundColor(accidental == .natural ? .blue : Color("UnpressedValve"))
+                            .foregroundColor(accidental == .natural && selectedMajorScale == .none ? .blue : Color("UnpressedValve"))
                         Image("natural")
                             .resizable()
                             .scaledToFit()
@@ -42,7 +42,7 @@ struct ScaleAndAccidentalSelector: View {
                     }
                     ZStack {
                         Rectangle()
-                            .foregroundColor(accidental == .flat ? .blue : Color("UnpressedValve"))
+                            .foregroundColor(accidental == .flat && selectedMajorScale == .none ? .blue : Color("UnpressedValve"))
                         Image("flat")
                             .resizable()
                             .scaledToFit()
@@ -53,6 +53,8 @@ struct ScaleAndAccidentalSelector: View {
                         accidental = .flat
                     }
                 }
+                .disabled(selectedMajorScale == .none ? false : true)
+                .opacity(selectedMajorScale == .none ? 1 : 0.5)
                 //Major Scale Selector
                 
                 

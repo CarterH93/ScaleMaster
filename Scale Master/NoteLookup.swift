@@ -86,6 +86,7 @@ struct NoteLookup: View {
             VStack {
                 //Main Stuff
                 HStack {
+                    Text("\(position)    \(Note.position)")
                     Scale_ViewNoteLookup(location: position, accidental: Note.accidental, majorScale: convertMajorScaleToRender(selectedMajorScale))
                         .padding([.top], 100)
                         .gesture(DragGesture()
@@ -208,7 +209,7 @@ struct NoteLookup: View {
                                     if let path = path {
                                         let url = URL(fileURLWithPath: path)
                                         noteAudio = try AVAudioPlayer(contentsOf: url)
-                                        noteAudio?.currentTime = figureOutAudioPos(position: Note.position, accidental: Note.accidental)
+                                        noteAudio?.currentTime = figureOutAudioPos(position: Note.position, accidental: Note.accidental, octave: Note.octave, note: Note.letter)
                                         noteAudio?.play()
                                     } else {
                                         

@@ -116,7 +116,7 @@ let PossibleNotes: [Notes] = [
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
-            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true),
+            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true),
         ]),
         
         
@@ -132,7 +132,7 @@ let PossibleNotes: [Notes] = [
                 //flat
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
-            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
+            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true),
         ]),
            
@@ -242,8 +242,11 @@ let PossibleNotes: [Notes] = [
         
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
-            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
-            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true),
+            
+            //Same as normal C fingering
+            
+            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
+            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true),
         ]),
         
         
@@ -255,10 +258,13 @@ let PossibleNotes: [Notes] = [
     Notes(position: 9, letter: .C, octave: 2, accidentalVariant: [
         //Accidentals (flat, natural, sharp)
                 //flat
+        
+        //Same as normal B fingering
+        
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
-            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true),
         ]),
            
             //natural
@@ -334,8 +340,11 @@ let PossibleNotes: [Notes] = [
         
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
-            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
-            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            
+            //same as normal F fingering
+            
+            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
         ]),
         
         
@@ -347,6 +356,10 @@ let PossibleNotes: [Notes] = [
     Notes(position: 12, letter: .F, octave: 2, accidentalVariant: [
         //Accidentals (flat, natural, sharp)
                 //flat
+        
+        //same as normal E fingering
+        
+        
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
@@ -454,10 +467,12 @@ let PossibleNotes: [Notes] = [
         
         //sharp
         
+        //Same as normal C fingering
+        
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
-            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
-            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false),
+            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
         ]),
         
         
@@ -470,6 +485,9 @@ let PossibleNotes: [Notes] = [
     Notes(position: 16, letter: .C, octave: 3, accidentalVariant: [
         //Accidentals (flat, natural, sharp)
                 //flat
+        
+        //same as normal B fingering
+        
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
@@ -548,8 +566,11 @@ let PossibleNotes: [Notes] = [
         
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
-            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
-            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            
+            //Same as normal F fingering
+            
+            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
         ]),
         
         
@@ -562,6 +583,9 @@ let PossibleNotes: [Notes] = [
     Notes(position: 19, letter: .F, octave: 3, accidentalVariant: [
         //Accidentals (flat, natural, sharp)
                 //flat
+        
+        //same as normal E fingering
+        
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
@@ -670,10 +694,12 @@ let PossibleNotes: [Notes] = [
         
         //sharp
         
+        //Same as normal C fingering
+        
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
-            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
-            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
         ]),
         
         
@@ -687,6 +713,10 @@ let PossibleNotes: [Notes] = [
     Notes(position: 23, letter: .C, octave: 4, accidentalVariant: [
         //Accidentals (flat, natural, sharp)
                 //flat
+        
+        //same as normal B fingering
+        
+        
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
@@ -764,6 +794,8 @@ let PossibleNotes: [Notes] = [
         
         //sharp
         
+        //same as normal F fingering
+        
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
@@ -780,10 +812,13 @@ let PossibleNotes: [Notes] = [
     Notes(position: 26, letter: .F, octave: 4, accidentalVariant: [
         //Accidentals (flat, natural, sharp)
                 //flat
+        
+        //same as normal E fingering
+        
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
-            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
-            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
+            fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
         ]),
            
             //natural
@@ -889,6 +924,9 @@ let PossibleNotes: [Notes] = [
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             
+            //same as normal C fingering
+            
+            
         ]),
         
         
@@ -901,6 +939,9 @@ let PossibleNotes: [Notes] = [
     Notes(position: 30, letter: .C, octave: 5, accidentalVariant: [
         //Accidentals (flat, natural, sharp)
                 //flat
+        
+        //same as normal B fingering
+        
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             
@@ -972,6 +1013,9 @@ let PossibleNotes: [Notes] = [
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             
+            //same as normal F fingering
+            
+            
         ]),
         
         
@@ -984,6 +1028,9 @@ let PossibleNotes: [Notes] = [
     Notes(position: 33, letter: .F, octave: 5, accidentalVariant: [
         //Accidentals (flat, natural, sharp)
                 //flat
+        
+        //same as normal E fingering
+        
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             

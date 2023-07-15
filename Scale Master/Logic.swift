@@ -7,21 +7,95 @@
 
 import Foundation
 
-func figureOutAudioPos(position: Int, accidental: Accidental) -> Double {
+func figureOutAudioPos(position: Int, accidental: Accidental, octave: Int, note: NoteLetters) -> Double {
+    
+    var startingPoint: Int = 0
+    
+    
+    if position > 7 {
+        //Adds previous notes
+        startingPoint += 7 * 2
+        
+        
+        //Take away 2 for B-C and E-F weird change
+        startingPoint -= 2
+        
+    }
+    
+    
+    if position > 14 {
+        //Adds previous notes
+        startingPoint += 7 * 2
+        
+        
+        //Take away 2 for B-C and E-F weird change
+        startingPoint -= 2
+        
+    }
+   
+    if position > 21 {
+        //Adds previous notes
+        startingPoint += 7 * 2
+        
+        
+        //Take away 2 for B-C and E-F weird change
+        startingPoint -= 2
+        
+    }
+    
+    
+    if position > 28 {
+        //Adds previous notes
+        startingPoint += 7 * 2
+        
+        
+        //Take away 2 for B-C and E-F weird change
+        startingPoint -= 2
+        
+    }
+    
+    let noteOrder: [NoteLetters] = [.B, .C, .D, .E, .F, .G, .A]
+    
+    var notecount = 0
+    for note1 in noteOrder {
+        notecount += 1
+        if note1 == note {
+            startingPoint += notecount * 2
+            
+            if notecount > 1 {
+                startingPoint -= 1
+            }
+            
+            if notecount > 4 {
+                startingPoint -= 1
+            }
+            
+            
+        }
+        
+        
+        
+    }
+    
+    startingPoint -= 1
+   
+   
     switch accidental {
     case .natural, .none:
-        let redonePosition = position
         
-        return Double(redonePosition) * 1.5
+        
+        return (Double(startingPoint) * 1.5)
     case .sharp:
-        let redonePosition = position + 1
         
-        return Double(redonePosition) * 1.5
+        
+        return (Double(startingPoint) * 1.5) + 1.5
     case .flat:
-        let redonePosition = position - 1
         
-        return Double(redonePosition) * 1.5
+        
+        return (Double(startingPoint) * 1.5) - 1.5
     }
+    
+    
 }
 
 struct SingleNote {
@@ -115,13 +189,15 @@ func calculateFinalAccidental(letter: NoteLetters, userInputedAccidental: Accide
         }
     }
     
-    if userInputedAccidental == .natural {
+    if majorScale != .none {
         if isNoteEffectedByMajorScale == true {
             return findListOfMajorScalesAccidentalEffecting(majorScale).accidental
+        } else {
+            return .natural
         }
+    } else {
+        return userInputedAccidental
     }
-    
-    return userInputedAccidental
 }
 
 func findListOfMajorScalesAccidentalEffecting(_ majorScale: MajorScale) -> (accidental: Accidental, notes: [NoteLetters]) {
