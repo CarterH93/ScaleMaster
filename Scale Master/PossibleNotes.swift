@@ -109,6 +109,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
     ]),
         
         //sharp
@@ -117,6 +119,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
         ]),
         
         
@@ -134,6 +138,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
         ]),
            
             //natural
@@ -141,6 +147,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
     ]),
         
         //sharp
@@ -149,6 +157,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
         ]),
         
         
@@ -165,6 +175,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
         ]),
            
             //natural
@@ -172,6 +184,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -180,6 +194,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -198,6 +214,9 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            
         ]),
            
             //natural
@@ -205,6 +224,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -213,6 +234,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -229,6 +252,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -236,6 +261,7 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true),
+        
     ]),
         
         //sharp
@@ -247,6 +273,7 @@ let PossibleNotes: [Notes] = [
             
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: true, valve4: true),
         ]),
         
         
@@ -272,6 +299,7 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: true, valve4: true),
     ]),
         
         //sharp
@@ -280,6 +308,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: true, valve4: true),
+            
         ]),
         
         
@@ -296,6 +326,7 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: true, valve4: true),
         ]),
            
             //natural
@@ -303,6 +334,7 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: true),
     ]),
         
         //sharp
@@ -311,6 +343,7 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: true),
         ]),
         
         
@@ -327,6 +360,7 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: true),
         ]),
            
             //natural
@@ -334,6 +368,9 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
+        
     ]),
         
         //sharp
@@ -345,6 +382,8 @@ let PossibleNotes: [Notes] = [
             
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
         ]),
         
         
@@ -364,6 +403,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
         ]),
            
             //natural
@@ -371,6 +412,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
     ]),
         
         //sharp
@@ -379,6 +422,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
         ]),
         
         
@@ -395,6 +440,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
         ]),
            
             //natural
@@ -402,6 +449,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -410,6 +459,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -425,6 +476,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -432,6 +485,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -440,6 +495,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -456,6 +513,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -463,6 +522,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
     ]),
         
         //sharp
@@ -473,6 +534,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
         ]),
         
         
@@ -492,6 +555,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
         ]),
            
             //natural
@@ -499,6 +564,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
     ]),
         
         //sharp
@@ -507,6 +574,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
         ]),
         
         
@@ -523,6 +592,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
         ]),
            
             //natural
@@ -530,6 +601,9 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
+        
     ]),
         
         //sharp
@@ -538,6 +612,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -553,6 +629,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -560,6 +638,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -571,6 +651,8 @@ let PossibleNotes: [Notes] = [
             
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -590,6 +672,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -597,6 +681,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -605,6 +691,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
         ]),
         
         
@@ -621,6 +709,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
         ]),
            
             //natural
@@ -628,6 +718,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -636,6 +728,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -652,6 +746,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -659,6 +755,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -667,6 +765,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -683,6 +783,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -690,6 +792,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -700,6 +804,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -721,6 +827,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -728,6 +836,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -736,6 +846,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         ]),
         
         
@@ -752,6 +864,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -759,6 +873,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -767,6 +883,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -783,6 +901,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -790,6 +910,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -800,6 +922,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -819,6 +943,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -826,6 +952,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -834,6 +962,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
         ]),
         
         
@@ -850,6 +980,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
         ]),
            
             //natural
@@ -857,6 +989,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -865,6 +999,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -880,6 +1016,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
         ]),
            
             //natural
@@ -887,6 +1025,8 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -895,6 +1035,8 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -911,12 +1053,16 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
            
             //natural
     NoteAccidentalVariant(accidental: .natural, fingeringVarient: [
         //Fingering per instrument and instrument type for accidental
       
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -926,7 +1072,8 @@ let PossibleNotes: [Notes] = [
             
             //same as normal C fingering
             
-            
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         ]),
         
         
@@ -942,6 +1089,9 @@ let PossibleNotes: [Notes] = [
         
         //same as normal B fingering
         
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             
@@ -950,7 +1100,9 @@ let PossibleNotes: [Notes] = [
             //natural
     NoteAccidentalVariant(accidental: .natural, fingeringVarient: [
         //Fingering per instrument and instrument type for accidental
-      
+        
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
     ]),
         
         //sharp
@@ -958,6 +1110,8 @@ let PossibleNotes: [Notes] = [
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         ]),
         
         
@@ -972,18 +1126,28 @@ let PossibleNotes: [Notes] = [
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
+            
+            
         ]),
            
             //natural
     NoteAccidentalVariant(accidental: .natural, fingeringVarient: [
         //Fingering per instrument and instrument type for accidental
       
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
+        
     ]),
         
         //sharp
         
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
+            
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             
         ]),
         
@@ -1000,12 +1164,18 @@ let PossibleNotes: [Notes] = [
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            
         ]),
            
             //natural
     NoteAccidentalVariant(accidental: .natural, fingeringVarient: [
         //Fingering per instrument and instrument type for accidental
       
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
+        
     ]),
         
         //sharp
@@ -1015,6 +1185,8 @@ let PossibleNotes: [Notes] = [
             
             //same as normal F fingering
             
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             
         ]),
         
@@ -1034,18 +1206,29 @@ let PossibleNotes: [Notes] = [
         NoteAccidentalVariant(accidental: .flat, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
             
+            
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: true, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
+            
         ]),
            
             //natural
     NoteAccidentalVariant(accidental: .natural, fingeringVarient: [
         //Fingering per instrument and instrument type for accidental
       
+        fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: false, valve2: false, valve3: false, valve4: false),
+        fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
+        
+        
     ]),
         
         //sharp
         
         NoteAccidentalVariant(accidental: .sharp, fingeringVarient: [
             //Fingering per instrument and instrument type for accidental
+            
+            fingering(instrument: .BaritoneBC, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false, valve4: false),
+            fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             
         ]),
         
