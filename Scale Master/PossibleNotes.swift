@@ -113,6 +113,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "7"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T2"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T2.5"),
     ]),
         
         //sharp
@@ -125,6 +126,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "6"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T1"),
         ]),
         
         
@@ -146,6 +148,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "7"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T2.5"),
         ]),
            
             //natural
@@ -157,6 +160,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "6"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T1"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T1"),
     ]),
         
         //sharp
@@ -169,6 +173,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "5"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "5"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "Gb1"),
         ]),
         
         
@@ -189,6 +194,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "5"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "5"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "Gb1"),
         ]),
            
             //natural
@@ -200,6 +206,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "4"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "4"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "4"),
     ]),
         
         //sharp
@@ -212,6 +219,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
         
         
@@ -234,6 +242,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
             
         ]),
            
@@ -246,6 +255,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
     ]),
         
         //sharp
@@ -258,6 +268,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
         
         
@@ -278,6 +289,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
            
             //natural
@@ -285,6 +297,7 @@ let PossibleNotes: [Notes] = [
         //Fingering per instrument and instrument type for accidental
         fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "TT5.5"),
         
     ]),
         
@@ -298,6 +311,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true),
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: true, valve4: true),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "TT4"),
         ]),
         
         
@@ -316,6 +330,7 @@ let PossibleNotes: [Notes] = [
             //Fingering per instrument and instrument type for accidental
             fingering(instrument: .Tuba, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: true),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "TT5.5"),
         ]),
            
             //natural
@@ -325,6 +340,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: true),
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: true, valve4: true),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T7.5"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "TT4"),
     ]),
         
         //sharp
@@ -335,6 +351,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true),
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: true, valve4: true),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T6"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "TT2.5"),
             
         ]),
         
@@ -354,6 +371,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: false, valve2: true, valve3: true),
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: true, valve4: true),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T6"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "TT2.5"),
         ]),
            
             //natural
@@ -363,6 +381,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: true, valve3: false),
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: true),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T5"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "TT1"),
     ]),
         
         //sharp
@@ -373,6 +392,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: true),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T3.5"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "Gb5"),
         ]),
         
         
@@ -391,6 +411,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .Tuba, instrumentType: .threevalve, valve1: true, valve2: false, valve3: false),
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: true),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T3.5"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "Gb5"),
         ]),
            
             //natural
@@ -402,6 +423,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "7"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T2"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T2.5"),
         
     ]),
         
@@ -418,6 +440,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "6"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T1"),
         ]),
         
         
@@ -441,6 +464,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "7"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T2.5"),
         ]),
            
             //natural
@@ -452,6 +476,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "6"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T1"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T1"),
     ]),
         
         //sharp
@@ -464,6 +489,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "5"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "5"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "Gb1"),
         ]),
         
         
@@ -484,6 +510,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "5"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "5"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "Gb1"),
         ]),
            
             //natural
@@ -495,6 +522,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "4"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "4"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "4"),
     ]),
         
         //sharp
@@ -507,6 +535,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
         
         
@@ -526,6 +555,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
            
             //natural
@@ -537,6 +567,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
     ]),
         
         //sharp
@@ -549,6 +580,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
         
         
@@ -569,6 +601,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
            
             //natural
@@ -580,6 +613,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "7"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T2"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T2.5"),
     ]),
         
         //sharp
@@ -594,6 +628,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "6"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T1"),
         ]),
         
         
@@ -617,6 +652,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: true),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "7"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T2.5"),
         ]),
            
             //natural
@@ -628,6 +664,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: true),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "6"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "T1"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "T1"),
     ]),
         
         //sharp
@@ -640,6 +677,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "5"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "5"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "Gb1"),
         ]),
         
         
@@ -660,6 +698,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "5"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "5"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "Gb1"),
         ]),
            
             //natural
@@ -671,6 +710,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "4"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "4"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "4"),
         
     ]),
         
@@ -684,6 +724,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
         
         
@@ -703,6 +744,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
            
             //natural
@@ -714,6 +756,8 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+        
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
     ]),
         
         //sharp
@@ -729,6 +773,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
         
         
@@ -752,6 +797,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
         ]),
            
             //natural
@@ -763,6 +809,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
     ]),
         
         //sharp
@@ -775,6 +822,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "5"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "5"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "Gb1"),
         ]),
         
         
@@ -795,6 +843,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "5"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "5"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "Gb1"),
         ]),
            
             //natural
@@ -806,6 +855,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "4"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "4"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "4"),
     ]),
         
         //sharp
@@ -818,6 +868,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
         
         
@@ -838,6 +889,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
            
             //natural
@@ -849,6 +901,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
     ]),
         
         //sharp
@@ -861,6 +914,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
         
         
@@ -881,6 +935,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
            
             //natural
@@ -892,6 +947,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "4"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "4"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "4"),
     ]),
         
         //sharp
@@ -906,6 +962,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
         
         
@@ -931,6 +988,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "4"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "4"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "4"),
         ]),
            
             //natural
@@ -954,6 +1012,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
         ]),
         
         
@@ -974,6 +1033,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
         ]),
            
             //natural
@@ -985,6 +1045,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
     ]),
         
         //sharp
@@ -997,6 +1058,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
         
         
@@ -1017,6 +1079,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
            
             //natural
@@ -1028,6 +1091,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
     ]),
         
         //sharp
@@ -1042,6 +1106,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
         
         
@@ -1065,6 +1130,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
         ]),
            
             //natural
@@ -1076,6 +1142,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
     ]),
         
         //sharp
@@ -1088,6 +1155,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
         
         
@@ -1108,6 +1176,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: true, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
            
             //natural
@@ -1119,6 +1188,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
     ]),
         
         //sharp
@@ -1131,6 +1201,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
         
         
@@ -1150,6 +1221,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
         ]),
            
             //natural
@@ -1161,6 +1233,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
     ]),
         
         //sharp
@@ -1173,6 +1246,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
         
         
@@ -1193,6 +1267,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
            
             //natural
@@ -1203,6 +1278,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
     ]),
         
         //sharp
@@ -1216,6 +1292,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         ]),
         
         
@@ -1240,6 +1317,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
             
             
         ]),
@@ -1252,6 +1330,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
     ]),
         
         //sharp
@@ -1263,6 +1342,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
         ]),
         
         
@@ -1281,6 +1361,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
             
             
         ]),
@@ -1293,6 +1374,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         
     ]),
         
@@ -1305,6 +1387,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
             
         ]),
         
@@ -1325,6 +1408,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
             
         ]),
            
@@ -1350,6 +1434,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
             
         ]),
         
@@ -1374,6 +1459,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: true, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "2"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "2"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "2"),
         ]),
            
             //natural
@@ -1384,6 +1470,7 @@ let PossibleNotes: [Notes] = [
         fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: false, valve2: false, valve3: false, valve4: false),
         fingering(instrument: .Trombone, instrumentType: .standard, slide: "1"),
         fingering(instrument: .Trombone, instrumentType: .trigger, slide: "1"),
+        fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "1"),
         
         
     ]),
@@ -1397,6 +1484,7 @@ let PossibleNotes: [Notes] = [
             fingering(instrument: .BaritoneBC, instrumentType: .fourvalve, valve1: true, valve2: false, valve3: false, valve4: false),
             fingering(instrument: .Trombone, instrumentType: .standard, slide: "3"),
             fingering(instrument: .Trombone, instrumentType: .trigger, slide: "3"),
+            fingering(instrument: .BassTrombone, instrumentType: .standard, slide: "3"),
             
         ]),
         
